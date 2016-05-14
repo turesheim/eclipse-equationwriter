@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse Equation Writer
+Bundle-SymbolicName: net.resheim.eclipse.equationwriter;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.ui;bundle-version="3.106.1",
+ org.eclipse.ui.browser;bundle-version="3.4.200",
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text;bundle-version="3.9.2",
+ org.eclipse.ui.workbench,
+ org.eclipse.ui.forms;bundle-version="3.6.100",
+ org.eclipse.swt,
+ org.eclipse.ui.editors,
+ org.eclipse.mylyn.wikitext.core;bundle-version="2.7.0"
+Bundle-Activator: net.resheim.eclipse.equationwriter.EditorPlugin
+Bundle-ActivationPolicy: lazy
+Export-Package: net.resheim.eclipse.equationwriter,
+ org.eclipse.mylyn.docs.equationwriter.build;x-internal:=true
+Bundle-Vendor: Torkild U. Resheim

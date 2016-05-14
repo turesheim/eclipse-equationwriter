@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="net.resheim.eclipse.equationwriter.Editor"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            extensions="eqn"
+            icon="icons/equation.png"
+            id="net.resheim.eclipse.equationwriter.EquationEditor"
+            name="Equation Editor">
+      </editor>
+   </extension>
+</plugin>

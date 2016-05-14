@@ -1,0 +1,14 @@
+\acute{x}
+\grave{x}
+\ddot{x}
+\tilde{x}
+\bar{x}
+\breve{x}
+\check{x}
+\hat{x}
+\vec{x}
+\dot{x}
+\ddot{x}
+\dddot{x}
+\widetilde{abc}
+\widehat{abc}
