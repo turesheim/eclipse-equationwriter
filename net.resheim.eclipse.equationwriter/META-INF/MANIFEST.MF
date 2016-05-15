@@ -16,5 +16,6 @@ Require-Bundle: org.eclipse.ui;bundle-version="3.106.1",
 Bundle-Activator: net.resheim.eclipse.equationwriter.EditorPlugin
 Bundle-ActivationPolicy: lazy
 Export-Package: net.resheim.eclipse.equationwriter,
- org.eclipse.mylyn.docs.equationwriter.build;x-internal:=true
+ net.resheim.eclipse.equationwriter.build;x-internal:=true
 Bundle-Vendor: Torkild U. Resheim
+Import-Package: com.google.common.xml;version="15.0.0"

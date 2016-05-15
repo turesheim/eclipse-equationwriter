@@ -11,9 +11,8 @@
  *******************************************************************************/
 package net.resheim.eclipse.equationwriter;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.IDocument;
@@ -33,29 +32,14 @@ class LaTeXContentAssistProcessor implements IContentAssistProcessor {
 
 	private static final char BACKSLASH = '\\';
 
-	private static String[] keywords = new String[0];
+	private String[] keywords = new String[0];
 
 	public LaTeXContentAssistProcessor() {
-		if (keywords.length == 0) {
-			try {
-				BufferedInputStream bs = new BufferedInputStream(
-						LaTeXContentAssistProcessor.this.getClass().getResourceAsStream("keywords.txt"));
-				StringBuilder sb = new StringBuilder();
-				try {
-					while (bs.available() != 0) {
-						char read = (char) bs.read();
-						// Add everything except space
-						if (read != ' ') {
-							sb.append(read);
-						}
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-				keywords = sb.toString().split("\n");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+		try {
+			List<String> symbols = EditorPlugin.getDefault().getSymbols();
+			keywords = symbols.toArray(new String[symbols.size()]);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 

@@ -1,42 +1,42 @@
-\Gamma
-\Delta
-\Lambda
-\Phi
-\Pi
-\Psi
-\Sigma
-\Theta
-\Upsilon
-\Xi
-\Omega
-\alpha
-\beta
-\gamma
-\delta
-\epsilon
-\zeta
-\eta
-\theta
-\iota
-\kappa
-\lambda
-\mu
-\nu
-\xi
-\pi
-\rho
-\sigma
-\tau
-\upsilon
-\phi
-\chi
-\psi
-\omega
-\digamma
-\varepsilon
-\varkappa
-\varphi
-\varpi
-\varrho
-\varsigma
-\vartheta
+\Gamma			\Gamma
+\Delta			\Delta
+\Lambda			\Lambda
+\Phi			\Phi
+\Pi				\Pi
+\Psi			\Psi
+\Sigma			\Sigma
+\Theta			\Theta
+\Upsilon		\Upsilon
+\Xi				\Xi
+\Omega			\Omega
+\alpha			\alpha
+\beta			\beta
+\gamma			\gamma
+\delta			\delta
+\epsilon		\epsilon
+\zeta			\zeta
+\eta			\eta
+\theta			\theta
+\iota			\iota
+\kappa			\kappa
+\lambda			\lambda
+\mu				\mu
+\nu				\nu
+\xi				\xi
+\pi				\pi
+\rho			\rho
+\sigma			\sigma
+\tau			\tau
+\upsilon		\upsilon
+\phi			\phi
+\chi			\chi
+\psi			\psi
+\omega			\omega
+\digamma		\digamma
+\varepsilon		\varepsilon
+\varkappa		\varkappa
+\varphi			\varphi
+\varpi			\varpi
+\varrho			\varrho
+\varsigma		\varsigma
+\vartheta		\vartheta

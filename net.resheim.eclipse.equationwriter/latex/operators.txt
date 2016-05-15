@@ -1,61 +1,61 @@
-\amalg
-\ast
-\barwedge
-\bigcirc
-\bigtriangledown
-\bigtriangleup
-\boxdot
-\boxminus
-\boxplus
-\boxtimes
-\bullet
-\cap
-\Cap
-\cdot
-\centerdot
-\circ
-\circledast
-\circledcirc
-\circleddash
-\cup
-\Cup
-\curlyvee
-\curlywedge
-\dagger
-\ddagger
-\diamond
-\div
-\divideontimes
-\dotplus
-\doublebarwedge
-\gtrdot
-\intercal
-\leftthreetimes
-\lessdot
-\ltimes
-\mp
-\odot
-\ominus
-\oplus
-\oslash
-\otimes
-\pm
-\rightthreetimes
-\rtimes
-\setminus
-\smallsetminus
-\sqcap
-\sqcup
-\star
-\times
-\triangleleft
-\triangleright
-\uplus
-\vee
-\veeba
-\wedge
-\wr
-\land
-\lor
-\doublecup
-\doublecap
+\amalg			\amalg
+\ast			\ast
+\barwedge			\barwedge
+\bigcirc			\bigcirc
+\bigtriangledown			\bigtriangledown
+\bigtriangleup			\bigtriangleup
+\boxdot			\boxdot
+\boxminus			\boxminus
+\boxplus			\boxplus
+\boxtimes			\boxtimes
+\bullet			\bullet
+\cap			\cap
+\Cap			\Cap
+\cdot			\cdot
+\centerdot			\centerdot
+\circ			\circ
+\circledast			\circledast
+\circledcirc			\circledcirc
+\circleddash			\circleddash
+\cup			\cup
+\Cup			\Cup
+\curlyvee			\curlyvee
+\curlywedge			\curlywedge
+\dagger			\dagger
+\ddagger			\ddagger
+\diamond			\diamond
+\div			\div
+\divideontimes			\divideontimes
+\dotplus			\dotplus
+\doublebarwedge			\doublebarwedge
+\gtrdot			\gtrdot
+\intercal			\intercal
+\leftthreetimes			\leftthreetimes
+\lessdot			\lessdot
+\ltimes			\ltimes
+\mp			\mp
+\odot			\odot
+\ominus			\ominus
+\oplus			\oplus
+\oslash			\oslash
+\otimes			\otimes
+\pm			\pm
+\rightthreetimes			\rightthreetimes
+\rtimes			\rtimes
+\setminus			\setminus
+\smallsetminus			\smallsetminus
+\sqcap			\sqcap
+\sqcup			\sqcup
+\star			\star
+\times			\times
+\triangleleft			\triangleleft
+\triangleright			\triangleright
+\uplus			\uplus
+\vee			\vee
+\veeba			\veeba
+\wedge			\wedge
+\wr			\wr
+\land			\land
+\lor			\lor
+\doublecup			\doublecup
+\doublecap			\doublecap

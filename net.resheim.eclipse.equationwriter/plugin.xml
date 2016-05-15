@@ -7,7 +7,7 @@
             class="net.resheim.eclipse.equationwriter.Editor"
             contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
             extensions="eqn"
-            icon="icons/equation.png"
+            icon="icons/icon.png"
             id="net.resheim.eclipse.equationwriter.EquationEditor"
             name="Equation Editor">
       </editor>

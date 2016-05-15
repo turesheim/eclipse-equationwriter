@@ -1,18 +1,18 @@
-\aleph
-\beth
-\daleth
-\gimel
-\complement
-\ell
-\eth
-\hbar
-\hslash
-\mho
-\partial
-\wp
-\circledS
-\Bbbk
-\Finv
-\Game
-\Im
-\Re
+\aleph			\aleph
+\beth			\beth
+\daleth			\daleth
+\gimel			\gimel
+\complement		\complement
+\ell			\ell
+\eth			\eth
+\hbar			\hbar
+\hslash			\hslash
+\mho			\mho
+\partial		\partial
+\wp				\wp
+\circledS		\circledS
+\Bbbk			\Bbbk
+\Finv			\Finv
+\Game			\Game
+\Im				\Im
+\Re				\Re

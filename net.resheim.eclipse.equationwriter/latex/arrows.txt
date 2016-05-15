@@ -1,64 +1,64 @@
-\Arrowvert
-\arrowvert
-\circlearrowleft
-\circlearrowright
-\curvearrowleft
-\curvearrowright
-\downdownarrows
-\downharpoonleft
-\downharpoonright
-\hookleftarrow
-\hookrightarrow
-\leftarrow
-\Leftarrow
-\leftarrowtail
-\leftharpoondown
-\leftharpoonup
-\leftleftarrows
-\leftrightarrow
-\Leftrightarrow
-\leftrightarrows
-\leftrightharpoons
-\Lleftarrow
-\longleftarrow
-\Longleftarrow
-\longleftrightarrow
-\Longleftrightarrow
-\longmapsto
-\longrightarrow
-\Longrightarrow
-\looparrowleft
-\looparrowright
-\Lsh
-\mapsto
-\multimap
-\nLeftarrow
-\nLeftrightarrow
-\nRightarrow
-\nearrow
-\nleftarrow
-\nleftrightarrow
-\nrightarrow
-\nwarrow
-\rightarrow
-\Rightarrow
-\rightarrowtail
-\rightharpoondown
-\rightharpoonup
-\rightleftarrows
-\rightleftharpoons
-\rightrightarrows
-\rightsquigarrow
-\Rrightarrow
-\Rsh
-\searrow
-\swarrow
-\twoheadleftarrow
-\twoheadrightarrow
-\uparrow
-\upharpoonleft
-\upharpoonright
-\upuparrows
-\gets
-\to
-\restriction
+\Arrowvert					\Arrowvert
+\arrowvert					\arrowvert
+\circlearrowleft			\circlearrowleft
+\circlearrowright			\circlearrowright
+\curvearrowleft				\curvearrowleft
+\curvearrowright			\curvearrowright
+\downdownarrows				\downdownarrows
+\downharpoonleft			\downharpoonleft
+\downharpoonright			\downharpoonright
+\hookleftarrow				\hookleftarrow
+\hookrightarrow				\hookrightarrow
+\leftarrow					\leftarrow
+\Leftarrow					\Leftarrow
+\leftarrowtail				\leftarrowtail
+\leftharpoondown			\leftharpoondown
+\leftharpoonup				\leftharpoonup
+\leftleftarrows				\leftleftarrows
+\leftrightarrow				\leftrightarrow
+\Leftrightarrow				\Leftrightarrow
+\leftrightarrows			\leftrightarrows
+\leftrightharpoons			\leftrightharpoons
+\Lleftarrow					\Lleftarrow
+\longleftarrow				\longleftarrow
+\Longleftarrow				\Longleftarrow
+\longleftrightarrow			\longleftrightarrow
+\Longleftrightarrow			\Longleftrightarrow
+\longmapsto					\longmapsto
+\longrightarrow				\longrightarrow
+\Longrightarrow				\Longrightarrow
+\looparrowleft				\looparrowleft
+\looparrowright				\looparrowright
+\Lsh						\Lsh
+\mapsto						\mapsto
+\multimap					\multimap
+\nLeftarrow					\nLeftarrow
+\nLeftrightarrow			\nLeftrightarrow
+\nRightarrow				\nRightarrow
+\nearrow					\nearrow
+\nleftarrow					\nleftarrow
+\nleftrightarrow			\nleftrightarrow
+\nrightarrow				\nrightarrow
+\nwarrow					\nwarrow
+\rightarrow					\rightarrow
+\Rightarrow					\Rightarrow
+\rightarrowtail				\rightarrowtail
+\rightharpoondown			\rightharpoondown
+\rightharpoonup				\rightharpoonup
+\rightleftarrows			\rightleftarrows
+\rightleftharpoons			\rightleftharpoons
+\rightrightarrows			\rightrightarrows
+\rightsquigarrow			\rightsquigarrow
+\Rrightarrow				\Rrightarrow
+\Rsh						\Rsh
+\searrow					\searrow
+\swarrow					\swarrow
+\twoheadleftarrow			\twoheadleftarrow
+\twoheadrightarrow			\twoheadrightarrow
+\uparrow					\uparrow
+\upharpoonleft				\upharpoonleft
+\upharpoonright				\upharpoonright
+\upuparrows					\upuparrows
+\gets						\gets
+\to							\to
+\restriction				\restriction

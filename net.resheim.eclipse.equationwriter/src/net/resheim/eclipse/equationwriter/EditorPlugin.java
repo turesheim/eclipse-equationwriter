@@ -24,6 +24,7 @@ import java.util.Enumeration;
 import java.util.List;
 
 import org.eclipse.core.runtime.FileLocator;
+import org.eclipse.core.runtime.Path;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.jface.resource.ImageRegistry;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
@@ -41,6 +42,7 @@ public class EditorPlugin extends AbstractUIPlugin {
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
 		plugin = this;
+		loadKeywords();
 	}
 
 	@Override
@@ -62,7 +64,7 @@ public class EditorPlugin extends AbstractUIPlugin {
 			if (Character.isUpperCase(c)) {
 				sb.append("_");
 				sb.append(Character.toLowerCase(c));
-			} else {
+			} else if (c != '\\') {
 				sb.append(c);
 			}
 		}
@@ -72,6 +74,22 @@ public class EditorPlugin extends AbstractUIPlugin {
 	@Override
 	protected void initializeImageRegistry(ImageRegistry reg) {
 		super.initializeImageRegistry(reg);
+
+		for (String string : getSymbols()) {
+			// build the filename and remove the prefixing backslash
+			try {
+				String path = "icons/content-assist/" + getFilename(string.substring(1)) + ".png";
+				URL url = FileLocator.find(getBundle(), new Path(path), null);
+				ImageDescriptor imageDescriptor = ImageDescriptor.createFromURL(url);
+				reg.put(string, imageDescriptor);
+			} catch (Exception e) {
+				e.printStackTrace();
+				System.err.println("Could not read " + string);
+			}
+		}
+	}
+
+	private void loadKeywords() {
 		Enumeration<URL> findEntries = getBundle().findEntries("latex", "*.txt", true);
 		while (findEntries.hasMoreElements()) {
 			URL url;
@@ -83,7 +101,8 @@ public class EditorPlugin extends AbstractUIPlugin {
 					String in = null;
 					while ((in = br.readLine()) != null) {
 						String trim = in.trim();
-						symbols.add(trim);
+						String[] split = trim.split("\\t+");
+						getSymbols().add(split[0]);
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -93,18 +112,10 @@ public class EditorPlugin extends AbstractUIPlugin {
 				e1.printStackTrace();
 			}
 		}
+	}
 
-		for (String string : symbols) {
-			// build the filename and remove the prefixing backslash
-			try {
-				String imageFilePath = "icons/content-assist/" + getFilename(string.substring(1)) + ".png";
-				ImageDescriptor imageDescriptorFromPlugin = AbstractUIPlugin.imageDescriptorFromPlugin(PLUGIN_ID,
-						imageFilePath);
-				reg.put(string, imageDescriptorFromPlugin);
-			} catch (Exception e) {
-				System.err.println("Could not read " + string);
-			}
-		}
+	public List<String> getSymbols() {
+		return symbols;
 	}
 
 }

@@ -1,15 +1,15 @@
-\int
-\oint
-\bigcap
-\bigcup
-\bigodot
-\bigoplus
-\bigotimes
-\bigsqcup
-\biguplus
-\bigvee
-\bigwedge
-\coprod
-\prod
-\smallint
-\sum
+\int				\int
+\oint				\oint
+\bigcap				\bigcap
+\bigcup				\bigcup
+\bigodot			\bigodot
+\bigoplus			\bigoplus
+\bigotimes			\bigotimes
+\bigsqcup			\bigsqcup
+\biguplus			\biguplus
+\bigvee				\bigvee
+\bigwedge			\bigwedge
+\coprod				\coprod
+\prod				\prod
+\smallint			\smallint
+\sum				\sum

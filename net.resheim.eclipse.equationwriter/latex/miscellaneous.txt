@@ -1,70 +1,72 @@
-\backepsilon
-\because
-\between
-\blacktriangleleft
-\blacktriangleright
-\bowtie
-\dashv
-\frown
-\in
-\mid
-\models
-\ni
-\nmid
-\notin
-\nparallel
-\nshortmid
-\nshortparallel
-\nsubseteq
-\nsubseteqq
-\nsupseteq
-\nsupseteqq
-\ntriangleleft
-\ntrianglelefteq
-\ntriangleright
-\ntrianglerighteq
-\nvdash
-\nVdash
-\nvDash
-\nVDash
-\parallel
-\perp
-\pitchfork
-àù\propto
-\shortmid
-\shortparallel
-\smallfrown
-\smallsmile
-\smile
-\sqsubset
-äë\sqsubseteq
-\sqsupset
-äí\sqsupseteq‚ä
-\subset
-\Subset
-äÜ\subseteq
-\subseteqq
-\subsetneq
-\subsetneqq
-\supset
-\Supset
-äá\supseteq
-\supseteqq
-\supsetneq
-\supsetneqq
-\therefore
-\trianglelefteq
-\trianglerighteq
-\varpropto
-\varsubsetneq
-\varsubsetneqq
-\varsupsetneq
-\varsupsetneqq
-\vartriangle
-\vartriangleleft
-\vartriangleright
-\vdash
-\Vdash
-\vDash
-\Vvdash
-\owns
+\backepsilon			\backepsilon
+\because				\because
+\between				\between
+\blacktriangleleft		\blacktriangleleft
+\blacktriangleright		\blacktriangleright
+\bowtie					\bowtie
+\dashv					\dashv
+\frown					\frown
+\in						\in
+\mid					\mid
+\models					\models
+\ni						\ni
+\nmid					\nmid
+\notin					\notin
+\nparallel				\nparallel
+\nshortmid				\nshortmid
+\nshortparallel			\nshortparallel
+\nsubseteq				\nsubseteq
+\nsubseteqq				\nsubseteqq
+\nsupseteq				\nsupseteq
+\nsupseteqq				\nsupseteqq
+\ntriangleleft			\ntriangleleft
+\ntrianglelefteq		\ntrianglelefteq
+\ntriangleright			\ntriangleright
+\ntrianglerighteq		\ntrianglerighteq
+\nvdash					\nvdash
+\nVdash					\nVdash
+\nvDash					\nvDash
+\nVDash					\nVDash
+\parallel				\parallel
+\perp					\perp
+\pitchfork				\pitchfork
+\propto					\propto
+\shortmid				\shortmid
+\shortparallel			\shortparallel
+\smallfrown				\smallfrown
+\smallsmile				\smallsmile
+\smile					\smile
+\sqsubset				\sqsubset
+\sqsubseteq				\sqsubseteq
+\sqsupset				\sqsupset
+\sqsupseteq				\sqsupseteq
+\subset					\subset
+\Subset					\Subset
+\subseteq				\subseteq
+\subseteqq				\subseteqq
+\subsetneq				\subsetneq
+\subsetneqq				\subsetneqq
+\supset					\supset
+\Supset					\Supset
+\supseteq				\supseteq
+\supseteqq				\supseteqq
+\supsetneq				\supsetneq
+\supsetneqq				\supsetneqq
+\therefore				\therefore
+\trianglelefteq			\trianglelefteq
+\trianglerighteq		\trianglerighteq
+\varpropto				\varpropto
+\varsubsetneq			\varsubsetneq
+\varsubsetneqq			\varsubsetneqq
+\varsupsetneq			\varsupsetneq
+\varsupsetneqq			\varsupsetneqq
+\vartriangle			\vartriangle
+\vartriangleleft		\vartriangleleft
+\vartriangleright		\vartriangleright
+\vdash					\vdash
+\Vdash					\Vdash
+\vDash					\vDash
+\Vvdash					\Vvdash
+\owns					\owns
+\LaTeX					\LaTeX
+icon					\small{x^2}

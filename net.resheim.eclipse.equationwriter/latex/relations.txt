@@ -1,92 +1,92 @@
-\approx
-\approxeq
-\asymp
-\backsim
-\backsimeq
-\bumpeq
-\Bumpeq
-\circeq
-\cong
-\curlyeqprec
-\curlyeqsucc
-\doteq
-\doteqdot
-\eqcirc
-\eqsim
-\eqslantgtr
-\eqslantless
-\equiv
-\fallingdotseq
-\geq
-\geqq
-\geqslant
-\gg
-\ggg
-\gnapprox
-\gneq
-\gneqq
-\gnsim
-\gtrapprox
-\gtreqless
-\gtreqqless
-\gtrless
-\gtrsim
-\gvertneqq
-\leq
-\leqq
-\leqslant
-\lessapprox
-\lesseqgtr
-\lesseqqgtr
-\lessgtr
-\lesssim
-\ll
-\lll
-\lnapprox
-\lneq
-\lneqq
-\lnsim
-\lvertneqq
-\ncong
-\neq
-\ngeq
-\ngeqq
-\ngeqslant
-\ngtr
-\nleq
-\nleqq
-\nleqslant
-\nless
-\nprec
-\npreceq
-\nsim
-\nsucc
-\nsucceq
-\prec
-\precapprox
-\preccurlyeq
-\preceq
-\precnapprox
-\precneqq
-\precnsim
-\precsim
-\risingdotseq
-\sim
-\simeq
-\succ
-\succapprox
-\succcurlyeq
-\succeq
-\succnapprox
-\succneqq
-\succnsim
-\succsim
-\thickapprox
-\thicksim
-\triangleq
-\ne
-\le
-\ge
-\Doteq
-\llless
-\gggtr
+\approx			\approx
+\approxeq			\approxeq
+\asymp			\asymp
+\backsim			\backsim
+\backsimeq			\backsimeq
+\bumpeq			\bumpeq
+\Bumpeq			\Bumpeq
+\circeq			\circeq
+\cong			\cong
+\curlyeqprec			\curlyeqprec
+\curlyeqsucc			\curlyeqsucc
+\doteq			\doteq
+\doteqdot			\doteqdot
+\eqcirc			\eqcirc
+\eqsim			\eqsim
+\eqslantgtr			\eqslantgtr
+\eqslantless			\eqslantless
+\equiv			\equiv
+\fallingdotseq			\fallingdotseq
+\geq			\geq
+\geqq			\geqq
+\geqslant			\geqslant
+\gg			\gg
+\ggg			\ggg
+\gnapprox			\gnapprox
+\gneq			\gneq
+\gneqq			\gneqq
+\gnsim			\gnsim
+\gtrapprox			\gtrapprox
+\gtreqless			\gtreqless
+\gtreqqless			\gtreqqless
+\gtrless			\gtrless
+\gtrsim			\gtrsim
+\gvertneqq			\gvertneqq
+\leq			\leq
+\leqq			\leqq
+\leqslant			\leqslant
+\lessapprox			\lessapprox
+\lesseqgtr			\lesseqgtr
+\lesseqqgtr			\lesseqqgtr
+\lessgtr			\lessgtr
+\lesssim			\lesssim
+\ll			\ll
+\lll			\lll
+\lnapprox			\lnapprox
+\lneq			\lneq
+\lneqq			\lneqq
+\lnsim			\lnsim
+\lvertneqq			\lvertneqq
+\ncong			\ncong
+\neq			\neq
+\ngeq			\ngeq
+\ngeqq			\ngeqq
+\ngeqslant			\ngeqslant
+\ngtr			\ngtr
+\nleq			\nleq
+\nleqq			\nleqq
+\nleqslant			\nleqslant
+\nless			\nless
+\nprec			\nprec
+\npreceq			\npreceq
+\nsim			\nsim
+\nsucc			\nsucc
+\nsucceq			\nsucceq
+\prec			\prec
+\precapprox			\precapprox
+\preccurlyeq			\preccurlyeq
+\preceq			\preceq
+\precnapprox			\precnapprox
+\precneqq			\precneqq
+\precnsim			\precnsim
+\precsim			\precsim
+\risingdotseq			\risingdotseq
+\sim			\sim
+\simeq			\simeq
+\succ			\succ
+\succapprox			\succapprox
+\succcurlyeq			\succcurlyeq
+\succeq			\succeq
+\succnapprox			\succnapprox
+\succneqq			\succneqq
+\succnsim			\succnsim
+\succsim			\succsim
+\thickapprox			\thickapprox
+\thicksim			\thicksim
+\triangleq			\triangleq
+\ne			\ne
+\le			\le
+\ge			\ge
+\Doteq			\Doteq
+\llless			\llless
+\gggtr			\gggtr

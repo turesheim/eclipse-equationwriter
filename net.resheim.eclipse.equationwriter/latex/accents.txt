@@ -1,14 +1,14 @@
-\acute{x}
-\grave{x}
-\ddot{x}
-\tilde{x}
-\bar{x}
-\breve{x}
-\check{x}
-\hat{x}
-\vec{x}
-\dot{x}
-\ddot{x}
-\dddot{x}
-\widetilde{abc}
-\widehat{abc}
+\acute{x}			\acute{x}
+\grave{x}			\grave{x}
+\ddot{x}			\ddot{x}
+\tilde{x}			\tilde{x}
+\bar{x}				\bar{x}
+\breve{x}			\breve{x}
+\check{x}			\check{x}
+\hat{x}				\hat{x}
+\vec{x}				\vec{x}
+\dot{x}				\dot{x}
+\ddot{x}			\ddot{x}
+\dddot{x}			\dddot{x}
+\widetilde{abc}		\widetilde{abc}
+\widehat{abc}			\widehat{abc}

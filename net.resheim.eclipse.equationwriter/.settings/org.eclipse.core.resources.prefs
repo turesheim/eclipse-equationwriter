@@ -1,2 +1,11 @@
 eclipse.preferences.version=1
+encoding//latex/accents.txt=ISO-8859-1
+encoding//latex/arrows.txt=ISO-8859-1
+encoding//latex/cumulative.txt=ISO-8859-1
+encoding//latex/greek.txt=ISO-8859-1
+encoding//latex/letters.txt=ISO-8859-1
+encoding//latex/miscellaneous.txt=ISO-8859-1
+encoding//latex/operators.txt=ISO-8859-1
+encoding//latex/relations.txt=ISO-8859-1
+encoding//latex/symbols.txt=ISO-8859-1
 encoding/<project>=UTF-8
