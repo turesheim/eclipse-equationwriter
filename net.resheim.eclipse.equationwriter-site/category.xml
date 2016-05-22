@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/net.resheim.eclipse.equationwriter_0.1.0.qualifier.jar" id="net.resheim.eclipse.equationwriter" version="0.1.0.qualifier">
+      <category name="main"/>
+   </feature>
+   <category-def name="main" label="Equation Writer for Eclipse">
+      <description>
+         Utility for writing LaTeX equations in Eclipse.
+      </description>
+   </category-def>
+</site>
