@@ -11,4 +11,4 @@
 \ddot{x}			\ddot{x}
 \dddot{x}			\dddot{x}
 \widetilde{abc}		\widetilde{abc}
-\widehat{abc}			\widehat{abc}
+\widehat{abc}		\widehat{abc}

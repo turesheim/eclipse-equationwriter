@@ -13,11 +13,14 @@ package net.resheim.eclipse.equationwriter.build;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.nio.charset.Charset;
-import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
@@ -114,18 +117,18 @@ public class IconBuilder {
 	public static void main(String[] args) {
 
 		try {
-			symbols.addAll(Files.readAllLines(Paths.get("latex/accents.txt"), Charset.forName("ISO-8859-1")));
-			symbols.addAll(Files.readAllLines(Paths.get("latex/arrows.txt"), Charset.forName("ISO-8859-1")));
-			symbols.addAll(Files.readAllLines(Paths.get("latex/cumulative.txt"), Charset.forName("ISO-8859-1")));
-			symbols.addAll(Files.readAllLines(Paths.get("latex/greek.txt"), Charset.forName("ISO-8859-1")));
-			symbols.addAll(Files.readAllLines(Paths.get("latex/letters.txt"), Charset.forName("ISO-8859-1")));
-			symbols.addAll(Files.readAllLines(Paths.get("latex/miscellaneous.txt"), Charset.forName("ISO-8859-1")));
-			symbols.addAll(Files.readAllLines(Paths.get("latex/operators.txt"), Charset.forName("ISO-8859-1")));
-			symbols.addAll(Files.readAllLines(Paths.get("latex/symbols.txt"), Charset.forName("ISO-8859-1")));
-			symbols.addAll(Files.readAllLines(Paths.get("latex/relations.txt"), Charset.forName("ISO-8859-1")));
+			symbols.addAll(readAllLines(Paths.get("latex/accents.txt"), Charset.forName("ISO-8859-1")));
+//			symbols.addAll(readAllLines(Paths.get("latex/arrows.txt"), Charset.forName("ISO-8859-1")));
+//			symbols.addAll(readAllLines(Paths.get("latex/cumulative.txt"), Charset.forName("ISO-8859-1")));
+//			symbols.addAll(readAllLines(Paths.get("latex/greek.txt"), Charset.forName("ISO-8859-1")));
+//			symbols.addAll(readAllLines(Paths.get("latex/letters.txt"), Charset.forName("ISO-8859-1")));
+//			symbols.addAll(readAllLines(Paths.get("latex/miscellaneous.txt"), Charset.forName("ISO-8859-1")));
+//			symbols.addAll(readAllLines(Paths.get("latex/operators.txt"), Charset.forName("ISO-8859-1")));
+//			symbols.addAll(readAllLines(Paths.get("latex/symbols.txt"), Charset.forName("ISO-8859-1")));
+//			symbols.addAll(readAllLines(Paths.get("latex/relations.txt"), Charset.forName("ISO-8859-1")));
 			// content assist keywords - used to verify that we got what we need
-			ca.addAll(Files.readAllLines(Paths.get("src/net/resheim/eclipse/equationwriter/keywords.txt"),
-					Charset.forName("UTF-8")));
+//			ca.addAll(readAllLines(Paths.get("src/net/resheim/eclipse/equationwriter/keywords.txt"),
+//					Charset.forName("UTF-8")));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -189,6 +192,20 @@ public class IconBuilder {
 		});
 	}
 
+	private static List<String> readAllLines(Path path, Charset charset) throws FileNotFoundException, IOException {
+		List<String> rl = new ArrayList<>();
+		try (BufferedReader br = new BufferedReader(
+				new InputStreamReader(new FileInputStream(path.toFile()), charset))) {
+			String in = null;
+			while ((in = br.readLine()) != null) {
+				if (!in.startsWith("#")) {
+					rl.add(in);
+				}
+			}
+		}
+		return rl;
+	}
+
 	/**
 	 * Save a screenshot (of the browser) for the running test.
 	 */
@@ -198,26 +215,52 @@ public class IconBuilder {
 			dir.mkdir();
 		}
 
-		saveIcon(currentKeyword, dir, SIZE_1x, "");
-		saveIcon(currentKeyword, dir, SIZE_1_5x, "@1.5x");
-		saveIcon(currentKeyword, dir, SIZE_2x, "@2x");
-	}
-
-	private static void saveIcon(String filename, File dir, int size, String suffix) {
+		final Image image = new Image(display, shell.getBounds().x, shell.getBounds().y);
 		// find edges and scale down
 		GC gc = new GC(browser);
-		final Image image = new Image(display, shell.getBounds().x, shell.getBounds().y);
 		gc.copyArea(image, 0, 0);
-		Rectangle r = detectEdges(image, size);
+		Rectangle edges = detectEdges(image);
+
+		saveIcon(image, edges, SIZE_1x, currentKeyword, dir, "");
+		saveIcon(image, edges, SIZE_1_5x, currentKeyword, dir, "@1.5x");
+		saveIcon(image, edges, SIZE_2x, currentKeyword, dir, "@2x");
+	}
+
+	private static void saveIcon(final Image image, final Rectangle edges, int size, String filename, File dir,
+			String suffix) {
+
+		// make sure that height and width are the same
+		int width = edges.width;
+		int height = edges.height;
+
+		if (width > height) {
+			height = width;
+		}
+		if (height > width) {
+			width = height;
+		}
+
+		// never scale up, only down
+		if (height < size) {
+			height = size;
+		}
+		if (width < size) {
+			width = size;
+		}
+
+		edges.width = width;
+		edges.height = height;
 
 		// crop and scale down
-		final Image t = new Image(display, r.width, r.height);
-		gc.copyArea(t, r.x, r.y);
+		final Image t = new Image(display, edges.width, edges.height);
+		GC gc = new GC(image);
+		gc.copyArea(t, edges.x, edges.y);
 		gc.dispose();
 		final Image scaled = new Image(display, t.getImageData().scaledTo(size, size));
 
 		// convert brightness (white) to transparent
-		ImageData id = convertBrightnessToAlpha(scaled.getImageData());
+		RGB foreground = new RGB(0, 0, 255); // icon color
+		ImageData id = convertBrightnessToAlpha(scaled.getImageData(), foreground);
 
 		// save the final image
 		ImageLoader il = new ImageLoader();
@@ -228,9 +271,16 @@ public class IconBuilder {
 			imageFile.delete();
 		}
 		il.save(imageName, SWT.IMAGE_PNG);
-		System.out.println("Created icon for " + currentExpression + ". Original size: " + r);
+		System.out.println("Created icon for " + currentExpression + ". Original size: " + edges);
 	}
 
+	/**
+	 * Converts the string to something that can be used as the icon file name
+	 * 
+	 * @param keyword
+	 *            the keyword
+	 * @return the file name
+	 */
 	public static String getFilename(String keyword) {
 		StringBuilder sb = new StringBuilder();
 		char[] charArray = keyword.toCharArray();
@@ -245,8 +295,7 @@ public class IconBuilder {
 		return sb.toString();
 	}
 
-	public static ImageData convertBrightnessToAlpha(ImageData data) {
-		RGB foreground = new RGB(0, 0, 255); // icon color
+	public static ImageData convertBrightnessToAlpha(ImageData data, RGB foreground) {
 		for (int x = 0; x < data.width; x++) {
 			for (int y = 0; y < data.height; y++) {
 				int pixel = data.getPixel(x, y);
@@ -261,7 +310,7 @@ public class IconBuilder {
 		return data;
 	}
 
-	private static Rectangle detectEdges(Image image, int size) {
+	private static Rectangle detectEdges(Image image) {
 		// find left edge
 		int left = 0;
 		int right = image.getImageData().width - 1;
@@ -275,21 +324,6 @@ public class IconBuilder {
 		}
 		int width = right - left;
 		int height = bottom - top;
-
-		// make sure that height and width are the same
-		if (width > height) {
-			height = width;
-		}
-		if (height > width) {
-			width = height;
-		}
-		// never scale up, only down
-		if (height < size) {
-			height = size;
-		}
-		if (width < size) {
-			width = size;
-		}
 
 		Rectangle r = new Rectangle(left, top, width, height);
 		return r;

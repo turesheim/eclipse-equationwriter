@@ -69,4 +69,5 @@
 \Vvdash					\Vvdash
 \owns					\owns
 \LaTeX					\LaTeX
+# Used to create the editor icon
 icon					\small{x^2}
