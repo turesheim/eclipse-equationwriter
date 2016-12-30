@@ -16,32 +16,28 @@ import java.util.List;
 
 import org.eclipse.jface.text.BadLocationException;
 import org.eclipse.jface.text.IDocument;
+import org.eclipse.jface.text.IRegion;
 import org.eclipse.jface.text.ITextViewer;
+import org.eclipse.jface.text.Region;
 import org.eclipse.jface.text.contentassist.CompletionProposal;
 import org.eclipse.jface.text.contentassist.ICompletionProposal;
-import org.eclipse.jface.text.contentassist.IContentAssistProcessor;
-import org.eclipse.jface.text.contentassist.IContextInformation;
-import org.eclipse.jface.text.contentassist.IContextInformationValidator;
+import org.eclipse.jface.text.templates.Template;
+import org.eclipse.jface.text.templates.TemplateCompletionProcessor;
+import org.eclipse.jface.text.templates.TemplateContext;
+import org.eclipse.jface.text.templates.TemplateContextType;
+import org.eclipse.jface.text.templates.TemplateException;
+import org.eclipse.jface.text.templates.TemplateProposal;
 import org.eclipse.swt.graphics.Image;
 
 /**
  * @author Torkild U. Resheim
  * @since 1.0
  */
-class LaTeXContentAssistProcessor implements IContentAssistProcessor {
+class LaTeXContentAssistProcessor extends TemplateCompletionProcessor {
 
 	private static final char BACKSLASH = '\\';
 
-	private String[] keywords = new String[0];
-
-	public LaTeXContentAssistProcessor() {
-		try {
-			List<String> symbols = EditorPlugin.getDefault().getSymbols();
-			keywords = symbols.toArray(new String[symbols.size()]);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+	TemplateContextType tcp = new TemplateContextType("net.resheim.eclipse.equationwriter");
 
 	@Override
 	public ICompletionProposal[] computeCompletionProposals(ITextViewer viewer, int documentOffset) {
@@ -50,36 +46,53 @@ class LaTeXContentAssistProcessor implements IContentAssistProcessor {
 		String qualifier = getQualifier(doc, documentOffset);
 		int qlen = qualifier.length();
 		boolean restart = false;
-		for (String keyword : keywords) {
-			if (qualifier.equals(keyword)) {
+		for (Symbol keyword : EditorPlugin.getDefault().getSymbols()) {
+			if (qualifier.equals(keyword.getToken())) {
 				restart = true;
 				qlen = 0;
 			}
 		}
-		for (String keyword : keywords) {
-			if ((restart || keyword.startsWith(qualifier)) && (documentOffset - qlen >= 0)) {
-				Image image = EditorPlugin.getDefault().getImageRegistry().get(keyword);
-				addProposal(keyword, documentOffset, qlen, image, props);
+		for (Symbol symbol : EditorPlugin.getDefault().getSymbols()) {
+			if ((restart || symbol.getToken().startsWith(qualifier)) && (documentOffset - qlen >= 0)) {
+				int position = symbol.getToken().length();
+				// Create a template if one has been specified
+				if (symbol.getTemplate() != null) {
+					Region region = new Region(documentOffset - qlen, qlen);
+					TemplateContext context = createContext(viewer, region);
+					for (Template template : getTemplates(tcp.getId())) {
+						try {
+							context.getContextType().validate(template.getPattern());
+							if (template.getName().startsWith(qualifier)) {
+								if (template.matches(qualifier, context.getContextType().getId())) {
+									Image image = EditorPlugin.getDefault().getImageRegistry().get(symbol.getToken());
+									TemplateProposal tp = new TemplateProposal(template, context, region, image);
+									props.add(tp);
+								}
+							}
+						} catch (TemplateException e) {
+							e.printStackTrace();
+						}
+					}
+				} else {
+					Image image = EditorPlugin.getDefault().getImageRegistry().get(symbol.getToken());
+					addBasicProposal(symbol.getToken(), documentOffset, qlen, image, position, props);
+				}
 			}
 		}
 		return props.toArray(new ICompletionProposal[props.size()]);
 	}
 
-	private void addProposal(String prop, int offset, int qlen, Image image, ArrayList<ICompletionProposal> props) {
+	private void addBasicProposal(String prop, int offset, int qlen, Image image, int position,
+			ArrayList<ICompletionProposal> props) {
 		CompletionProposal proposal = new CompletionProposal(prop, // replacement string
 				offset - qlen, // offset of the text
 				qlen, // length of the text
-				prop.length(), // cursor position after
+				position, // cursor position after
 				image, // the image
 				prop, // displayed string
 				null, // context info
 				null); // extra information
 		props.add(proposal);
-	}
-
-	@Override
-	public IContextInformation[] computeContextInformation(ITextViewer viewer, int offset) {
-		return null;
 	}
 
 	@Override
@@ -90,18 +103,6 @@ class LaTeXContentAssistProcessor implements IContentAssistProcessor {
 	@Override
 	public char[] getContextInformationAutoActivationCharacters() {
 		return new char[] { BACKSLASH };
-	}
-
-	@Override
-	public String getErrorMessage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public IContextInformationValidator getContextInformationValidator() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	/**
@@ -133,4 +134,27 @@ class LaTeXContentAssistProcessor implements IContentAssistProcessor {
 		}
 		return BACKSLASH + qualifier;
 	}
+
+	@Override
+	protected Template[] getTemplates(String contextTypeId) {
+		List<Template> templates = new ArrayList<>();
+		for (Symbol symbol : EditorPlugin.getDefault().getSymbols()) {
+			if (symbol.getTemplate() != null) {
+				Template template = new Template(symbol.getToken(), "", tcp.getId(), symbol.getTemplate(), false);
+				templates.add(template);
+			}
+		}
+		return templates.toArray(new Template[0]);
+	}
+
+	@Override
+	protected TemplateContextType getContextType(ITextViewer viewer, IRegion region) {
+		return tcp;
+	}
+
+	@Override
+	protected Image getImage(Template template) {
+		return EditorPlugin.getDefault().getImageRegistry().get(template.getName());
+	}
+
 }

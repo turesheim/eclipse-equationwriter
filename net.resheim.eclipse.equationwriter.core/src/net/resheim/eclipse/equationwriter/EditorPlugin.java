@@ -36,7 +36,7 @@ public class EditorPlugin extends AbstractUIPlugin {
 
 	public static final String PLUGIN_ID = "net.resheim.eclipse.equationwriter"; //$NON-NLS-1$
 
-	private final List<String> symbols = new ArrayList<>();
+	private final List<Symbol> symbols = new ArrayList<>();
 
 	@Override
 	public void start(BundleContext context) throws Exception {
@@ -75,16 +75,16 @@ public class EditorPlugin extends AbstractUIPlugin {
 	protected void initializeImageRegistry(ImageRegistry reg) {
 		super.initializeImageRegistry(reg);
 
-		for (String string : getSymbols()) {
+		for (Symbol symbol : getSymbols()) {
 			// build the filename and remove the prefixing backslash
 			try {
-				String path = "icons/content-assist/" + getFilename(string.substring(1)) + ".png";
+				String path = "icons/content-assist/" + getFilename(symbol.getToken().substring(1)) + ".png";
 				URL url = FileLocator.find(getBundle(), new Path(path), null);
 				ImageDescriptor imageDescriptor = ImageDescriptor.createFromURL(url);
-				reg.put(string, imageDescriptor);
+				reg.put(symbol.getToken(), imageDescriptor);
 			} catch (Exception e) {
 				e.printStackTrace();
-				System.err.println("Could not read " + string);
+				System.err.println("Could not read " + symbol);
 			}
 		}
 	}
@@ -101,8 +101,13 @@ public class EditorPlugin extends AbstractUIPlugin {
 					String in = null;
 					while ((in = br.readLine()) != null) {
 						String trim = in.trim();
-						String[] split = trim.split("\\t+");
-						getSymbols().add(split[0]);
+						// ignore comments
+						if (trim.startsWith("#")) {
+							continue;
+						}
+						// use the "template" column if specified
+						System.out.println(trim);
+						getSymbols().add(new Symbol(trim));
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -114,7 +119,7 @@ public class EditorPlugin extends AbstractUIPlugin {
 		}
 	}
 
-	public List<String> getSymbols() {
+	public List<Symbol> getSymbols() {
 		return symbols;
 	}
 
