@@ -1,7 +1,7 @@
 target "Eclipse Equationwriter Target Platform" with source requirements
 
-// Base dependencies (Currently 4.6M7)
-location "http://download.eclipse.org/releases/neon/" {
+// Base dependencies (Currently 4.5)
+location "http://download.eclipse.org/releases/luna/" {
     org.eclipse.emf.ecore
     org.eclipse.emf.ecore.xmi
     org.eclipse.emf.ecore.change
@@ -12,12 +12,6 @@ location "http://download.eclipse.org/releases/neon/" {
     org.eclipse.sdk.feature.group
     org.eclipse.pde.core
 }
-// Use latest milestone for Hi-DPI stuff
-//location "http://download.eclipse.org/eclipse/updates/4.6milestones/" {
-//    org.eclipse.equinox.p2.sdk.feature.group
-//    org.eclipse.sdk.feature.group
-//    org.eclipse.pde.core
-//}
 
 // UI Testing
 location "http://download.eclipse.org/technology/swtbot/releases/2.2.1/" {
@@ -28,6 +22,7 @@ location "http://download.eclipse.org/technology/swtbot/releases/2.2.1/" {
     org.hamcrest.core
 }
 
+// Mylyn WikiText
 location "http://download.eclipse.org/mylyn/releases/latest" {
     org.eclipse.mylyn.wikitext.core
     com.google.guava

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
-<target name="Eclipse Equationwriter Target Platform" sequenceNumber="1463437911">
+<target name="Eclipse Equationwriter Target Platform" sequenceNumber="1482930538">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
-      <unit id="org.eclipse.emf.ecore" version="2.12.0.v20160420-0247"/>
-      <unit id="org.eclipse.emf.ecore.xmi" version="2.12.0.v20160420-0247"/>
-      <unit id="org.eclipse.emf.ecore.change" version="2.11.0.v20160420-0247"/>
-      <unit id="org.eclipse.emf.common" version="2.12.0.v20160420-0247"/>
+      <unit id="org.eclipse.emf.ecore" version="2.10.2.v20150123-0348"/>
+      <unit id="org.eclipse.emf.ecore.xmi" version="2.10.2.v20150123-0348"/>
+      <unit id="org.eclipse.emf.ecore.change" version="2.10.0.v20150123-0348"/>
+      <unit id="org.eclipse.emf.common" version="2.10.1.v20150123-0348"/>
       <unit id="org.apache.log4j" version="1.2.15.v201012070815"/>
-      <unit id="org.apache.commons.collections" version="3.2.2.v201511171945"/>
-      <unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.9.200.v20160427-2220"/>
-      <unit id="org.eclipse.sdk.feature.group" version="4.6.0.v20160428-0800"/>
-      <unit id="org.eclipse.pde.core" version="3.11.0.v20160427-1849"/>
-      <repository location="http://download.eclipse.org/releases/neon/"/>
+      <unit id="org.apache.commons.collections" version="3.2.0.v2013030210310"/>
+      <unit id="org.eclipse.equinox.p2.sdk.feature.group" version="3.9.1.v20150129-0838"/>
+      <unit id="org.eclipse.sdk.feature.group" version="4.4.2.v20150204-1700"/>
+      <unit id="org.eclipse.pde.core" version="3.10.2.v20150127-1015"/>
+      <repository location="http://download.eclipse.org/releases/luna/"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.swtbot.forms.source.feature.group" version="2.2.1.201402241301"/>
@@ -24,7 +24,7 @@
       <repository location="http://download.eclipse.org/technology/swtbot/releases/2.2.1/"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
-      <unit id="org.eclipse.mylyn.wikitext.core" version="2.8.0.v20160315-1828"/>
+      <unit id="org.eclipse.mylyn.wikitext.core" version="2.10.1.v20161129-1925"/>
       <unit id="com.google.guava" version="15.0.0.v201403281430"/>
       <repository location="http://download.eclipse.org/mylyn/releases/latest"/>
     </location>
