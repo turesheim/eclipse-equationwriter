@@ -12,11 +12,15 @@
 package net.resheim.eclipse.equationwriter;
 
 /**
- * Represents a LaTeX math symbol.
+ * Represents a LaTeX math symbol. Can be an expression or a simple symbol, letter or sign.
  * 
  * @author Torkild U. Resheims
  */
-public class Symbol {
+public class LaTeXCommand {
+
+	public enum Group {
+		ACCENT, ARROW, CUMULATIVE, GREEK, LETTER, MISCELLANEOUS, OPERATOR, RELATION, SYMBOL, GENERAL
+	}
 
 	/** The token to use for content assist */
 	private String token;
@@ -27,15 +31,22 @@ public class Symbol {
 	/** The template to offer the user in content assist etc */
 	private String template;
 
-	public Symbol(String input) {
+	private Group group;
+
+	public LaTeXCommand(String input) {
 		String trim = input.trim();
 		String[] split = trim.split("\\t+");
 		// use the "template" column if specified
 		if (split.length == 3) {
 			this.template = split[2];
+		} else {
+			this.template = split[0];
 		}
 		this.token = split[0];
 		this.render = split[1];
+	}
+
+	public LaTeXCommand() {
 	}
 
 	public String getRender() {
@@ -60,6 +71,14 @@ public class Symbol {
 
 	public void setToken(String token) {
 		this.token = token;
+	}
+
+	public Group getGroup() {
+		return group;
+	}
+
+	public void setGroup(Group group) {
+		this.group = group;
 	}
 
 }

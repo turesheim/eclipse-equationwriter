@@ -46,13 +46,13 @@ class LaTeXContentAssistProcessor extends TemplateCompletionProcessor {
 		String qualifier = getQualifier(doc, documentOffset);
 		int qlen = qualifier.length();
 		boolean restart = false;
-		for (Symbol keyword : EditorPlugin.getDefault().getSymbols()) {
+		for (LaTeXCommand keyword : EditorPlugin.getDefault().getSymbols()) {
 			if (qualifier.equals(keyword.getToken())) {
 				restart = true;
 				qlen = 0;
 			}
 		}
-		for (Symbol symbol : EditorPlugin.getDefault().getSymbols()) {
+		for (LaTeXCommand symbol : EditorPlugin.getDefault().getSymbols()) {
 			if ((restart || symbol.getToken().startsWith(qualifier)) && (documentOffset - qlen >= 0)) {
 				int position = symbol.getToken().length();
 				// Create a template if one has been specified
@@ -138,7 +138,7 @@ class LaTeXContentAssistProcessor extends TemplateCompletionProcessor {
 	@Override
 	protected Template[] getTemplates(String contextTypeId) {
 		List<Template> templates = new ArrayList<>();
-		for (Symbol symbol : EditorPlugin.getDefault().getSymbols()) {
+		for (LaTeXCommand symbol : EditorPlugin.getDefault().getSymbols()) {
 			if (symbol.getTemplate() != null) {
 				Template template = new Template(symbol.getToken(), "", tcp.getId(), symbol.getTemplate(), false);
 				templates.add(template);

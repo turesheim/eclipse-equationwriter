@@ -1,3 +1,5 @@
+# filename					render				template
+#-----------------------------------------------------------------------------
 \approx			\approx
 \approxeq			\approxeq
 \asymp			\asymp

@@ -1,15 +1,22 @@
-\int				\int
-\oint				\oint
-\bigcap				\bigcap
-\bigcup				\bigcup
-\bigodot			\bigodot
-\bigoplus			\bigoplus
-\bigotimes			\bigotimes
-\bigsqcup			\bigsqcup
-\biguplus			\biguplus
-\bigvee				\bigvee
-\bigwedge			\bigwedge
-\coprod				\coprod
-\prod				\prod
-\smallint			\smallint
-\sum				\sum
+# The "token" string is used both in the content assist routines and to 
+# determine the name of the file when creating the icon. The "render" string
+# is used to render the token for the icon. If a "template" string is
+# specified it will inserted instead of "token" when offering content assist.
+#
+# token							render				template
+#-----------------------------------------------------------------------------
+\int							\int
+\oint							\oint
+\bigcap							\bigcap
+\bigcup							\bigcup
+\bigodot						\bigodot
+\bigoplus						\bigoplus
+\bigotimes						\bigotimes
+\bigsqcup						\bigsqcup
+\biguplus						\biguplus
+\bigvee							\bigvee
+\bigwedge						\bigwedge
+\coprod							\coprod
+\prod							\prod
+\smallint						\smallint
+\sum							\sum

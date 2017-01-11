@@ -1,37 +1,46 @@
-\#			\#
-\&			\&
-\And			\And
-\angle			\angle
-\backprime			\backprime
-\bigstar			\bigstar
-\blacklozenge			\blacklozenge
-\blacksquare			\blacksquare
-\blacktriangle			\blacktriangle
-\blacktriangledown			\blacktriangledown
-\bot			\bot
-\clubsuit			\clubsuit
-\diagdown			\diagdown
-\diagup			\diagup
-\diamondsuit			\diamondsuit
-\emptyset			\emptyset
-\exists			\exists
-\flat			\flat
-\forall			\forall
-\heartsuit			\heartsuit
-\infty			\infty
-\lozenge			\lozenge
-\measuredangle			\measuredangle
-\nabla			\nabla
-\natural			\natural
-\neg			\neg
-\nexists			\nexists
-\prime			\prime
-\sharp			\sharp
-\spadesuit			\spadesuit
-\sphericalangle			\sphericalangle
-\square			\square
-\top			\top
-\surd			\surd
-\triangle			\triangle
-\triangledown			\triangledown
-\varnothing			\varnothing
+# The "token" string is used both in the content assist routines and to 
+# determine the name of the file when creating the icon. The "render" string
+# is used to render the token for the icon. If a "template" string is
+# specified it will inserted instead of "token" when offering content assist.
+#
+# token							render				template
+#-----------------------------------------------------------------------------
+\#								\#
+\&								\&
+\And							\And
+\angle							\angle
+\backprime						\backprime
+\backslash						\backslash
+\bigstar						\bigstar
+\blacklozenge					\blacklozenge
+\blacksquare					\blacksquare
+\blacktriangle					\blacktriangle
+\blacktriangledown				\blacktriangledown
+\bot							\bot
+\clubsuit						\clubsuit
+\diagdown						\diagdown
+\diagup							\diagup
+\diamondsuit					\diamondsuit
+\emptyset						\emptyset
+\exists							\exists
+\flat							\flat
+\forall							\forall
+\heartsuit						\heartsuit
+\infty							\infty
+\lozenge						\lozenge
+\measuredangle					\measuredangle
+\nabla							\nabla
+\natural						\natural
+\neg							\neg
+\nexists						\nexists
+\prime							\prime
+\sharp							\sharp
+\spadesuit						\spadesuit
+\sphericalangle					\sphericalangle
+\square							\square
+\top							\top
+\surd							\surd
+\triangle						\triangle
+\triangledown					\triangledown
+\varnothing						\varnothing
+\yen							\yen

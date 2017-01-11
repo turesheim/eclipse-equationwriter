@@ -1,14 +1,21 @@
-\acute{x}			\acute{x}
-\grave{x}			\grave{x}
-\ddot{x}			\ddot{x}
-\tilde{x}			\tilde{x}
-\bar{x}				\bar{x}
-\breve{x}			\breve{x}
-\check{x}			\check{x}
-\hat{x}				\hat{x}
-\vec{x}				\vec{x}
-\dot{x}				\dot{x}
-\ddot{x}			\ddot{x}
-\dddot{x}			\dddot{x}
-\widetilde{abc}		\widetilde{abc}
-\widehat{abc}		\widehat{abc}
+# The "token" string is used both in the content assist routines and to 
+# determine the name of the file when creating the icon. The "render" string
+# is used to render the token for the icon. If a "template" string is
+# specified it will inserted instead of "token" when offering content assist.
+#
+# token							render				template
+#-----------------------------------------------------------------------------
+\acute{x}						\acute{x}
+\grave{x}						\grave{x}
+\ddot{x}						\ddot{x}
+\tilde{x}						\tilde{x}
+\bar{x}							\bar{x}
+\breve{x}						\breve{x}
+\check{x}						\check{x}
+\hat{x}							\hat{x}
+\vec{x}							\vec{x}
+\dot{x}							\dot{x}
+\ddot{x}						\ddot{x}
+\dddot{x}						\dddot{x}
+\widetilde{abc}					\widetilde{abc}
+\widehat{abc}					\widehat{abc}

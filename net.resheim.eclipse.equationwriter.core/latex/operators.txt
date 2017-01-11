@@ -1,10 +1,9 @@
-# Use 
-# filename			render				template
+# filename					render				template
 #-----------------------------------------------------------------------------
 \amalg				\amalg
 \ast				\ast
 \barwedge			\barwedge
-\binom				\binom{n}{k}		\binom{${a}}{${b}}${cursor}
+\binom				\binom{n}{k}		\binom{${a}}{${b}}
 \bigcirc			\bigcirc
 \bigtriangledown	\bigtriangledown
 \bigtriangleup		\bigtriangleup
@@ -30,9 +29,9 @@
 \diamond			\diamond
 \div				\div
 \divideontimes		\divideontimes
-\dotplus			\dotplus
+\dotplus			\dotplus			\dotplus
 \doublebarwedge		\doublebarwedge
-\frac				\frac{n}{k}			\frac{n}{k}
+\frac				\frac{n}{k}			\frac{${n}}{${k}}
 \gtrdot				\gtrdot
 \intercal			\intercal
 \leftthreetimes		\leftthreetimes

@@ -1,0 +1,3638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+	<command
+		group="ACCENT"
+		token="\acute{x}"
+		render="\acute{x}"
+		template="\acute{x}" />
+	<command
+		group="ACCENT"
+		token="\grave{x}"
+		render="\grave{x}"
+		template="\grave{x}" />
+	<command
+		group="ACCENT"
+		token="\ddot{x}"
+		render="\ddot{x}"
+		template="\ddot{x}" />
+	<command
+		group="ACCENT"
+		token="\tilde{x}"
+		render="\tilde{x}"
+		template="\tilde{x}" />
+	<command
+		group="ACCENT"
+		token="\bar{x}"
+		render="\bar{x}"
+		template="\bar{x}" />
+	<command
+		group="ACCENT"
+		token="\breve{x}"
+		render="\breve{x}"
+		template="\breve{x}" />
+	<command
+		group="ACCENT"
+		token="\check{x}"
+		render="\check{x}"
+		template="\check{x}" />
+	<command
+		group="ACCENT"
+		token="\hat{x}"
+		render="\hat{x}"
+		template="\hat{x}" />
+	<command
+		group="ACCENT"
+		token="\vec{x}"
+		render="\vec{x}"
+		template="\vec{x}" />
+	<command
+		group="ACCENT"
+		token="\dot{x}"
+		render="\dot{x}"
+		template="\dot{x}" />
+	<command
+		group="ACCENT"
+		token="\ddot{x}"
+		render="\ddot{x}"
+		template="\ddot{x}" />
+	<command
+		group="ACCENT"
+		token="\dddot{x}"
+		render="\dddot{x}"
+		template="\dddot{x}" />
+	<command
+		group="ACCENT"
+		token="\widetilde{abc}"
+		render="\widetilde{abc}"
+		template="\widetilde{abc}" />
+	<command
+		group="ACCENT"
+		token="\widehat{abc}"
+		render="\widehat{abc}"
+		template="\widehat{abc}" />
+	<command
+		group="ARROW"
+		token="\Arrowvert"
+		render="\Arrowvert"
+		template="\Arrowvert" />
+	<command
+		group="ARROW"
+		token="\arrowvert"
+		render="\arrowvert"
+		template="\arrowvert" />
+	<command
+		group="ARROW"
+		token="\circlearrowleft"
+		render="\circlearrowleft"
+		template="\circlearrowleft" />
+	<command
+		group="ARROW"
+		token="\circlearrowright"
+		render="\circlearrowright"
+		template="\circlearrowright" />
+	<command
+		group="ARROW"
+		token="\curvearrowleft"
+		render="\curvearrowleft"
+		template="\curvearrowleft" />
+	<command
+		group="ARROW"
+		token="\curvearrowright"
+		render="\curvearrowright"
+		template="\curvearrowright" />
+	<command
+		group="ARROW"
+		token="\downdownarrows"
+		render="\downdownarrows"
+		template="\downdownarrows" />
+	<command
+		group="ARROW"
+		token="\downharpoonleft"
+		render="\downharpoonleft"
+		template="\downharpoonleft" />
+	<command
+		group="ARROW"
+		token="\downharpoonright"
+		render="\downharpoonright"
+		template="\downharpoonright" />
+	<command
+		group="ARROW"
+		token="\hookleftarrow"
+		render="\hookleftarrow"
+		template="\hookleftarrow" />
+	<command
+		group="ARROW"
+		token="\hookrightarrow"
+		render="\hookrightarrow"
+		template="\hookrightarrow" />
+	<command
+		group="ARROW"
+		token="\leftarrow"
+		render="\leftarrow"
+		template="\leftarrow" />
+	<command
+		group="ARROW"
+		token="\Leftarrow"
+		render="\Leftarrow"
+		template="\Leftarrow" />
+	<command
+		group="ARROW"
+		token="\leftarrowtail"
+		render="\leftarrowtail"
+		template="\leftarrowtail" />
+	<command
+		group="ARROW"
+		token="\leftharpoondown"
+		render="\leftharpoondown"
+		template="\leftharpoondown" />
+	<command
+		group="ARROW"
+		token="\leftharpoonup"
+		render="\leftharpoonup"
+		template="\leftharpoonup" />
+	<command
+		group="ARROW"
+		token="\leftleftarrows"
+		render="\leftleftarrows"
+		template="\leftleftarrows" />
+	<command
+		group="ARROW"
+		token="\leftrightarrow"
+		render="\leftrightarrow"
+		template="\leftrightarrow" />
+	<command
+		group="ARROW"
+		token="\Leftrightarrow"
+		render="\Leftrightarrow"
+		template="\Leftrightarrow" />
+	<command
+		group="ARROW"
+		token="\leftrightarrows"
+		render="\leftrightarrows"
+		template="\leftrightarrows" />
+	<command
+		group="ARROW"
+		token="\leftrightharpoons"
+		render="\leftrightharpoons"
+		template="\leftrightharpoons" />
+	<command
+		group="ARROW"
+		token="\Lleftarrow"
+		render="\Lleftarrow"
+		template="\Lleftarrow" />
+	<command
+		group="ARROW"
+		token="\longleftarrow"
+		render="\longleftarrow"
+		template="\longleftarrow" />
+	<command
+		group="ARROW"
+		token="\Longleftarrow"
+		render="\Longleftarrow"
+		template="\Longleftarrow" />
+	<command
+		group="ARROW"
+		token="\longleftrightarrow"
+		render="\longleftrightarrow"
+		template="\longleftrightarrow" />
+	<command
+		group="ARROW"
+		token="\Longleftrightarrow"
+		render="\Longleftrightarrow"
+		template="\Longleftrightarrow" />
+	<command
+		group="ARROW"
+		token="\longmapsto"
+		render="\longmapsto"
+		template="\longmapsto" />
+	<command
+		group="ARROW"
+		token="\longrightarrow"
+		render="\longrightarrow"
+		template="\longrightarrow" />
+	<command
+		group="ARROW"
+		token="\Longrightarrow"
+		render="\Longrightarrow"
+		template="\Longrightarrow" />
+	<command
+		group="ARROW"
+		token="\looparrowleft"
+		render="\looparrowleft"
+		template="\looparrowleft" />
+	<command
+		group="ARROW"
+		token="\looparrowright"
+		render="\looparrowright"
+		template="\looparrowright" />
+	<command
+		group="ARROW"
+		token="\Lsh"
+		render="\Lsh"
+		template="\Lsh" />
+	<command
+		group="ARROW"
+		token="\mapsto"
+		render="\mapsto"
+		template="\mapsto" />
+	<command
+		group="ARROW"
+		token="\multimap"
+		render="\multimap"
+		template="\multimap" />
+	<command
+		group="ARROW"
+		token="\nLeftarrow"
+		render="\nLeftarrow"
+		template="\nLeftarrow" />
+	<command
+		group="ARROW"
+		token="\nLeftrightarrow"
+		render="\nLeftrightarrow"
+		template="\nLeftrightarrow" />
+	<command
+		group="ARROW"
+		token="\nRightarrow"
+		render="\nRightarrow"
+		template="\nRightarrow" />
+	<command
+		group="ARROW"
+		token="\nearrow"
+		render="\nearrow"
+		template="\nearrow" />
+	<command
+		group="ARROW"
+		token="\nleftarrow"
+		render="\nleftarrow"
+		template="\nleftarrow" />
+	<command
+		group="ARROW"
+		token="\nleftrightarrow"
+		render="\nleftrightarrow"
+		template="\nleftrightarrow" />
+	<command
+		group="ARROW"
+		token="\nrightarrow"
+		render="\nrightarrow"
+		template="\nrightarrow" />
+	<command
+		group="ARROW"
+		token="\nwarrow"
+		render="\nwarrow"
+		template="\nwarrow" />
+	<command
+		group="ARROW"
+		token="\rightarrow"
+		render="\rightarrow"
+		template="\rightarrow" />
+	<command
+		group="ARROW"
+		token="\Rightarrow"
+		render="\Rightarrow"
+		template="\Rightarrow" />
+	<command
+		group="ARROW"
+		token="\rightarrowtail"
+		render="\rightarrowtail"
+		template="\rightarrowtail" />
+	<command
+		group="ARROW"
+		token="\rightharpoondown"
+		render="\rightharpoondown"
+		template="\rightharpoondown" />
+	<command
+		group="ARROW"
+		token="\rightharpoonup"
+		render="\rightharpoonup"
+		template="\rightharpoonup" />
+	<command
+		group="ARROW"
+		token="\rightleftarrows"
+		render="\rightleftarrows"
+		template="\rightleftarrows" />
+	<command
+		group="ARROW"
+		token="\rightleftharpoons"
+		render="\rightleftharpoons"
+		template="\rightleftharpoons" />
+	<command
+		group="ARROW"
+		token="\rightrightarrows"
+		render="\rightrightarrows"
+		template="\rightrightarrows" />
+	<command
+		group="ARROW"
+		token="\rightsquigarrow"
+		render="\rightsquigarrow"
+		template="\rightsquigarrow" />
+	<command
+		group="ARROW"
+		token="\Rrightarrow"
+		render="\Rrightarrow"
+		template="\Rrightarrow" />
+	<command
+		group="ARROW"
+		token="\Rsh"
+		render="\Rsh"
+		template="\Rsh" />
+	<command
+		group="ARROW"
+		token="\searrow"
+		render="\searrow"
+		template="\searrow" />
+	<command
+		group="ARROW"
+		token="\swarrow"
+		render="\swarrow"
+		template="\swarrow" />
+	<command
+		group="ARROW"
+		token="\twoheadleftarrow"
+		render="\twoheadleftarrow"
+		template="\twoheadleftarrow" />
+	<command
+		group="ARROW"
+		token="\twoheadrightarrow"
+		render="\twoheadrightarrow"
+		template="\twoheadrightarrow" />
+	<command
+		group="ARROW"
+		token="\uparrow"
+		render="\uparrow"
+		template="\uparrow" />
+	<command
+		group="ARROW"
+		token="\upharpoonleft"
+		render="\upharpoonleft"
+		template="\upharpoonleft" />
+	<command
+		group="ARROW"
+		token="\upharpoonright"
+		render="\upharpoonright"
+		template="\upharpoonright" />
+	<command
+		group="ARROW"
+		token="\upuparrows"
+		render="\upuparrows"
+		template="\upuparrows" />
+	<command
+		group="ARROW"
+		token="\gets"
+		render="\gets"
+		template="\gets" />
+	<command
+		group="ARROW"
+		token="\to"
+		render="\to"
+		template="\to" />
+	<command
+		group="ARROW"
+		token="\restriction"
+		render="\restriction"
+		template="\restriction" />
+	<command
+		group="ARROW"
+		token="\underleftarrow"
+		render="\underleftarrow"
+		template="\underleftarrow" />
+	<command
+		group="ARROW"
+		token="\underleftrightarrow"
+		render="\underleftrightarrow"
+		template="\underleftrightarrow" />
+	<command
+		group="ARROW"
+		token="\underrightarrow"
+		render="\underrightarrow"
+		template="\underrightarrow" />
+	<command
+		group="ARROW"
+		token="\xleftarrow"
+		render="A\xleftarrow{\text{left}}B"
+		template="\xleftarrow" />
+	<command
+		group="ARROW"
+		token="\xrightarrow"
+		render="A\xrightarrow{\text{right}}B"
+		template="\xrightarrow" />
+	<command
+		group="ARROW"
+		token="\xtwoheadleftarrow"
+		render="A\xtwoheadleftarrow{\text{left}}B"
+		template="\xtwoheadleftarrow" />
+	<command
+		group="ARROW"
+		token="\xtwoheadrightarrow"
+		render="A\xtwoheadrightarrow{\text{right}}B"
+		template="\xtwoheadrightarrow" />
+	<command
+		group="CUMULATIVE"
+		token="\int"
+		render="\int"
+		template="\int" />
+	<command
+		group="CUMULATIVE"
+		token="\oint"
+		render="\oint"
+		template="\oint" />
+	<command
+		group="CUMULATIVE"
+		token="\bigcap"
+		render="\bigcap"
+		template="\bigcap" />
+	<command
+		group="CUMULATIVE"
+		token="\bigcup"
+		render="\bigcup"
+		template="\bigcup" />
+	<command
+		group="CUMULATIVE"
+		token="\bigodot"
+		render="\bigodot"
+		template="\bigodot" />
+	<command
+		group="CUMULATIVE"
+		token="\bigoplus"
+		render="\bigoplus"
+		template="\bigoplus" />
+	<command
+		group="CUMULATIVE"
+		token="\bigotimes"
+		render="\bigotimes"
+		template="\bigotimes" />
+	<command
+		group="CUMULATIVE"
+		token="\bigsqcup"
+		render="\bigsqcup"
+		template="\bigsqcup" />
+	<command
+		group="CUMULATIVE"
+		token="\biguplus"
+		render="\biguplus"
+		template="\biguplus" />
+	<command
+		group="CUMULATIVE"
+		token="\bigvee"
+		render="\bigvee"
+		template="\bigvee" />
+	<command
+		group="CUMULATIVE"
+		token="\bigwedge"
+		render="\bigwedge"
+		template="\bigwedge" />
+	<command
+		group="CUMULATIVE"
+		token="\coprod"
+		render="\coprod"
+		template="\coprod" />
+	<command
+		group="CUMULATIVE"
+		token="\prod"
+		render="\prod"
+		template="\prod" />
+	<command
+		group="CUMULATIVE"
+		token="\smallint"
+		render="\smallint"
+		template="\smallint" />
+	<command
+		group="CUMULATIVE"
+		token="\sum"
+		render="\sum"
+		template="\sum" />
+	<command
+		group="GREEK"
+		token="\Gamma"
+		render="\Gamma"
+		template="\Gamma" />
+	<command
+		group="GREEK"
+		token="\Delta"
+		render="\Delta"
+		template="\Delta" />
+	<command
+		group="GREEK"
+		token="\Lambda"
+		render="\Lambda"
+		template="\Lambda" />
+	<command
+		group="GREEK"
+		token="\Phi"
+		render="\Phi"
+		template="\Phi" />
+	<command
+		group="GREEK"
+		token="\Pi"
+		render="\Pi"
+		template="\Pi" />
+	<command
+		group="GREEK"
+		token="\Psi"
+		render="\Psi"
+		template="\Psi" />
+	<command
+		group="GREEK"
+		token="\Sigma"
+		render="\Sigma"
+		template="\Sigma" />
+	<command
+		group="GREEK"
+		token="\Theta"
+		render="\Theta"
+		template="\Theta" />
+	<command
+		group="GREEK"
+		token="\Upsilon"
+		render="\Upsilon"
+		template="\Upsilon" />
+	<command
+		group="GREEK"
+		token="\Xi"
+		render="\Xi"
+		template="\Xi" />
+	<command
+		group="GREEK"
+		token="\Omega"
+		render="\Omega"
+		template="\Omega" />
+	<command
+		group="GREEK"
+		token="\alpha"
+		render="\alpha"
+		template="\alpha" />
+	<command
+		group="GREEK"
+		token="\beta"
+		render="\beta"
+		template="\beta" />
+	<command
+		group="GREEK"
+		token="\gamma"
+		render="\gamma"
+		template="\gamma" />
+	<command
+		group="GREEK"
+		token="\delta"
+		render="\delta"
+		template="\delta" />
+	<command
+		group="GREEK"
+		token="\epsilon"
+		render="\epsilon"
+		template="\epsilon" />
+	<command
+		group="GREEK"
+		token="\zeta"
+		render="\zeta"
+		template="\zeta" />
+	<command
+		group="GREEK"
+		token="\eta"
+		render="\eta"
+		template="\eta" />
+	<command
+		group="GREEK"
+		token="\theta"
+		render="\theta"
+		template="\theta" />
+	<command
+		group="GREEK"
+		token="\iota"
+		render="\iota"
+		template="\iota" />
+	<command
+		group="GREEK"
+		token="\kappa"
+		render="\kappa"
+		template="\kappa" />
+	<command
+		group="GREEK"
+		token="\lambda"
+		render="\lambda"
+		template="\lambda" />
+	<command
+		group="GREEK"
+		token="\mu"
+		render="\mu"
+		template="\mu" />
+	<command
+		group="GREEK"
+		token="\nu"
+		render="\nu"
+		template="\nu" />
+	<command
+		group="GREEK"
+		token="\xi"
+		render="\xi"
+		template="\xi" />
+	<command
+		group="GREEK"
+		token="\pi"
+		render="\pi"
+		template="\pi" />
+	<command
+		group="GREEK"
+		token="\rho"
+		render="\rho"
+		template="\rho" />
+	<command
+		group="GREEK"
+		token="\sigma"
+		render="\sigma"
+		template="\sigma" />
+	<command
+		group="GREEK"
+		token="\tau"
+		render="\tau"
+		template="\tau" />
+	<command
+		group="GREEK"
+		token="\upsilon"
+		render="\upsilon"
+		template="\upsilon" />
+	<command
+		group="GREEK"
+		token="\phi"
+		render="\phi"
+		template="\phi" />
+	<command
+		group="GREEK"
+		token="\chi"
+		render="\chi"
+		template="\chi" />
+	<command
+		group="GREEK"
+		token="\psi"
+		render="\psi"
+		template="\psi" />
+	<command
+		group="GREEK"
+		token="\omega"
+		render="\omega"
+		template="\omega" />
+	<command
+		group="GREEK"
+		token="\digamma"
+		render="\digamma"
+		template="\digamma" />
+	<command
+		group="GREEK"
+		token="\varDelta"
+		render="\varDelta"
+		template="\varDelta" />
+	<command
+		group="GREEK"
+		token="\varGamma"
+		render="\varGamma"
+		template="\varGamma" />
+	<command
+		group="GREEK"
+		token="\varinjlim"
+		render="\varinjlim"
+		template="\varinjlim" />
+	<command
+		group="GREEK"
+		token="\varLambda"
+		render="\varLambda"
+		template="\varLambda" />
+	<command
+		group="GREEK"
+		token="\varliminf"
+		render="\varliminf"
+		template="\varliminf" />
+	<command
+		group="GREEK"
+		token="\varlimsup"
+		render="\varlimsup"
+		template="\varlimsup" />
+	<command
+		group="GREEK"
+		token="\varOmega"
+		render="\varOmega"
+		template="\varOmega" />
+	<command
+		group="GREEK"
+		token="\varPhi"
+		render="\varPhi"
+		template="\varPhi" />
+	<command
+		group="GREEK"
+		token="\varPi"
+		render="\varPi"
+		template="\varPi" />
+	<command
+		group="GREEK"
+		token="\varPsi"
+		render="\varPsi"
+		template="\varPsi" />
+	<command
+		group="GREEK"
+		token="\varSigma"
+		render="\varSigma"
+		template="\varSigma" />
+	<command
+		group="GREEK"
+		token="\varTheta"
+		render="\varTheta"
+		template="\varTheta" />
+	<command
+		group="GREEK"
+		token="\varUpsilon"
+		render="\varUpsilon"
+		template="\varUpsilon" />
+	<command
+		group="GREEK"
+		token="\varXi"
+		render="\varXi"
+		template="\varXi" />
+	<command
+		group="GREEK"
+		token="\varepsilon"
+		render="\varepsilon"
+		template="\varepsilon" />
+	<command
+		group="GREEK"
+		token="\varkappa"
+		render="\varkappa"
+		template="\varkappa" />
+	<command
+		group="GREEK"
+		token="\varphi"
+		render="\varphi"
+		template="\varphi" />
+	<command
+		group="GREEK"
+		token="\varpi"
+		render="\varpi"
+		template="\varpi" />
+	<command
+		group="GREEK"
+		token="\varrho"
+		render="\varrho"
+		template="\varrho" />
+	<command
+		group="GREEK"
+		token="\varsigma"
+		render="\varsigma"
+		template="\varsigma" />
+	<command
+		group="GREEK"
+		token="\vartheta"
+		render="\vartheta"
+		template="\vartheta" />
+	<command
+		group="LETTER"
+		token="\aleph"
+		render="\aleph"
+		template="\aleph" />
+	<command
+		group="LETTER"
+		token="\beth"
+		render="\beth"
+		template="\beth" />
+	<command
+		group="LETTER"
+		token="\daleth"
+		render="\daleth"
+		template="\daleth" />
+	<command
+		group="LETTER"
+		token="\gimel"
+		render="\gimel"
+		template="\gimel" />
+	<command
+		group="LETTER"
+		token="\complement"
+		render="\complement"
+		template="\complement" />
+	<command
+		group="LETTER"
+		token="\ell"
+		render="\ell"
+		template="\ell" />
+	<command
+		group="LETTER"
+		token="\eth"
+		render="\eth"
+		template="\eth" />
+	<command
+		group="LETTER"
+		token="\hbar"
+		render="\hbar"
+		template="\hbar" />
+	<command
+		group="LETTER"
+		token="\hslash"
+		render="\hslash"
+		template="\hslash" />
+	<command
+		group="LETTER"
+		token="\mho"
+		render="\mho"
+		template="\mho" />
+	<command
+		group="LETTER"
+		token="\partial"
+		render="\partial"
+		template="\partial" />
+	<command
+		group="LETTER"
+		token="\wp"
+		render="\wp"
+		template="\wp" />
+	<command
+		group="LETTER"
+		token="\circledS"
+		render="\circledS"
+		template="\circledS" />
+	<command
+		group="LETTER"
+		token="\Bbbk"
+		render="\Bbbk"
+		template="\Bbbk" />
+	<command
+		group="LETTER"
+		token="\Finv"
+		render="\Finv"
+		template="\Finv" />
+	<command
+		group="LETTER"
+		token="\Game"
+		render="\Game"
+		template="\Game" />
+	<command
+		group="LETTER"
+		token="\Im"
+		render="\Im"
+		template="\Im" />
+	<command
+		group="LETTER"
+		token="\Re"
+		render="\Re"
+		template="\Re" />
+	<command
+		group="MISCELLANEOUS"
+		token="\backepsilon"
+		render="\backepsilon"
+		template="\backepsilon" />
+	<command
+		group="MISCELLANEOUS"
+		token="\because"
+		render="\because"
+		template="\because" />
+	<command
+		group="MISCELLANEOUS"
+		token="\between"
+		render="\between"
+		template="\between" />
+	<command
+		group="MISCELLANEOUS"
+		token="\blacktriangleleft"
+		render="\blacktriangleleft"
+		template="\blacktriangleleft" />
+	<command
+		group="MISCELLANEOUS"
+		token="\blacktriangleright"
+		render="\blacktriangleright"
+		template="\blacktriangleright" />
+	<command
+		group="MISCELLANEOUS"
+		token="\bowtie"
+		render="\bowtie"
+		template="\bowtie" />
+	<command
+		group="MISCELLANEOUS"
+		token="\dashv"
+		render="\dashv"
+		template="\dashv" />
+	<command
+		group="MISCELLANEOUS"
+		token="\frown"
+		render="\frown"
+		template="\frown" />
+	<command
+		group="MISCELLANEOUS"
+		token="\in"
+		render="\in"
+		template="\in" />
+	<command
+		group="MISCELLANEOUS"
+		token="\mid"
+		render="\mid"
+		template="\mid" />
+	<command
+		group="MISCELLANEOUS"
+		token="\models"
+		render="\models"
+		template="\models" />
+	<command
+		group="MISCELLANEOUS"
+		token="\ni"
+		render="\ni"
+		template="\ni" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nmid"
+		render="\nmid"
+		template="\nmid" />
+	<command
+		group="MISCELLANEOUS"
+		token="\notin"
+		render="\notin"
+		template="\notin" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nparallel"
+		render="\nparallel"
+		template="\nparallel" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nshortmid"
+		render="\nshortmid"
+		template="\nshortmid" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nshortparallel"
+		render="\nshortparallel"
+		template="\nshortparallel" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nsubseteq"
+		render="\nsubseteq"
+		template="\nsubseteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nsubseteqq"
+		render="\nsubseteqq"
+		template="\nsubseteqq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nsupseteq"
+		render="\nsupseteq"
+		template="\nsupseteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nsupseteqq"
+		render="\nsupseteqq"
+		template="\nsupseteqq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\ntriangleleft"
+		render="\ntriangleleft"
+		template="\ntriangleleft" />
+	<command
+		group="MISCELLANEOUS"
+		token="\ntrianglelefteq"
+		render="\ntrianglelefteq"
+		template="\ntrianglelefteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\ntriangleright"
+		render="\ntriangleright"
+		template="\ntriangleright" />
+	<command
+		group="MISCELLANEOUS"
+		token="\ntrianglerighteq"
+		render="\ntrianglerighteq"
+		template="\ntrianglerighteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nvdash"
+		render="\nvdash"
+		template="\nvdash" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nVdash"
+		render="\nVdash"
+		template="\nVdash" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nvDash"
+		render="\nvDash"
+		template="\nvDash" />
+	<command
+		group="MISCELLANEOUS"
+		token="\nVDash"
+		render="\nVDash"
+		template="\nVDash" />
+	<command
+		group="MISCELLANEOUS"
+		token="\parallel"
+		render="\parallel"
+		template="\parallel" />
+	<command
+		group="MISCELLANEOUS"
+		token="\perp"
+		render="\perp"
+		template="\perp" />
+	<command
+		group="MISCELLANEOUS"
+		token="\pitchfork"
+		render="\pitchfork"
+		template="\pitchfork" />
+	<command
+		group="MISCELLANEOUS"
+		token="\propto"
+		render="\propto"
+		template="\propto" />
+	<command
+		group="MISCELLANEOUS"
+		token="\shortmid"
+		render="\shortmid"
+		template="\shortmid" />
+	<command
+		group="MISCELLANEOUS"
+		token="\shortparallel"
+		render="\shortparallel"
+		template="\shortparallel" />
+	<command
+		group="MISCELLANEOUS"
+		token="\smallfrown"
+		render="\smallfrown"
+		template="\smallfrown" />
+	<command
+		group="MISCELLANEOUS"
+		token="\smallsmile"
+		render="\smallsmile"
+		template="\smallsmile" />
+	<command
+		group="MISCELLANEOUS"
+		token="\smile"
+		render="\smile"
+		template="\smile" />
+	<command
+		group="MISCELLANEOUS"
+		token="\sqsubset"
+		render="\sqsubset"
+		template="\sqsubset" />
+	<command
+		group="MISCELLANEOUS"
+		token="\sqsubseteq"
+		render="\sqsubseteq"
+		template="\sqsubseteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\sqsupset"
+		render="\sqsupset"
+		template="\sqsupset" />
+	<command
+		group="MISCELLANEOUS"
+		token="\sqsupseteq"
+		render="\sqsupseteq"
+		template="\sqsupseteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\subset"
+		render="\subset"
+		template="\subset" />
+	<command
+		group="MISCELLANEOUS"
+		token="\Subset"
+		render="\Subset"
+		template="\Subset" />
+	<command
+		group="MISCELLANEOUS"
+		token="\subseteq"
+		render="\subseteq"
+		template="\subseteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\subseteqq"
+		render="\subseteqq"
+		template="\subseteqq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\subsetneq"
+		render="\subsetneq"
+		template="\subsetneq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\subsetneqq"
+		render="\subsetneqq"
+		template="\subsetneqq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\supset"
+		render="\supset"
+		template="\supset" />
+	<command
+		group="MISCELLANEOUS"
+		token="\Supset"
+		render="\Supset"
+		template="\Supset" />
+	<command
+		group="MISCELLANEOUS"
+		token="\supseteq"
+		render="\supseteq"
+		template="\supseteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\supseteqq"
+		render="\supseteqq"
+		template="\supseteqq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\supsetneq"
+		render="\supsetneq"
+		template="\supsetneq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\supsetneqq"
+		render="\supsetneqq"
+		template="\supsetneqq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\therefore"
+		render="\therefore"
+		template="\therefore" />
+	<command
+		group="MISCELLANEOUS"
+		token="\trianglelefteq"
+		render="\trianglelefteq"
+		template="\trianglelefteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\trianglerighteq"
+		render="\trianglerighteq"
+		template="\trianglerighteq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\varpropto"
+		render="\varpropto"
+		template="\varpropto" />
+	<command
+		group="MISCELLANEOUS"
+		token="\varsubsetneq"
+		render="\varsubsetneq"
+		template="\varsubsetneq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\varsubsetneqq"
+		render="\varsubsetneqq"
+		template="\varsubsetneqq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\varsupsetneq"
+		render="\varsupsetneq"
+		template="\varsupsetneq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\varsupsetneqq"
+		render="\varsupsetneqq"
+		template="\varsupsetneqq" />
+	<command
+		group="MISCELLANEOUS"
+		token="\vartriangle"
+		render="\vartriangle"
+		template="\vartriangle" />
+	<command
+		group="MISCELLANEOUS"
+		token="\vartriangleleft"
+		render="\vartriangleleft"
+		template="\vartriangleleft" />
+	<command
+		group="MISCELLANEOUS"
+		token="\vartriangleright"
+		render="\vartriangleright"
+		template="\vartriangleright" />
+	<command
+		group="MISCELLANEOUS"
+		token="\vdash"
+		render="\vdash"
+		template="\vdash" />
+	<command
+		group="MISCELLANEOUS"
+		token="\Vdash"
+		render="\Vdash"
+		template="\Vdash" />
+	<command
+		group="MISCELLANEOUS"
+		token="\vDash"
+		render="\vDash"
+		template="\vDash" />
+	<command
+		group="MISCELLANEOUS"
+		token="\Vvdash"
+		render="\Vvdash"
+		template="\Vvdash" />
+	<command
+		group="MISCELLANEOUS"
+		token="\owns"
+		render="\owns"
+		template="\owns" />
+	<command
+		group="MISCELLANEOUS"
+		token="\LaTeX"
+		render="\LaTeX"
+		template="\LaTeX" />
+	<command
+		group="MISCELLANEOUS"
+		token="icon"
+		render="\small{x^2}"
+		template="icon" />
+	<command
+		group="OPERATOR"
+		token="\amalg"
+		render="\amalg"
+		template="\amalg" />
+	<command
+		group="OPERATOR"
+		token="\ast"
+		render="\ast"
+		template="\ast" />
+	<command
+		group="OPERATOR"
+		token="\barwedge"
+		render="\barwedge"
+		template="\barwedge" />
+	<command
+		group="OPERATOR"
+		token="\binom"
+		render="\binom{n}{k}"
+		template="\binom{${a}}{${b}}" />
+	<command
+		group="OPERATOR"
+		token="\bigcirc"
+		render="\bigcirc"
+		template="\bigcirc" />
+	<command
+		group="OPERATOR"
+		token="\bigtriangledown"
+		render="\bigtriangledown"
+		template="\bigtriangledown" />
+	<command
+		group="OPERATOR"
+		token="\bigtriangleup"
+		render="\bigtriangleup"
+		template="\bigtriangleup" />
+	<command
+		group="OPERATOR"
+		token="\boxdot"
+		render="\boxdot"
+		template="\boxdot" />
+	<command
+		group="OPERATOR"
+		token="\boxminus"
+		render="\boxminus"
+		template="\boxminus" />
+	<command
+		group="OPERATOR"
+		token="\boxplus"
+		render="\boxplus"
+		template="\boxplus" />
+	<command
+		group="OPERATOR"
+		token="\boxtimes"
+		render="\boxtimes"
+		template="\boxtimes" />
+	<command
+		group="OPERATOR"
+		token="\bullet"
+		render="\bullet"
+		template="\bullet" />
+	<command
+		group="OPERATOR"
+		token="\cap"
+		render="\cap"
+		template="\cap" />
+	<command
+		group="OPERATOR"
+		token="\Cap"
+		render="\Cap"
+		template="\Cap" />
+	<command
+		group="OPERATOR"
+		token="\cdot"
+		render="\cdot"
+		template="\cdot" />
+	<command
+		group="OPERATOR"
+		token="\centerdot"
+		render="\centerdot"
+		template="\centerdot" />
+	<command
+		group="OPERATOR"
+		token="\circ"
+		render="\circ"
+		template="\circ" />
+	<command
+		group="OPERATOR"
+		token="\circledast"
+		render="\circledast"
+		template="\circledast" />
+	<command
+		group="OPERATOR"
+		token="\circledcirc"
+		render="\circledcirc"
+		template="\circledcirc" />
+	<command
+		group="OPERATOR"
+		token="\circleddash"
+		render="\circleddash"
+		template="\circleddash" />
+	<command
+		group="OPERATOR"
+		token="\cup"
+		render="\cup"
+		template="\cup" />
+	<command
+		group="OPERATOR"
+		token="\Cup"
+		render="\Cup"
+		template="\Cup" />
+	<command
+		group="OPERATOR"
+		token="\curlyvee"
+		render="\curlyvee"
+		template="\curlyvee" />
+	<command
+		group="OPERATOR"
+		token="\curlywedge"
+		render="\curlywedge"
+		template="\curlywedge" />
+	<command
+		group="OPERATOR"
+		token="\dagger"
+		render="\dagger"
+		template="\dagger" />
+	<command
+		group="OPERATOR"
+		token="\ddagger"
+		render="\ddagger"
+		template="\ddagger" />
+	<command
+		group="OPERATOR"
+		token="\diamond"
+		render="\diamond"
+		template="\diamond" />
+	<command
+		group="OPERATOR"
+		token="\div"
+		render="\div"
+		template="\div" />
+	<command
+		group="OPERATOR"
+		token="\divideontimes"
+		render="\divideontimes"
+		template="\divideontimes" />
+	<command
+		group="OPERATOR"
+		token="\dotplus"
+		render="\dotplus"
+		template="\dotplus" />
+	<command
+		group="OPERATOR"
+		token="\doublebarwedge"
+		render="\doublebarwedge"
+		template="\doublebarwedge" />
+	<command
+		group="OPERATOR"
+		token="\frac"
+		render="\frac{n}{k}"
+		template="\frac{${n}}{${k}}" />
+	<command
+		group="OPERATOR"
+		token="\gtrdot"
+		render="\gtrdot"
+		template="\gtrdot" />
+	<command
+		group="OPERATOR"
+		token="\intercal"
+		render="\intercal"
+		template="\intercal" />
+	<command
+		group="OPERATOR"
+		token="\leftthreetimes"
+		render="\leftthreetimes"
+		template="\leftthreetimes" />
+	<command
+		group="OPERATOR"
+		token="\lessdot"
+		render="\lessdot"
+		template="\lessdot" />
+	<command
+		group="OPERATOR"
+		token="\ltimes"
+		render="\ltimes"
+		template="\ltimes" />
+	<command
+		group="OPERATOR"
+		token="\mp"
+		render="\mp"
+		template="\mp" />
+	<command
+		group="OPERATOR"
+		token="\odot"
+		render="\odot"
+		template="\odot" />
+	<command
+		group="OPERATOR"
+		token="\ominus"
+		render="\ominus"
+		template="\ominus" />
+	<command
+		group="OPERATOR"
+		token="\oplus"
+		render="\oplus"
+		template="\oplus" />
+	<command
+		group="OPERATOR"
+		token="\oslash"
+		render="\oslash"
+		template="\oslash" />
+	<command
+		group="OPERATOR"
+		token="\otimes"
+		render="\otimes"
+		template="\otimes" />
+	<command
+		group="OPERATOR"
+		token="\pm"
+		render="\pm"
+		template="\pm" />
+	<command
+		group="OPERATOR"
+		token="\rightthreetimes"
+		render="\rightthreetimes"
+		template="\rightthreetimes" />
+	<command
+		group="OPERATOR"
+		token="\rtimes"
+		render="\rtimes"
+		template="\rtimes" />
+	<command
+		group="OPERATOR"
+		token="\setminus"
+		render="\setminus"
+		template="\setminus" />
+	<command
+		group="OPERATOR"
+		token="\smallsetminus"
+		render="\smallsetminus"
+		template="\smallsetminus" />
+	<command
+		group="OPERATOR"
+		token="\sqcap"
+		render="\sqcap"
+		template="\sqcap" />
+	<command
+		group="OPERATOR"
+		token="\sqcup"
+		render="\sqcup"
+		template="\sqcup" />
+	<command
+		group="OPERATOR"
+		token="\star"
+		render="\star"
+		template="\star" />
+	<command
+		group="OPERATOR"
+		token="\times"
+		render="\times"
+		template="\times" />
+	<command
+		group="OPERATOR"
+		token="\triangleleft"
+		render="\triangleleft"
+		template="\triangleleft" />
+	<command
+		group="OPERATOR"
+		token="\triangleright"
+		render="\triangleright"
+		template="\triangleright" />
+	<command
+		group="OPERATOR"
+		token="\uplus"
+		render="\uplus"
+		template="\uplus" />
+	<command
+		group="OPERATOR"
+		token="\vee"
+		render="\vee"
+		template="\vee" />
+	<command
+		group="OPERATOR"
+		token="\veeba"
+		render="\veeba"
+		template="\veeba" />
+	<command
+		group="OPERATOR"
+		token="\wedge"
+		render="\wedge"
+		template="\wedge" />
+	<command
+		group="OPERATOR"
+		token="\wr"
+		render="\wr"
+		template="\wr" />
+	<command
+		group="OPERATOR"
+		token="\land"
+		render="\land"
+		template="\land" />
+	<command
+		group="OPERATOR"
+		token="\lor"
+		render="\lor"
+		template="\lor" />
+	<command
+		group="OPERATOR"
+		token="\doublecup"
+		render="\doublecup"
+		template="\doublecup" />
+	<command
+		group="OPERATOR"
+		token="\doublecap"
+		render="\doublecap"
+		template="\doublecap" />
+	<command
+		group="RELATION"
+		token="\approx"
+		render="\approx"
+		template="\approx" />
+	<command
+		group="RELATION"
+		token="\approxeq"
+		render="\approxeq"
+		template="\approxeq" />
+	<command
+		group="RELATION"
+		token="\asymp"
+		render="\asymp"
+		template="\asymp" />
+	<command
+		group="RELATION"
+		token="\backsim"
+		render="\backsim"
+		template="\backsim" />
+	<command
+		group="RELATION"
+		token="\backsimeq"
+		render="\backsimeq"
+		template="\backsimeq" />
+	<command
+		group="RELATION"
+		token="\bumpeq"
+		render="\bumpeq"
+		template="\bumpeq" />
+	<command
+		group="RELATION"
+		token="\Bumpeq"
+		render="\Bumpeq"
+		template="\Bumpeq" />
+	<command
+		group="RELATION"
+		token="\circeq"
+		render="\circeq"
+		template="\circeq" />
+	<command
+		group="RELATION"
+		token="\cong"
+		render="\cong"
+		template="\cong" />
+	<command
+		group="RELATION"
+		token="\curlyeqprec"
+		render="\curlyeqprec"
+		template="\curlyeqprec" />
+	<command
+		group="RELATION"
+		token="\curlyeqsucc"
+		render="\curlyeqsucc"
+		template="\curlyeqsucc" />
+	<command
+		group="RELATION"
+		token="\doteq"
+		render="\doteq"
+		template="\doteq" />
+	<command
+		group="RELATION"
+		token="\doteqdot"
+		render="\doteqdot"
+		template="\doteqdot" />
+	<command
+		group="RELATION"
+		token="\eqcirc"
+		render="\eqcirc"
+		template="\eqcirc" />
+	<command
+		group="RELATION"
+		token="\eqsim"
+		render="\eqsim"
+		template="\eqsim" />
+	<command
+		group="RELATION"
+		token="\eqslantgtr"
+		render="\eqslantgtr"
+		template="\eqslantgtr" />
+	<command
+		group="RELATION"
+		token="\eqslantless"
+		render="\eqslantless"
+		template="\eqslantless" />
+	<command
+		group="RELATION"
+		token="\equiv"
+		render="\equiv"
+		template="\equiv" />
+	<command
+		group="RELATION"
+		token="\fallingdotseq"
+		render="\fallingdotseq"
+		template="\fallingdotseq" />
+	<command
+		group="RELATION"
+		token="\geq"
+		render="\geq"
+		template="\geq" />
+	<command
+		group="RELATION"
+		token="\geqq"
+		render="\geqq"
+		template="\geqq" />
+	<command
+		group="RELATION"
+		token="\geqslant"
+		render="\geqslant"
+		template="\geqslant" />
+	<command
+		group="RELATION"
+		token="\gg"
+		render="\gg"
+		template="\gg" />
+	<command
+		group="RELATION"
+		token="\ggg"
+		render="\ggg"
+		template="\ggg" />
+	<command
+		group="RELATION"
+		token="\gnapprox"
+		render="\gnapprox"
+		template="\gnapprox" />
+	<command
+		group="RELATION"
+		token="\gneq"
+		render="\gneq"
+		template="\gneq" />
+	<command
+		group="RELATION"
+		token="\gneqq"
+		render="\gneqq"
+		template="\gneqq" />
+	<command
+		group="RELATION"
+		token="\gnsim"
+		render="\gnsim"
+		template="\gnsim" />
+	<command
+		group="RELATION"
+		token="\gtrapprox"
+		render="\gtrapprox"
+		template="\gtrapprox" />
+	<command
+		group="RELATION"
+		token="\gtreqless"
+		render="\gtreqless"
+		template="\gtreqless" />
+	<command
+		group="RELATION"
+		token="\gtreqqless"
+		render="\gtreqqless"
+		template="\gtreqqless" />
+	<command
+		group="RELATION"
+		token="\gtrless"
+		render="\gtrless"
+		template="\gtrless" />
+	<command
+		group="RELATION"
+		token="\gtrsim"
+		render="\gtrsim"
+		template="\gtrsim" />
+	<command
+		group="RELATION"
+		token="\gvertneqq"
+		render="\gvertneqq"
+		template="\gvertneqq" />
+	<command
+		group="RELATION"
+		token="\leq"
+		render="\leq"
+		template="\leq" />
+	<command
+		group="RELATION"
+		token="\leqq"
+		render="\leqq"
+		template="\leqq" />
+	<command
+		group="RELATION"
+		token="\leqslant"
+		render="\leqslant"
+		template="\leqslant" />
+	<command
+		group="RELATION"
+		token="\lessapprox"
+		render="\lessapprox"
+		template="\lessapprox" />
+	<command
+		group="RELATION"
+		token="\lesseqgtr"
+		render="\lesseqgtr"
+		template="\lesseqgtr" />
+	<command
+		group="RELATION"
+		token="\lesseqqgtr"
+		render="\lesseqqgtr"
+		template="\lesseqqgtr" />
+	<command
+		group="RELATION"
+		token="\lessgtr"
+		render="\lessgtr"
+		template="\lessgtr" />
+	<command
+		group="RELATION"
+		token="\lesssim"
+		render="\lesssim"
+		template="\lesssim" />
+	<command
+		group="RELATION"
+		token="\ll"
+		render="\ll"
+		template="\ll" />
+	<command
+		group="RELATION"
+		token="\lll"
+		render="\lll"
+		template="\lll" />
+	<command
+		group="RELATION"
+		token="\lnapprox"
+		render="\lnapprox"
+		template="\lnapprox" />
+	<command
+		group="RELATION"
+		token="\lneq"
+		render="\lneq"
+		template="\lneq" />
+	<command
+		group="RELATION"
+		token="\lneqq"
+		render="\lneqq"
+		template="\lneqq" />
+	<command
+		group="RELATION"
+		token="\lnsim"
+		render="\lnsim"
+		template="\lnsim" />
+	<command
+		group="RELATION"
+		token="\lvertneqq"
+		render="\lvertneqq"
+		template="\lvertneqq" />
+	<command
+		group="RELATION"
+		token="\ncong"
+		render="\ncong"
+		template="\ncong" />
+	<command
+		group="RELATION"
+		token="\neq"
+		render="\neq"
+		template="\neq" />
+	<command
+		group="RELATION"
+		token="\ngeq"
+		render="\ngeq"
+		template="\ngeq" />
+	<command
+		group="RELATION"
+		token="\ngeqq"
+		render="\ngeqq"
+		template="\ngeqq" />
+	<command
+		group="RELATION"
+		token="\ngeqslant"
+		render="\ngeqslant"
+		template="\ngeqslant" />
+	<command
+		group="RELATION"
+		token="\ngtr"
+		render="\ngtr"
+		template="\ngtr" />
+	<command
+		group="RELATION"
+		token="\nleq"
+		render="\nleq"
+		template="\nleq" />
+	<command
+		group="RELATION"
+		token="\nleqq"
+		render="\nleqq"
+		template="\nleqq" />
+	<command
+		group="RELATION"
+		token="\nleqslant"
+		render="\nleqslant"
+		template="\nleqslant" />
+	<command
+		group="RELATION"
+		token="\nless"
+		render="\nless"
+		template="\nless" />
+	<command
+		group="RELATION"
+		token="\nprec"
+		render="\nprec"
+		template="\nprec" />
+	<command
+		group="RELATION"
+		token="\npreceq"
+		render="\npreceq"
+		template="\npreceq" />
+	<command
+		group="RELATION"
+		token="\nsim"
+		render="\nsim"
+		template="\nsim" />
+	<command
+		group="RELATION"
+		token="\nsucc"
+		render="\nsucc"
+		template="\nsucc" />
+	<command
+		group="RELATION"
+		token="\nsucceq"
+		render="\nsucceq"
+		template="\nsucceq" />
+	<command
+		group="RELATION"
+		token="\prec"
+		render="\prec"
+		template="\prec" />
+	<command
+		group="RELATION"
+		token="\precapprox"
+		render="\precapprox"
+		template="\precapprox" />
+	<command
+		group="RELATION"
+		token="\preccurlyeq"
+		render="\preccurlyeq"
+		template="\preccurlyeq" />
+	<command
+		group="RELATION"
+		token="\preceq"
+		render="\preceq"
+		template="\preceq" />
+	<command
+		group="RELATION"
+		token="\precnapprox"
+		render="\precnapprox"
+		template="\precnapprox" />
+	<command
+		group="RELATION"
+		token="\precneqq"
+		render="\precneqq"
+		template="\precneqq" />
+	<command
+		group="RELATION"
+		token="\precnsim"
+		render="\precnsim"
+		template="\precnsim" />
+	<command
+		group="RELATION"
+		token="\precsim"
+		render="\precsim"
+		template="\precsim" />
+	<command
+		group="RELATION"
+		token="\risingdotseq"
+		render="\risingdotseq"
+		template="\risingdotseq" />
+	<command
+		group="RELATION"
+		token="\sim"
+		render="\sim"
+		template="\sim" />
+	<command
+		group="RELATION"
+		token="\simeq"
+		render="\simeq"
+		template="\simeq" />
+	<command
+		group="RELATION"
+		token="\succ"
+		render="\succ"
+		template="\succ" />
+	<command
+		group="RELATION"
+		token="\succapprox"
+		render="\succapprox"
+		template="\succapprox" />
+	<command
+		group="RELATION"
+		token="\succcurlyeq"
+		render="\succcurlyeq"
+		template="\succcurlyeq" />
+	<command
+		group="RELATION"
+		token="\succeq"
+		render="\succeq"
+		template="\succeq" />
+	<command
+		group="RELATION"
+		token="\succnapprox"
+		render="\succnapprox"
+		template="\succnapprox" />
+	<command
+		group="RELATION"
+		token="\succneqq"
+		render="\succneqq"
+		template="\succneqq" />
+	<command
+		group="RELATION"
+		token="\succnsim"
+		render="\succnsim"
+		template="\succnsim" />
+	<command
+		group="RELATION"
+		token="\succsim"
+		render="\succsim"
+		template="\succsim" />
+	<command
+		group="RELATION"
+		token="\thickapprox"
+		render="\thickapprox"
+		template="\thickapprox" />
+	<command
+		group="RELATION"
+		token="\thicksim"
+		render="\thicksim"
+		template="\thicksim" />
+	<command
+		group="RELATION"
+		token="\triangleq"
+		render="\triangleq"
+		template="\triangleq" />
+	<command
+		group="RELATION"
+		token="\ne"
+		render="\ne"
+		template="\ne" />
+	<command
+		group="RELATION"
+		token="\le"
+		render="\le"
+		template="\le" />
+	<command
+		group="RELATION"
+		token="\ge"
+		render="\ge"
+		template="\ge" />
+	<command
+		group="RELATION"
+		token="\Doteq"
+		render="\Doteq"
+		template="\Doteq" />
+	<command
+		group="RELATION"
+		token="\llless"
+		render="\llless"
+		template="\llless" />
+	<command
+		group="RELATION"
+		token="\gggtr"
+		render="\gggtr"
+		template="\gggtr" />
+	<command
+		group="GENERAL"
+		token="\above"
+		render="\above"
+		template="\above" />
+	<command
+		group="GENERAL"
+		token="\abovewithdelims"
+		render="\abovewithdelims"
+		template="\abovewithdelims" />
+	<command
+		group="GENERAL"
+		token="\arccos"
+		render="\arccos"
+		template="\arccos" />
+	<command
+		group="GENERAL"
+		token="\arcsin"
+		render="\arcsin"
+		template="\arcsin" />
+	<command
+		group="GENERAL"
+		token="\arctan"
+		render="\arctan"
+		template="\arctan" />
+	<command
+		group="GENERAL"
+		token="\arg"
+		render="\arg"
+		template="\arg" />
+	<command
+		group="GENERAL"
+		token="\array"
+		render="\array"
+		template="\array" />
+	<command
+		group="GENERAL"
+		token="\atop"
+		render="\atop"
+		template="\atop" />
+	<command
+		group="GENERAL"
+		token="\atopwithdelims"
+		render="\atopwithdelims"
+		template="\atopwithdelims" />
+	<command
+		group="GENERAL"
+		token="\Bbb"
+		render="\Bbb"
+		template="\Bbb" />
+	<command
+		group="GENERAL"
+		token="\bbox"
+		render="\bbox"
+		template="\bbox" />
+	<command
+		group="GENERAL"
+		token="\bcancel"
+		render="\bcancel"
+		template="\bcancel" />
+	<command
+		group="GENERAL"
+		token="\begin"
+		render="\begin"
+		template="\begin" />
+	<command
+		group="GENERAL"
+		token="\begingroup"
+		render="\begingroup"
+		template="\begingroup" />
+	<command
+		group="GENERAL"
+		token="\bf"
+		render="\bf"
+		template="\bf" />
+	<command
+		group="GENERAL"
+		token="\Big"
+		render="\Big"
+		template="\Big" />
+	<command
+		group="GENERAL"
+		token="\big"
+		render="\big"
+		template="\big" />
+	<command
+		group="GENERAL"
+		token="\Bigg"
+		render="\Bigg"
+		template="\Bigg" />
+	<command
+		group="GENERAL"
+		token="\bigg"
+		render="\bigg"
+		template="\bigg" />
+	<command
+		group="GENERAL"
+		token="\Biggl"
+		render="\Biggl"
+		template="\Biggl" />
+	<command
+		group="GENERAL"
+		token="\biggl"
+		render="\biggl"
+		template="\biggl" />
+	<command
+		group="GENERAL"
+		token="\Biggm"
+		render="\Biggm"
+		template="\Biggm" />
+	<command
+		group="GENERAL"
+		token="\biggm"
+		render="\biggm"
+		template="\biggm" />
+	<command
+		group="GENERAL"
+		token="\Biggr"
+		render="\Biggr"
+		template="\Biggr" />
+	<command
+		group="GENERAL"
+		token="\biggr"
+		render="\biggr"
+		template="\biggr" />
+	<command
+		group="GENERAL"
+		token="\Bigl"
+		render="\Bigl"
+		template="\Bigl" />
+	<command
+		group="GENERAL"
+		token="\bigl"
+		render="\bigl"
+		template="\bigl" />
+	<command
+		group="GENERAL"
+		token="\Bigm"
+		render="\Bigm"
+		template="\Bigm" />
+	<command
+		group="GENERAL"
+		token="\bigm"
+		render="\bigm"
+		template="\bigm" />
+	<command
+		group="GENERAL"
+		token="\Bigr"
+		render="\Bigr"
+		template="\Bigr" />
+	<command
+		group="GENERAL"
+		token="\bigr"
+		render="\bigr"
+		template="\bigr" />
+	<command
+		group="GENERAL"
+		token="\bmod"
+		render="\bmod"
+		template="\bmod" />
+	<command
+		group="GENERAL"
+		token="\boldsymbol"
+		render="\boldsymbol"
+		template="\boldsymbol" />
+	<command
+		group="GENERAL"
+		token="\Box"
+		render="\Box"
+		template="\Box" />
+	<command
+		group="GENERAL"
+		token="\boxed"
+		render="\boxed"
+		template="\boxed" />
+	<command
+		group="GENERAL"
+		token="\brace"
+		render="\brace"
+		template="\brace" />
+	<command
+		group="GENERAL"
+		token="\bracevert"
+		render="\bracevert"
+		template="\bracevert" />
+	<command
+		group="GENERAL"
+		token="\brack"
+		render="\brack"
+		template="\brack" />
+	<command
+		group="GENERAL"
+		token="\buildrel"
+		render="\buildrel"
+		template="\buildrel" />
+	<command
+		group="GENERAL"
+		token="\cal"
+		render="\cal"
+		template="\cal" />
+	<command
+		group="GENERAL"
+		token="\cancel"
+		render="\cancel"
+		template="\cancel" />
+	<command
+		group="GENERAL"
+		token="\cancelto"
+		render="\cancelto"
+		template="\cancelto" />
+	<command
+		group="GENERAL"
+		token="\cases"
+		render="\cases"
+		template="\cases" />
+	<command
+		group="GENERAL"
+		token="\cdotp"
+		render="\cdotp"
+		template="\cdotp" />
+	<command
+		group="GENERAL"
+		token="\cdots"
+		render="\cdots"
+		template="\cdots" />
+	<command
+		group="GENERAL"
+		token="\ce"
+		render="\ce"
+		template="\ce" />
+	<command
+		group="GENERAL"
+		token="\cee"
+		render="\cee"
+		template="\cee" />
+	<command
+		group="GENERAL"
+		token="\cf"
+		render="\cf"
+		template="\cf" />
+	<command
+		group="GENERAL"
+		token="\cfrac"
+		render="\cfrac"
+		template="\cfrac" />
+	<command
+		group="GENERAL"
+		token="\checkmark"
+		render="\checkmark"
+		template="\checkmark" />
+	<command
+		group="GENERAL"
+		token="\choose"
+		render="\choose"
+		template="\choose" />
+	<command
+		group="GENERAL"
+		token="\circledR"
+		render="\circledR"
+		template="\circledR" />
+	<command
+		group="GENERAL"
+		token="\class"
+		render="\class"
+		template="\class" />
+	<command
+		group="GENERAL"
+		token="\colon"
+		render="\colon"
+		template="\colon" />
+	<command
+		group="GENERAL"
+		token="\color"
+		render="\color"
+		template="\color" />
+	<command
+		group="GENERAL"
+		token="\colorbox"
+		render="\colorbox"
+		template="\colorbox" />
+	<command
+		group="GENERAL"
+		token="\cos"
+		render="\cos"
+		template="\cos" />
+	<command
+		group="GENERAL"
+		token="\cosh"
+		render="\cosh"
+		template="\cosh" />
+	<command
+		group="GENERAL"
+		token="\cot"
+		render="\cot"
+		template="\cot" />
+	<command
+		group="GENERAL"
+		token="\coth"
+		render="\coth"
+		template="\coth" />
+	<command
+		group="GENERAL"
+		token="\cr"
+		render="\cr"
+		template="\cr" />
+	<command
+		group="GENERAL"
+		token="\csc"
+		render="\csc"
+		template="\csc" />
+	<command
+		group="GENERAL"
+		token="\dashleftarrow"
+		render="\dashleftarrow"
+		template="\dashleftarrow" />
+	<command
+		group="GENERAL"
+		token="\dashrightarrow"
+		render="\dashrightarrow"
+		template="\dashrightarrow" />
+	<command
+		group="GENERAL"
+		token="\dbinom"
+		render="\dbinom"
+		template="\dbinom" />
+	<command
+		group="GENERAL"
+		token="\ddddot"
+		render="\ddddot"
+		template="\ddddot" />
+	<command
+		group="GENERAL"
+		token="\ddots"
+		render="\ddots"
+		template="\ddots" />
+	<command
+		group="GENERAL"
+		token="\DeclareMathOperator"
+		render="\DeclareMathOperator"
+		template="\DeclareMathOperator" />
+	<command
+		group="GENERAL"
+		token="\deg"
+		render="\deg"
+		template="\deg" />
+	<command
+		group="GENERAL"
+		token="\det"
+		render="\det"
+		template="\det" />
+	<command
+		group="GENERAL"
+		token="\dfrac"
+		render="\dfrac"
+		template="\dfrac" />
+	<command
+		group="GENERAL"
+		token="\Diamond"
+		render="\Diamond"
+		template="\Diamond" />
+	<command
+		group="GENERAL"
+		token="\dim"
+		render="\dim"
+		template="\dim" />
+	<command
+		group="GENERAL"
+		token="\displaylines"
+		render="\displaylines"
+		template="\displaylines" />
+	<command
+		group="GENERAL"
+		token="\displaystyle"
+		render="\displaystyle"
+		template="\displaystyle" />
+	<command
+		group="GENERAL"
+		token="\dots"
+		render="\dots"
+		template="\dots" />
+	<command
+		group="GENERAL"
+		token="\dotsb"
+		render="\dotsb"
+		template="\dotsb" />
+	<command
+		group="GENERAL"
+		token="\dotsc"
+		render="\dotsc"
+		template="\dotsc" />
+	<command
+		group="GENERAL"
+		token="\dotsi"
+		render="\dotsi"
+		template="\dotsi" />
+	<command
+		group="GENERAL"
+		token="\dotsm"
+		render="\dotsm"
+		template="\dotsm" />
+	<command
+		group="GENERAL"
+		token="\dotso"
+		render="\dotso"
+		template="\dotso" />
+	<command
+		group="GENERAL"
+		token="\Downarrow"
+		render="\Downarrow"
+		template="\Downarrow" />
+	<command
+		group="GENERAL"
+		token="\downarrow"
+		render="\downarrow"
+		template="\downarrow" />
+	<command
+		group="GENERAL"
+		token="\end"
+		render="\end"
+		template="\end" />
+	<command
+		group="GENERAL"
+		token="\enspace"
+		render="\enspace"
+		template="\enspace" />
+	<command
+		group="GENERAL"
+		token="\eqalign"
+		render="\eqalign"
+		template="\eqalign" />
+	<command
+		group="GENERAL"
+		token="\eqalignno"
+		render="\eqalignno"
+		template="\eqalignno" />
+	<command
+		group="GENERAL"
+		token="\exp"
+		render="\exp"
+		template="\exp" />
+	<command
+		group="GENERAL"
+		token="\fbox"
+		render="\fbox"
+		template="\fbox" />
+	<command
+		group="GENERAL"
+		token="\frak"
+		render="\frak"
+		template="\frak" />
+	<command
+		group="GENERAL"
+		token="\gcd"
+		render="\gcd"
+		template="\gcd" />
+	<command
+		group="GENERAL"
+		token="\genfrac"
+		render="\genfrac"
+		template="\genfrac" />
+	<command
+		group="GENERAL"
+		token="\gt"
+		render="\gt"
+		template="\gt" />
+	<command
+		group="GENERAL"
+		token="\gt"
+		render="\gt"
+		template="\gt" />
+	<command
+		group="GENERAL"
+		token="\hbox"
+		render="\hbox"
+		template="\hbox" />
+	<command
+		group="GENERAL"
+		token="\hdashline"
+		render="\hdashline"
+		template="\hdashline" />
+	<command
+		group="GENERAL"
+		token="\hline"
+		render="\hline"
+		template="\hline" />
+	<command
+		group="GENERAL"
+		token="\hom"
+		render="\hom"
+		template="\hom" />
+	<command
+		group="GENERAL"
+		token="\hphantom"
+		render="\hphantom"
+		template="\hphantom" />
+	<command
+		group="GENERAL"
+		token="\hskip"
+		render="\hskip"
+		template="\hskip" />
+	<command
+		group="GENERAL"
+		token="\hspace"
+		render="\hspace"
+		template="\hspace" />
+	<command
+		group="GENERAL"
+		token="\Huge"
+		render="\Huge"
+		template="\Huge" />
+	<command
+		group="GENERAL"
+		token="\huge"
+		render="\huge"
+		template="\huge" />
+	<command
+		group="GENERAL"
+		token="\idotsint"
+		render="\idotsint"
+		template="\idotsint" />
+	<command
+		group="GENERAL"
+		token="\iff"
+		render="\iff"
+		template="\iff" />
+	<command
+		group="GENERAL"
+		token="\iiiint"
+		render="\iiiint"
+		template="\iiiint" />
+	<command
+		group="GENERAL"
+		token="\iiint"
+		render="\iiint"
+		template="\iiint" />
+	<command
+		group="GENERAL"
+		token="\iint"
+		render="\iint"
+		template="\iint" />
+	<command
+		group="GENERAL"
+		token="\imath"
+		render="\imath"
+		template="\imath" />
+	<command
+		group="GENERAL"
+		token="\impliedby"
+		render="\impliedby"
+		template="\impliedby" />
+	<command
+		group="GENERAL"
+		token="\implies"
+		render="\implies"
+		template="\implies" />
+	<command
+		group="GENERAL"
+		token="\inf"
+		render="\inf"
+		template="\inf" />
+	<command
+		group="GENERAL"
+		token="\injlim"
+		render="\injlim"
+		template="\injlim" />
+	<command
+		group="GENERAL"
+		token="\intop"
+		render="\intop"
+		template="\intop" />
+	<command
+		group="GENERAL"
+		token="\it"
+		render="\it"
+		template="\it" />
+	<command
+		group="GENERAL"
+		token="\jmath"
+		render="\jmath"
+		template="\jmath" />
+	<command
+		group="GENERAL"
+		token="\Join"
+		render="\Join"
+		template="\Join" />
+	<command
+		group="GENERAL"
+		token="\ker"
+		render="\ker"
+		template="\ker" />
+	<command
+		group="GENERAL"
+		token="\kern"
+		render="\kern"
+		template="\kern" />
+	<command
+		group="GENERAL"
+		token="\langle"
+		render="\langle"
+		template="\langle" />
+	<command
+		group="GENERAL"
+		token="\LARGE"
+		render="\LARGE"
+		template="\LARGE" />
+	<command
+		group="GENERAL"
+		token="\Large"
+		render="\Large"
+		template="\Large" />
+	<command
+		group="GENERAL"
+		token="\large"
+		render="\large"
+		template="\large" />
+	<command
+		group="GENERAL"
+		token="\lbrace"
+		render="\lbrace"
+		template="\lbrace" />
+	<command
+		group="GENERAL"
+		token="\lbrack"
+		render="\lbrack"
+		template="\lbrack" />
+	<command
+		group="GENERAL"
+		token="\lceil"
+		render="\lceil"
+		template="\lceil" />
+	<command
+		group="GENERAL"
+		token="\ldotp"
+		render="\ldotp"
+		template="\ldotp" />
+	<command
+		group="GENERAL"
+		token="\ldots"
+		render="\ldots"
+		template="\ldots" />
+	<command
+		group="GENERAL"
+		token="\leadsto"
+		render="\leadsto"
+		template="\leadsto" />
+	<command
+		group="GENERAL"
+		token="\left"
+		render="\left"
+		template="\left" />
+	<command
+		group="GENERAL"
+		token="\leftrightsquigarrow"
+		render="\leftrightsquigarrow"
+		template="\leftrightsquigarrow" />
+	<command
+		group="GENERAL"
+		token="\leftroot"
+		render="\leftroot"
+		template="\leftroot" />
+	<command
+		group="GENERAL"
+		token="\leqalignno"
+		render="\leqalignno"
+		template="\leqalignno" />
+	<command
+		group="GENERAL"
+		token="\lfloor"
+		render="\lfloor"
+		template="\lfloor" />
+	<command
+		group="GENERAL"
+		token="\lg"
+		render="\lg"
+		template="\lg" />
+	<command
+		group="GENERAL"
+		token="\lgroup"
+		render="\lgroup"
+		template="\lgroup" />
+	<command
+		group="GENERAL"
+		token="\lhd"
+		render="\lhd"
+		template="\lhd" />
+	<command
+		group="GENERAL"
+		token="\lim"
+		render="\lim"
+		template="\lim" />
+	<command
+		group="GENERAL"
+		token="\liminf"
+		render="\liminf"
+		template="\liminf" />
+	<command
+		group="GENERAL"
+		token="\limits"
+		render="\limits"
+		template="\limits" />
+	<command
+		group="GENERAL"
+		token="\limsup"
+		render="\limsup"
+		template="\limsup" />
+	<command
+		group="GENERAL"
+		token="\llap"
+		render="\llap"
+		template="\llap" />
+	<command
+		group="GENERAL"
+		token="\llcorner"
+		render="\llcorner"
+		template="\llcorner" />
+	<command
+		group="GENERAL"
+		token="\lmoustache"
+		render="\lmoustache"
+		template="\lmoustache" />
+	<command
+		group="GENERAL"
+		token="\ln"
+		render="\ln"
+		template="\ln" />
+	<command
+		group="GENERAL"
+		token="\lnot"
+		render="\lnot"
+		template="\lnot" />
+	<command
+		group="GENERAL"
+		token="\log"
+		render="\log"
+		template="\log" />
+	<command
+		group="GENERAL"
+		token="\lower"
+		render="\lower"
+		template="\lower" />
+	<command
+		group="GENERAL"
+		token="\lrcorner"
+		render="\lrcorner"
+		template="\lrcorner" />
+	<command
+		group="GENERAL"
+		token="\lt"
+		render="\lt"
+		template="\lt" />
+	<command
+		group="GENERAL"
+		token="\lt"
+		render="\lt"
+		template="\lt" />
+	<command
+		group="GENERAL"
+		token="\lVert"
+		render="\lVert"
+		template="\lVert" />
+	<command
+		group="GENERAL"
+		token="\lvert"
+		render="\lvert"
+		template="\lvert" />
+	<command
+		group="GENERAL"
+		token="\maltese"
+		render="\maltese"
+		template="\maltese" />
+	<command
+		group="GENERAL"
+		token="\mathbb"
+		render="\mathbb"
+		template="\mathbb" />
+	<command
+		group="GENERAL"
+		token="\mathbf"
+		render="\mathbf"
+		template="\mathbf" />
+	<command
+		group="GENERAL"
+		token="\mathbin"
+		render="\mathbin"
+		template="\mathbin" />
+	<command
+		group="GENERAL"
+		token="\mathcal"
+		render="\mathcal"
+		template="\mathcal" />
+	<command
+		group="GENERAL"
+		token="\mathclose"
+		render="\mathclose"
+		template="\mathclose" />
+	<command
+		group="GENERAL"
+		token="\mathfrak"
+		render="\mathfrak"
+		template="\mathfrak" />
+	<command
+		group="GENERAL"
+		token="\mathinner"
+		render="\mathinner"
+		template="\mathinner" />
+	<command
+		group="GENERAL"
+		token="\mathit"
+		render="\mathit"
+		template="\mathit" />
+	<command
+		group="GENERAL"
+		token="\mathop"
+		render="\mathop"
+		template="\mathop" />
+	<command
+		group="GENERAL"
+		token="\mathopen"
+		render="\mathopen"
+		template="\mathopen" />
+	<command
+		group="GENERAL"
+		token="\mathord"
+		render="\mathord"
+		template="\mathord" />
+	<command
+		group="GENERAL"
+		token="\mathpunct"
+		render="\mathpunct"
+		template="\mathpunct" />
+	<command
+		group="GENERAL"
+		token="\mathrel"
+		render="\mathrel"
+		template="\mathrel" />
+	<command
+		group="GENERAL"
+		token="\mathring"
+		render="\mathring"
+		template="\mathring" />
+	<command
+		group="GENERAL"
+		token="\mathrm"
+		render="\mathrm"
+		template="\mathrm" />
+	<command
+		group="GENERAL"
+		token="\mathscr"
+		render="\mathscr"
+		template="\mathscr" />
+	<command
+		group="GENERAL"
+		token="\mathsf"
+		render="\mathsf"
+		template="\mathsf" />
+	<command
+		group="GENERAL"
+		token="\mathstrut"
+		render="\mathstrut"
+		template="\mathstrut" />
+	<command
+		group="GENERAL"
+		token="\mathtt"
+		render="\mathtt"
+		template="\mathtt" />
+	<command
+		group="GENERAL"
+		token="\matrix"
+		render="\matrix"
+		template="\matrix" />
+	<command
+		group="GENERAL"
+		token="\max"
+		render="\max"
+		template="\max" />
+	<command
+		group="GENERAL"
+		token="\mbox"
+		render="\mbox"
+		template="\mbox" />
+	<command
+		group="GENERAL"
+		token="\middle"
+		render="\middle"
+		template="\middle" />
+	<command
+		group="GENERAL"
+		token="\min"
+		render="\min"
+		template="\min" />
+	<command
+		group="GENERAL"
+		token="\mit"
+		render="\mit"
+		template="\mit" />
+	<command
+		group="GENERAL"
+		token="\mkern"
+		render="\mkern"
+		template="\mkern" />
+	<command
+		group="GENERAL"
+		token="\mod"
+		render="\mod"
+		template="\mod" />
+	<command
+		group="GENERAL"
+		token="\moveleft"
+		render="\moveleft"
+		template="\moveleft" />
+	<command
+		group="GENERAL"
+		token="\moveright"
+		render="\moveright"
+		template="\moveright" />
+	<command
+		group="GENERAL"
+		token="\mskip"
+		render="\mskip"
+		template="\mskip" />
+	<command
+		group="GENERAL"
+		token="\mspace"
+		render="\mspace"
+		template="\mspace" />
+	<command
+		group="GENERAL"
+		token="\negmedspace"
+		render="\negmedspace"
+		template="\negmedspace" />
+	<command
+		group="GENERAL"
+		token="\negthickspace"
+		render="\negthickspace"
+		template="\negthickspace" />
+	<command
+		group="GENERAL"
+		token="\negthinspace"
+		render="\negthinspace"
+		template="\negthinspace" />
+	<command
+		group="GENERAL"
+		token="\Newextarrow"
+		render="\Newextarrow"
+		template="\Newextarrow" />
+	<command
+		group="GENERAL"
+		token="\newline"
+		render="\newline"
+		template="\newline" />
+	<command
+		group="GENERAL"
+		token="\nobreakspace"
+		render="\nobreakspace"
+		template="\nobreakspace" />
+	<command
+		group="GENERAL"
+		token="\nolimits"
+		render="\nolimits"
+		template="\nolimits" />
+	<command
+		group="GENERAL"
+		token="\normalsize"
+		render="\normalsize"
+		template="\normalsize" />
+	<command
+		group="GENERAL"
+		token="\not"
+		render="\not"
+		template="\not" />
+	<command
+		group="GENERAL"
+		token="\oldstyle"
+		render="\oldstyle"
+		template="\oldstyle" />
+	<command
+		group="GENERAL"
+		token="\omicron"
+		render="\omicron"
+		template="\omicron" />
+	<command
+		group="GENERAL"
+		token="\operatorname"
+		render="\operatorname"
+		template="\operatorname" />
+	<command
+		group="GENERAL"
+		token="\over"
+		render="\over"
+		template="\over" />
+	<command
+		group="GENERAL"
+		token="\overbrace"
+		render="\overbrace"
+		template="\overbrace" />
+	<command
+		group="GENERAL"
+		token="\overleftarrow"
+		render="\overleftarrow"
+		template="\overleftarrow" />
+	<command
+		group="GENERAL"
+		token="\overleftrightarrow"
+		render="\overleftrightarrow"
+		template="\overleftrightarrow" />
+	<command
+		group="GENERAL"
+		token="\overline"
+		render="\overline"
+		template="\overline" />
+	<command
+		group="GENERAL"
+		token="\overrightarrow"
+		render="\overrightarrow"
+		template="\overrightarrow" />
+	<command
+		group="GENERAL"
+		token="\overset"
+		render="\overset"
+		template="\overset" />
+	<command
+		group="GENERAL"
+		token="\overwithdelims"
+		render="\overwithdelims"
+		template="\overwithdelims" />
+	<command
+		group="GENERAL"
+		token="\phantom"
+		render="\phantom"
+		template="\phantom" />
+	<command
+		group="GENERAL"
+		token="\pmatrix"
+		render="\pmatrix"
+		template="\pmatrix" />
+	<command
+		group="GENERAL"
+		token="\pmb"
+		render="\pmb"
+		template="\pmb" />
+	<command
+		group="GENERAL"
+		token="\pmod"
+		render="\pmod"
+		template="\pmod" />
+	<command
+		group="GENERAL"
+		token="\pod"
+		render="\pod"
+		template="\pod" />
+	<command
+		group="GENERAL"
+		token="\Pr"
+		render="\Pr"
+		template="\Pr" />
+	<command
+		group="GENERAL"
+		token="\projlim"
+		render="\projlim"
+		template="\projlim" />
+	<command
+		group="GENERAL"
+		token="\qquad"
+		render="\qquad"
+		template="\qquad" />
+	<command
+		group="GENERAL"
+		token="\quad"
+		render="\quad"
+		template="\quad" />
+	<command
+		group="GENERAL"
+		token="\raise"
+		render="\raise"
+		template="\raise" />
+	<command
+		group="GENERAL"
+		token="\rangle"
+		render="\rangle"
+		template="\rangle" />
+	<command
+		group="GENERAL"
+		token="\rbrace"
+		render="\rbrace"
+		template="\rbrace" />
+	<command
+		group="GENERAL"
+		token="\rbrack"
+		render="\rbrack"
+		template="\rbrack" />
+	<command
+		group="GENERAL"
+		token="\rceil"
+		render="\rceil"
+		template="\rceil" />
+	<command
+		group="GENERAL"
+		token="\rfloor"
+		render="\rfloor"
+		template="\rfloor" />
+	<command
+		group="GENERAL"
+		token="\rgroup"
+		render="\rgroup"
+		template="\rgroup" />
+	<command
+		group="GENERAL"
+		token="\rhd"
+		render="\rhd"
+		template="\rhd" />
+	<command
+		group="GENERAL"
+		token="\right"
+		render="\right"
+		template="\right" />
+	<command
+		group="GENERAL"
+		token="\rlap"
+		render="\rlap"
+		template="\rlap" />
+	<command
+		group="GENERAL"
+		token="\rm"
+		render="\rm"
+		template="\rm" />
+	<command
+		group="GENERAL"
+		token="\rmoustache"
+		render="\rmoustache"
+		template="\rmoustache" />
+	<command
+		group="GENERAL"
+		token="\root"
+		render="\root"
+		template="\root" />
+	<command
+		group="GENERAL"
+		token="\rVert"
+		render="\rVert"
+		template="\rVert" />
+	<command
+		group="GENERAL"
+		token="\rvert"
+		render="\rvert"
+		template="\rvert" />
+	<command
+		group="GENERAL"
+		token="\S"
+		render="\S"
+		template="\S" />
+	<command
+		group="GENERAL"
+		token="\scr"
+		render="\scr"
+		template="\scr" />
+	<command
+		group="GENERAL"
+		token="\scriptscriptstyle"
+		render="\scriptscriptstyle"
+		template="\scriptscriptstyle" />
+	<command
+		group="GENERAL"
+		token="\scriptsize"
+		render="\scriptsize"
+		template="\scriptsize" />
+	<command
+		group="GENERAL"
+		token="\scriptstyle"
+		render="\scriptstyle"
+		template="\scriptstyle" />
+	<command
+		group="GENERAL"
+		token="\sec"
+		render="\sec"
+		template="\sec" />
+	<command
+		group="GENERAL"
+		token="\sf"
+		render="\sf"
+		template="\sf" />
+	<command
+		group="GENERAL"
+		token="\shoveleft"
+		render="\shoveleft"
+		template="\shoveleft" />
+	<command
+		group="GENERAL"
+		token="\shoveright"
+		render="\shoveright"
+		template="\shoveright" />
+	<command
+		group="GENERAL"
+		token="\sideset"
+		render="\sideset"
+		template="\sideset" />
+	<command
+		group="GENERAL"
+		token="\sin"
+		render="\sin"
+		template="\sin" />
+	<command
+		group="GENERAL"
+		token="\sinh"
+		render="\sinh"
+		template="\sinh" />
+	<command
+		group="GENERAL"
+		token="\skew"
+		render="\skew"
+		template="\skew" />
+	<command
+		group="GENERAL"
+		token="\small"
+		render="\small"
+		template="\small" />
+	<command
+		group="GENERAL"
+		token="\smash"
+		render="\smash"
+		template="\smash" />
+	<command
+		group="GENERAL"
+		token="\Space"
+		render="\Space"
+		template="\Space" />
+	<command
+		group="GENERAL"
+		token="\space"
+		render="\space"
+		template="\space" />
+	<command
+		group="GENERAL"
+		token="\sqrt"
+		render="\sqrt"
+		template="\sqrt" />
+	<command
+		group="GENERAL"
+		token="\stackrel"
+		render="\stackrel"
+		template="\stackrel" />
+	<command
+		group="GENERAL"
+		token="\strut"
+		render="\strut"
+		template="\strut" />
+	<command
+		group="GENERAL"
+		token="\substack"
+		render="\substack"
+		template="\substack" />
+	<command
+		group="GENERAL"
+		token="\sup"
+		render="\sup"
+		template="\sup" />
+	<command
+		group="GENERAL"
+		token="\tan"
+		render="\tan"
+		template="\tan" />
+	<command
+		group="GENERAL"
+		token="\tanh"
+		render="\tanh"
+		template="\tanh" />
+	<command
+		group="GENERAL"
+		token="\tbinom"
+		render="\tbinom"
+		template="\tbinom" />
+	<command
+		group="GENERAL"
+		token="\TeX"
+		render="\TeX"
+		template="\TeX" />
+	<command
+		group="GENERAL"
+		token="\text"
+		render="\text"
+		template="\text" />
+	<command
+		group="GENERAL"
+		token="\textbf"
+		render="\textbf"
+		template="\textbf" />
+	<command
+		group="GENERAL"
+		token="\textit"
+		render="\textit"
+		template="\textit" />
+	<command
+		group="GENERAL"
+		token="\textrm"
+		render="\textrm"
+		template="\textrm" />
+	<command
+		group="GENERAL"
+		token="\textstyle"
+		render="\textstyle"
+		template="\textstyle" />
+	<command
+		group="GENERAL"
+		token="\tfrac"
+		render="\tfrac"
+		template="\tfrac" />
+	<command
+		group="GENERAL"
+		token="\thinspace"
+		render="\thinspace"
+		template="\thinspace" />
+	<command
+		group="GENERAL"
+		token="\tiny"
+		render="\tiny"
+		template="\tiny" />
+	<command
+		group="GENERAL"
+		token="\tt"
+		render="\tt"
+		template="\tt" />
+	<command
+		group="GENERAL"
+		token="\ulcorner"
+		render="\ulcorner"
+		template="\ulcorner" />
+	<command
+		group="GENERAL"
+		token="\underbrace"
+		render="\underbrace"
+		template="\underbrace" />
+	<command
+		group="GENERAL"
+		token="\underline"
+		render="\underline"
+		template="\underline" />
+	<command
+		group="GENERAL"
+		token="\underset"
+		render="\underset"
+		template="\underset" />
+	<command
+		group="GENERAL"
+		token="\unlhd"
+		render="\unlhd"
+		template="\unlhd" />
+	<command
+		group="GENERAL"
+		token="\unrhd"
+		render="\unrhd"
+		template="\unrhd" />
+	<command
+		group="GENERAL"
+		token="\Uparrow"
+		render="\Uparrow"
+		template="\Uparrow" />
+	<command
+		group="GENERAL"
+		token="\Updownarrow"
+		render="\Updownarrow"
+		template="\Updownarrow" />
+	<command
+		group="GENERAL"
+		token="\updownarrow"
+		render="\updownarrow"
+		template="\updownarrow" />
+	<command
+		group="GENERAL"
+		token="\uproot"
+		render="\uproot"
+		template="\uproot" />
+	<command
+		group="GENERAL"
+		token="\urcorner"
+		render="\urcorner"
+		template="\urcorner" />
+	<command
+		group="GENERAL"
+		token="\vcenter"
+		render="\vcenter"
+		template="\vcenter" />
+	<command
+		group="GENERAL"
+		token="\vdots"
+		render="\vdots"
+		template="\vdots" />
+	<command
+		group="GENERAL"
+		token="\veebar"
+		render="\veebar"
+		template="\veebar" />
+	<command
+		group="GENERAL"
+		token="\verb"
+		render="\verb"
+		template="\verb" />
+	<command
+		group="GENERAL"
+		token="\Vert"
+		render="\Vert"
+		template="\Vert" />
+	<command
+		group="GENERAL"
+		token="\vert"
+		render="\vert"
+		template="\vert" />
+	<command
+		group="GENERAL"
+		token="\vphantom"
+		render="\vphantom"
+		template="\vphantom" />
+	<command
+		group="GENERAL"
+		token="\xcancel"
+		render="\xcancel"
+		template="\xcancel" />
+	<command
+		group="GENERAL"
+		token="\xlongequal"
+		render="\xlongequal"
+		template="\xlongequal" />
+	<command
+		group="GENERAL"
+		token="\xmapsto"
+		render="\xmapsto"
+		template="\xmapsto" />
+	<command
+		group="GENERAL"
+		token="\xtofrom"
+		render="\xtofrom"
+		template="\xtofrom" />
+	<command
+		group="GENERAL"
+		token="\varprojlim"
+		render="\varprojlim"
+		template="\varprojlim" />
+	<command
+		group="SYMBOL"
+		token="\#"
+		render="\#"
+		template="\#" />
+	<command
+		group="SYMBOL"
+		token="\&"
+		render="\&"
+		template="\&" />
+	<command
+		group="SYMBOL"
+		token="\And"
+		render="\And"
+		template="\And" />
+	<command
+		group="SYMBOL"
+		token="\angle"
+		render="\angle"
+		template="\angle" />
+	<command
+		group="SYMBOL"
+		token="\backprime"
+		render="\backprime"
+		template="\backprime" />
+	<command
+		group="SYMBOL"
+		token="\backslash"
+		render="\backslash"
+		template="\backslash" />
+	<command
+		group="SYMBOL"
+		token="\bigstar"
+		render="\bigstar"
+		template="\bigstar" />
+	<command
+		group="SYMBOL"
+		token="\blacklozenge"
+		render="\blacklozenge"
+		template="\blacklozenge" />
+	<command
+		group="SYMBOL"
+		token="\blacksquare"
+		render="\blacksquare"
+		template="\blacksquare" />
+	<command
+		group="SYMBOL"
+		token="\blacktriangle"
+		render="\blacktriangle"
+		template="\blacktriangle" />
+	<command
+		group="SYMBOL"
+		token="\blacktriangledown"
+		render="\blacktriangledown"
+		template="\blacktriangledown" />
+	<command
+		group="SYMBOL"
+		token="\bot"
+		render="\bot"
+		template="\bot" />
+	<command
+		group="SYMBOL"
+		token="\clubsuit"
+		render="\clubsuit"
+		template="\clubsuit" />
+	<command
+		group="SYMBOL"
+		token="\diagdown"
+		render="\diagdown"
+		template="\diagdown" />
+	<command
+		group="SYMBOL"
+		token="\diagup"
+		render="\diagup"
+		template="\diagup" />
+	<command
+		group="SYMBOL"
+		token="\diamondsuit"
+		render="\diamondsuit"
+		template="\diamondsuit" />
+	<command
+		group="SYMBOL"
+		token="\emptyset"
+		render="\emptyset"
+		template="\emptyset" />
+	<command
+		group="SYMBOL"
+		token="\exists"
+		render="\exists"
+		template="\exists" />
+	<command
+		group="SYMBOL"
+		token="\flat"
+		render="\flat"
+		template="\flat" />
+	<command
+		group="SYMBOL"
+		token="\forall"
+		render="\forall"
+		template="\forall" />
+	<command
+		group="SYMBOL"
+		token="\heartsuit"
+		render="\heartsuit"
+		template="\heartsuit" />
+	<command
+		group="SYMBOL"
+		token="\infty"
+		render="\infty"
+		template="\infty" />
+	<command
+		group="SYMBOL"
+		token="\lozenge"
+		render="\lozenge"
+		template="\lozenge" />
+	<command
+		group="SYMBOL"
+		token="\measuredangle"
+		render="\measuredangle"
+		template="\measuredangle" />
+	<command
+		group="SYMBOL"
+		token="\nabla"
+		render="\nabla"
+		template="\nabla" />
+	<command
+		group="SYMBOL"
+		token="\natural"
+		render="\natural"
+		template="\natural" />
+	<command
+		group="SYMBOL"
+		token="\neg"
+		render="\neg"
+		template="\neg" />
+	<command
+		group="SYMBOL"
+		token="\nexists"
+		render="\nexists"
+		template="\nexists" />
+	<command
+		group="SYMBOL"
+		token="\prime"
+		render="\prime"
+		template="\prime" />
+	<command
+		group="SYMBOL"
+		token="\sharp"
+		render="\sharp"
+		template="\sharp" />
+	<command
+		group="SYMBOL"
+		token="\spadesuit"
+		render="\spadesuit"
+		template="\spadesuit" />
+	<command
+		group="SYMBOL"
+		token="\sphericalangle"
+		render="\sphericalangle"
+		template="\sphericalangle" />
+	<command
+		group="SYMBOL"
+		token="\square"
+		render="\square"
+		template="\square" />
+	<command
+		group="SYMBOL"
+		token="\top"
+		render="\top"
+		template="\top" />
+	<command
+		group="SYMBOL"
+		token="\surd"
+		render="\surd"
+		template="\surd" />
+	<command
+		group="SYMBOL"
+		token="\triangle"
+		render="\triangle"
+		template="\triangle" />
+	<command
+		group="SYMBOL"
+		token="\triangledown"
+		render="\triangledown"
+		template="\triangledown" />
+	<command
+		group="SYMBOL"
+		token="\varnothing"
+		render="\varnothing"
+		template="\varnothing" />
+	<command
+		group="SYMBOL"
+		token="\yen"
+		render="\yen"
+		template="\yen" />
+</dictionary>

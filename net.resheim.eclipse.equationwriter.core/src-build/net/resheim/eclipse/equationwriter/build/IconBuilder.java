@@ -13,16 +13,9 @@ package net.resheim.eclipse.equationwriter.build;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.io.StringWriter;
-import java.nio.charset.Charset;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.mylyn.wikitext.core.parser.builder.HtmlDocumentBuilder;
@@ -39,9 +32,13 @@ import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
+import net.resheim.eclipse.equationwriter.LaTeXCommand;
+import net.resheim.eclipse.equationwriter.LaTeXDictionary;
+
 /**
  * This type is ised to create icons for the content assist feature. It will iterate over all LaTeX commands found in
- * <i>./latex</i>, render it and produce a PNG file. Specify file name Specify token
+ * the dictionaru, render it and produce PNG file in different sizes. Note that this has been found to work with Luna.
+ * It appears there have been some changes in the browser widget.
  * 
  * @author Torkild U. Resheim
  */
@@ -58,6 +55,10 @@ public class IconBuilder {
 
 	private static Browser browser;
 
+	/**
+	 * JavaScript to render the current LaTeX command presentation and call back to Java code once this is done so that
+	 * the image can be saved.
+	 */
 	public static final String JS = "" //
 			+ "<script type=\"text/x-mathjax-config\">MathJax.Hub.Config({tex2jax: {inlineMath: [[\"$\",\"$\"],[\"\\\\(\",\"\\\\)\"]]}});</script>" //
 			+ "<script type=\"text/javascript\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG\"></script>" //
@@ -86,10 +87,6 @@ public class IconBuilder {
 			+ "<div id=\"MathOutput\" >${}$</div>\n" //
 			+ "</div>"; //
 
-	private static List<String> symbols = new ArrayList<>();
-
-	private static List<String> ca = new ArrayList<>();
-
 	private static Display display;
 
 	private static Shell shell;
@@ -116,22 +113,7 @@ public class IconBuilder {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
-		try {
-			symbols.addAll(readAllLines(Paths.get("latex/accents.txt"), Charset.forName("ISO-8859-1")));
-//			symbols.addAll(readAllLines(Paths.get("latex/arrows.txt"), Charset.forName("ISO-8859-1")));
-//			symbols.addAll(readAllLines(Paths.get("latex/cumulative.txt"), Charset.forName("ISO-8859-1")));
-//			symbols.addAll(readAllLines(Paths.get("latex/greek.txt"), Charset.forName("ISO-8859-1")));
-//			symbols.addAll(readAllLines(Paths.get("latex/letters.txt"), Charset.forName("ISO-8859-1")));
-//			symbols.addAll(readAllLines(Paths.get("latex/miscellaneous.txt"), Charset.forName("ISO-8859-1")));
-//			symbols.addAll(readAllLines(Paths.get("latex/operators.txt"), Charset.forName("ISO-8859-1")));
-//			symbols.addAll(readAllLines(Paths.get("latex/symbols.txt"), Charset.forName("ISO-8859-1")));
-//			symbols.addAll(readAllLines(Paths.get("latex/relations.txt"), Charset.forName("ISO-8859-1")));
-			// content assist keywords - used to verify that we got what we need
-//			ca.addAll(readAllLines(Paths.get("src/net/resheim/eclipse/equationwriter/keywords.txt"),
-//					Charset.forName("UTF-8")));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		dictionary = LaTeXDictionary.readDictionary();
 
 		display = new Display();
 		shell = new Shell(display);
@@ -162,28 +144,23 @@ public class IconBuilder {
 			}
 		}
 
-		ca.stream().filter(t -> !symbols.contains(t)).forEach(t -> System.out.println(t));
-
 		System.out.println("Done.");
 
 		display.dispose();
 	}
 
-	private static String currentExpression;
+	private static LaTeXCommand currentSymbol;
 
-	private static String currentKeyword;
+	private static List<LaTeXCommand> dictionary;
 
 	public static void setNextSymbol() {
 		browser.getDisplay().asyncExec(new Runnable() {
 
 			@Override
 			public void run() {
-				if (i < symbols.size()) {
-					String input = symbols.get(i++).trim();
-					String[] split = input.split("\t+");
-					currentKeyword = split[0];
-					currentExpression = split[1];
-					final String string = fixExpression(currentExpression);
+				if (i < dictionary.size()) {
+					currentSymbol = dictionary.get(i++);
+					final String string = fixExpression(currentSymbol.getRender());
 					browser.execute("UpdateMath(\"" + string + "\");");
 				} else {
 					shell.dispose();
@@ -192,22 +169,8 @@ public class IconBuilder {
 		});
 	}
 
-	private static List<String> readAllLines(Path path, Charset charset) throws FileNotFoundException, IOException {
-		List<String> rl = new ArrayList<>();
-		try (BufferedReader br = new BufferedReader(
-				new InputStreamReader(new FileInputStream(path.toFile()), charset))) {
-			String in = null;
-			while ((in = br.readLine()) != null) {
-				if (!in.startsWith("#")) {
-					rl.add(in);
-				}
-			}
-		}
-		return rl;
-	}
-
 	/**
-	 * Save a screenshot (of the browser) for the running test.
+	 * Save a screenshot (of the browser) having rendered the expression.
 	 */
 	private static void saveCurrentIcon() {
 		File dir = new File("icons/content-assist");
@@ -221,9 +184,10 @@ public class IconBuilder {
 		gc.copyArea(image, 0, 0);
 		Rectangle edges = detectEdges(image);
 
-		saveIcon(image, edges, SIZE_1x, currentKeyword, dir, "");
-		saveIcon(image, edges, SIZE_1_5x, currentKeyword, dir, "@1.5x");
-		saveIcon(image, edges, SIZE_2x, currentKeyword, dir, "@2x");
+		// we need three different sizes for HiDPI displays.
+		saveIcon(image, edges, SIZE_1x, currentSymbol.getToken(), dir, "");
+		saveIcon(image, edges, SIZE_1_5x, currentSymbol.getToken(), dir, "@1.5x");
+		saveIcon(image, edges, SIZE_2x, currentSymbol.getToken(), dir, "@2x");
 	}
 
 	private static void saveIcon(final Image image, final Rectangle edges, int size, String filename, File dir,
@@ -258,8 +222,9 @@ public class IconBuilder {
 		gc.dispose();
 		final Image scaled = new Image(display, t.getImageData().scaledTo(size, size));
 
-		// convert brightness (white) to transparent
-		RGB foreground = new RGB(0, 0, 255); // icon color
+		// change the colour to blue which looks a bit better
+		RGB foreground = new RGB(0, 0, 255);
+		// convert brightness (white) to degrees of transparent
 		ImageData id = convertBrightnessToAlpha(scaled.getImageData(), foreground);
 
 		// save the final image
@@ -271,7 +236,7 @@ public class IconBuilder {
 			imageFile.delete();
 		}
 		il.save(imageName, SWT.IMAGE_PNG);
-		System.out.println("Created icon for " + currentExpression + ". Original size: " + edges);
+		System.out.println("Created icon for " + currentSymbol.getToken() + ". Original size: " + edges);
 	}
 
 	/**

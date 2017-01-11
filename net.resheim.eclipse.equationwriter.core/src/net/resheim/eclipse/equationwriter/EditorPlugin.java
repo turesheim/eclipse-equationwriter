@@ -36,7 +36,7 @@ public class EditorPlugin extends AbstractUIPlugin {
 
 	public static final String PLUGIN_ID = "net.resheim.eclipse.equationwriter"; //$NON-NLS-1$
 
-	private final List<Symbol> symbols = new ArrayList<>();
+	private final List<LaTeXCommand> symbols = new ArrayList<>();
 
 	@Override
 	public void start(BundleContext context) throws Exception {
@@ -75,7 +75,7 @@ public class EditorPlugin extends AbstractUIPlugin {
 	protected void initializeImageRegistry(ImageRegistry reg) {
 		super.initializeImageRegistry(reg);
 
-		for (Symbol symbol : getSymbols()) {
+		for (LaTeXCommand symbol : getSymbols()) {
 			// build the filename and remove the prefixing backslash
 			try {
 				String path = "icons/content-assist/" + getFilename(symbol.getToken().substring(1)) + ".png";
@@ -107,7 +107,7 @@ public class EditorPlugin extends AbstractUIPlugin {
 						}
 						// use the "template" column if specified
 						System.out.println(trim);
-						getSymbols().add(new Symbol(trim));
+						getSymbols().add(new LaTeXCommand(trim));
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -119,7 +119,7 @@ public class EditorPlugin extends AbstractUIPlugin {
 		}
 	}
 
-	public List<Symbol> getSymbols() {
+	public List<LaTeXCommand> getSymbols() {
 		return symbols;
 	}
 
