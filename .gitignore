@@ -16,3 +16,6 @@ target/
 
 # Temporary files
 *~
+
+# macOS metadata
+.DS_Store
