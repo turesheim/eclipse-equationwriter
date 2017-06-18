@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MathJaX
+Bundle-SymbolicName: net.resheim.eclipse.equationwriter.mathjax
+Bundle-Version: 2.6.0.qualifier

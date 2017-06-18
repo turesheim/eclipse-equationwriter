@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2016 Torkild U. Resheim.
+ * Copyright (c) 2016, 2017 Torkild U. Resheim.
  * 
  * All rights reserved. This program and the accompanying materials are made
  * available under the terms of the Eclipse Public License v1.0 which
@@ -16,9 +16,16 @@ import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.List;
 
-import org.eclipse.mylyn.wikitext.core.parser.builder.HtmlDocumentBuilder;
+import org.eclipse.core.runtime.FileLocator;
+import org.eclipse.core.runtime.Path;
+import org.eclipse.core.runtime.Platform;
+import org.eclipse.mylyn.wikitext.parser.DocumentBuilder.SpanType;
+import org.eclipse.mylyn.wikitext.parser.builder.HtmlDocumentBuilder;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.browser.BrowserFunction;
@@ -31,7 +38,9 @@ import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
+import org.osgi.framework.Bundle;
 
+import net.resheim.eclipse.equationwriter.EditorPlugin;
 import net.resheim.eclipse.equationwriter.LaTeXCommand;
 import net.resheim.eclipse.equationwriter.LaTeXDictionary;
 
@@ -61,7 +70,7 @@ public class IconBuilder {
 	 */
 	public static final String JS = "" //
 			+ "<script type=\"text/x-mathjax-config\">MathJax.Hub.Config({tex2jax: {inlineMath: [[\"$\",\"$\"],[\"\\\\(\",\"\\\\)\"]]}});</script>" //
-			+ "<script type=\"text/javascript\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG\"></script>" //
+			+ "<script type=\"text/javascript\" src=\"%MATHJAX%/MathJax.js?config=TeX-AMS_SVG\"></script>" //
 			+ "<style>\n" + "  * {\n" + "    margin: 0;\n" //
 			+ "    padding: 0;\n" + "  }\n" + "</style>\n" + "<script>\n" //
 			+ "  MathJax.Hub.Config({\n" //
@@ -129,7 +138,18 @@ public class IconBuilder {
 		final StringWriter sw = new StringWriter();
 		final HtmlDocumentBuilder h = new HtmlDocumentBuilder(sw);
 		h.beginDocument();
-		h.charactersUnescaped(JS);
+		Bundle bundle = Platform.getBundle(EditorPlugin.MATHJAX_BUNDLE_ID);
+		URL url = FileLocator.find(bundle, Path.fromPortableString("MathJax"), null);
+		try {
+			URI uri = FileLocator.resolve(url).toURI();
+			File f = new File(uri);
+			h.charactersUnescaped(JS.replace("%MATHJAX%", f.toString()));
+		} catch (URISyntaxException | IOException e) {
+			h.beginSpan(SpanType.CODE, null);
+			h.characters(e.getMessage());
+			h.endSpan();
+			e.printStackTrace();
+		}
 		h.endDocument();
 		browser.setText(sw.toString());
 		shell.open();

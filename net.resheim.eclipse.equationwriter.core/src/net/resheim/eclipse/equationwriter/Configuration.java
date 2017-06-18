@@ -34,14 +34,16 @@ import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.widgets.Display;
 
 /**
+ * Configures the LateX source viewer.
  * 
  * @author Torkild U. Resheim
  * @since 1.0
  */
 public class Configuration extends SourceViewerConfiguration {
 
-	private Color latexTokenColor;
-	private Color groupTokenColor;
+	private final Color latexTokenColor;
+
+	private final Color groupTokenColor;
 
 	public Configuration() {
 		super();

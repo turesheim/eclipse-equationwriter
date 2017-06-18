@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2016 Torkild U. Resheim.
+ * Copyright (c) 2016, 2017 Torkild U. Resheim.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -8,7 +8,6 @@
  * Contributors:
  *     Torkild U. Resheim - initial API and implementation
  *******************************************************************************/
-
 package net.resheim.eclipse.equationwriter.build;
 
 import java.io.BufferedReader;
@@ -26,7 +25,12 @@ import net.resheim.eclipse.equationwriter.LaTeXCommand;
 import net.resheim.eclipse.equationwriter.LaTeXCommand.Group;
 import net.resheim.eclipse.equationwriter.LaTeXDictionary;
 
-// Convert from pure text to "dictionary" format which is XML.
+/**
+ * Converts from the initial pure text format to the new "dictionary" format. This type can probably be deleted as soon
+ * as the dictionary is completed.
+ * 
+ * @author Torkild U. Resheim
+ */
 public class SymbolHelper {
 
 	public static void main(String[] args) {

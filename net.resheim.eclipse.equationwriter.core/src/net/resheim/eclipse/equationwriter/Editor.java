@@ -12,18 +12,26 @@
 package net.resheim.eclipse.equationwriter;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.Path;
+import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.jface.text.ITextListener;
 import org.eclipse.jface.text.TextEvent;
-import org.eclipse.mylyn.wikitext.core.parser.builder.HtmlDocumentBuilder;
+import org.eclipse.mylyn.wikitext.parser.DocumentBuilder.SpanType;
+import org.eclipse.mylyn.wikitext.parser.builder.HtmlDocumentBuilder;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.browser.BrowserFunction;
@@ -31,6 +39,7 @@ import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.editors.text.TextEditor;
 import org.eclipse.ui.progress.WorkbenchJob;
+import org.osgi.framework.Bundle;
 
 public class Editor extends TextEditor {
 
@@ -42,7 +51,7 @@ public class Editor extends TextEditor {
 	// to be a bit easier on the eyes.
 	private static final String JS = "" //
 			+ "<script type=\"text/x-mathjax-config\">MathJax.Hub.Config({tex2jax: {inlineMath: [[\"$\",\"$\"],[\"\\\\(\",\"\\\\)\"]]}});</script>" //
-			+ "<script type=\"text/javascript\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG\"></script>" //
+			+ "<script type=\"text/javascript\" src=\"%MATHJAX%/MathJax.js?config=TeX-AMS-MML_SVG\"></script>" //
 			+ "<script>\n" //
 			+ "  (function () {\n" //
 			+ "    var QUEUE = MathJax.Hub.queue;\n" //
@@ -67,7 +76,7 @@ public class Editor extends TextEditor {
 			+ "<div id=\"MathOutput\" >$${}$$</div>\n" //
 			+ "</div>"; //
 
-	/** Use to handle that browser/MathJax may not be ready */
+	/** Use to handle that browser/MathJax may not be ready to do any rendering */
 	private final Lock readyLock = new ReentrantLock();
 
 	/**
@@ -143,10 +152,22 @@ public class Editor extends TextEditor {
 	@SuppressWarnings("unused")
 	private void initializePreview() {
 		new MathJaxReady(browser, "loadFormula");
+
+		Bundle bundle = Platform.getBundle(EditorPlugin.MATHJAX_BUNDLE_ID);
 		final StringWriter sw = new StringWriter();
 		final HtmlDocumentBuilder h = new HtmlDocumentBuilder(sw);
 		h.beginDocument();
-		h.charactersUnescaped(JS);
+		URL url = FileLocator.find(bundle, Path.fromPortableString("MathJax"), null);
+		try {
+			URI uri = FileLocator.resolve(url).toURI();
+			File f = new File(uri);
+			h.charactersUnescaped(JS.replace("%MATHJAX%", f.toString()));
+		} catch (URISyntaxException | IOException e) {
+			h.beginSpan(SpanType.CODE, null);
+			h.characters(e.getMessage());
+			h.endSpan();
+			e.printStackTrace();
+		}
 		h.endDocument();
 		browser.setText(sw.toString());
 	}

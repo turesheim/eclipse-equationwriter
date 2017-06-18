@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2016 Torkild U. Resheim.
+ * Copyright (c) 2016, 2017 Torkild U. Resheim.
  * 
  * All rights reserved. This program and the accompanying materials are made
  * available under the terms of the Eclipse Public License v1.0 which
@@ -37,6 +37,8 @@ public class EditorPlugin extends AbstractUIPlugin {
 	public static final String PLUGIN_ID = "net.resheim.eclipse.equationwriter"; //$NON-NLS-1$
 
 	private final List<LaTeXCommand> symbols = new ArrayList<>();
+
+	public static final String MATHJAX_BUNDLE_ID = "net.resheim.eclipse.equationwriter.mathjax";
 
 	@Override
 	public void start(BundleContext context) throws Exception {
