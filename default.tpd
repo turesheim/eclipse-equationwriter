@@ -24,7 +24,7 @@ location "http://download.eclipse.org/technology/swtbot/releases/2.2.1/" {
 
 // Mylyn WikiText
 location "http://download.eclipse.org/mylyn/releases/latest" {
-    org.eclipse.mylyn.wikitext.core
+    org.eclipse.mylyn.wikitext
     com.google.guava
 }
 
