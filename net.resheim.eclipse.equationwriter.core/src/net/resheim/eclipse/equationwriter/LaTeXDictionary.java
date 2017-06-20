@@ -12,6 +12,7 @@
 package net.resheim.eclipse.equationwriter;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -27,6 +28,9 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
+import org.eclipse.core.runtime.FileLocator;
+import org.eclipse.core.runtime.Platform;
+import org.osgi.framework.Bundle;
 import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -35,8 +39,6 @@ import org.xml.sax.helpers.DefaultHandler;
 import net.resheim.eclipse.equationwriter.LaTeXCommand.Group;
 
 public class LaTeXDictionary {
-
-	private static Path path = Paths.get("dictionary.xml");
 
 	public static List<LaTeXCommand> readDictionary() {
 		List<LaTeXCommand> commands = new ArrayList<>();
@@ -56,12 +58,19 @@ public class LaTeXDictionary {
 						command.setToken(attributes.getValue("token"));
 						command.setRender(attributes.getValue("render"));
 						command.setTemplate(attributes.getValue("template"));
+						if (attributes.getValue("icon") != null) {
+							command.setIcon(Paths.get(attributes.getValue("icon")));
+						}
 						commands.add(command);
 					}
 				}
 			};
 
-			InputStream inputStream = new FileInputStream(path.toFile());
+			Bundle bundle = Platform.getBundle("net.resheim.eclipse.equationwriter.core");
+			InputStream inputStream = bundle == null
+					? new FileInputStream(new File("dictionary.xml"))
+					: FileLocator.openStream(bundle, org.eclipse.core.runtime.Path.fromPortableString("dictionary.xml"),
+							false);
 			Reader reader = new InputStreamReader(inputStream, "UTF-8");
 
 			InputSource is = new InputSource(reader);
@@ -79,26 +88,29 @@ public class LaTeXDictionary {
 	}
 
 	public static void writeDictionary(List<LaTeXCommand> commands) throws IOException {
+		Path path = Paths.get("dictionary2.xml");
 		BufferedWriter bw = new BufferedWriter(new FileWriter(path.toFile()));
 		bw.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
 		bw.write("<dictionary>\n");
 		for (LaTeXCommand command : commands) {
 			if (command.getRender() == null && command.getTemplate() == null) {
 				bw.write("\t<command\n\t\tgroup=\"" + command.getGroup() + "\"\n\t\ttoken=\"" + command.getToken()
-						+ "\" />\n");
+						+ (command.getIcon() == null ? "" : "\"\n\t\ticon=\"" + command.getIcon()) + "\" />\n");
 			}
 			if (command.getRender() != null && command.getTemplate() == null) {
 				bw.write("\t<command\n\t\tgroup=\"" + command.getGroup() + "\"\n\t\ttoken=\"" + command.getToken()
-						+ "\"\n\t\trender=\"" + command.getRender() + "\" />\n");
+						+ "\"\n\t\trender=\"" + command.getRender()
+						+ (command.getIcon() == null ? "" : "\"\n\t\ticon=\"" + command.getIcon()) + "\" />\n");
 			}
 			if (command.getRender() == null && command.getTemplate() != null) {
 				bw.write("\t<command\n\t\tgroup=\"" + command.getGroup() + "\"\n\t\ttoken=\"" + command.getToken()
-						+ "\"\n\t\ttemplate=\"" + command.getTemplate() + "\" />\n");
+						+ "\"\n\t\ttemplate=\"" + command.getTemplate()
+						+ (command.getIcon() == null ? "" : "\"\n\t\ticon=\"" + command.getIcon()) + "\" />\n");
 			}
 			if (command.getRender() != null && command.getTemplate() != null) {
 				bw.write("\t<command\n\t\tgroup=\"" + command.getGroup() + "\"\n\t\ttoken=\"" + command.getToken()
 						+ "\"\n\t\trender=\"" + command.getRender() + "\"\n\t\ttemplate=\"" + command.getTemplate()
-						+ "\" />\n");
+						+ (command.getIcon() == null ? "" : "\"\n\t\ticon=\"" + command.getIcon()) + "\" />\n");
 			}
 		}
 		bw.write("</dictionary>\n");

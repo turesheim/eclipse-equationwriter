@@ -12,12 +12,9 @@
 package net.resheim.eclipse.equationwriter;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -30,6 +27,7 @@ import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.jface.text.ITextListener;
 import org.eclipse.jface.text.TextEvent;
+import org.eclipse.mylyn.wikitext.parser.Attributes;
 import org.eclipse.mylyn.wikitext.parser.DocumentBuilder.SpanType;
 import org.eclipse.mylyn.wikitext.parser.builder.HtmlDocumentBuilder;
 import org.eclipse.swt.SWT;
@@ -159,11 +157,10 @@ public class Editor extends TextEditor {
 		h.beginDocument();
 		URL url = FileLocator.find(bundle, Path.fromPortableString("MathJax"), null);
 		try {
-			URI uri = FileLocator.resolve(url).toURI();
-			File f = new File(uri);
-			h.charactersUnescaped(JS.replace("%MATHJAX%", f.toString()));
-		} catch (URISyntaxException | IOException e) {
-			h.beginSpan(SpanType.CODE, null);
+			String f = FileLocator.resolve(url).toExternalForm();
+			h.charactersUnescaped(JS.replace("%MATHJAX%", f));
+		} catch (IOException e) {
+			h.beginSpan(SpanType.CODE, new Attributes());
 			h.characters(e.getMessage());
 			h.endSpan();
 			e.printStackTrace();

@@ -11,6 +11,8 @@
 
 package net.resheim.eclipse.equationwriter;
 
+import java.nio.file.Path;
+
 /**
  * Represents a LaTeX math symbol. Can be an expression or a simple symbol, letter or sign.
  * 
@@ -32,6 +34,8 @@ public class LaTeXCommand {
 	private String template;
 
 	private Group group;
+
+	private Path icon;
 
 	public LaTeXCommand(String input) {
 		String trim = input.trim();
@@ -79,6 +83,14 @@ public class LaTeXCommand {
 
 	public void setGroup(Group group) {
 		this.group = group;
+	}
+
+	public Path getIcon() {
+		return icon;
+	}
+
+	public void setIcon(Path icon) {
+		this.icon = icon;
 	}
 
 }

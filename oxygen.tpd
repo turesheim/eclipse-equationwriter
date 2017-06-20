@@ -1,0 +1,31 @@
+target "Eclipse Equationwriter Target Platform" with source requirements
+
+// Base dependencies (Currently 4.7)
+location "http://download.eclipse.org/releases/oxygen/" {
+    org.eclipse.emf.ecore
+    org.eclipse.emf.ecore.xmi
+    org.eclipse.emf.ecore.change
+    org.eclipse.emf.common
+    org.apache.log4j
+    org.apache.commons.collections
+    org.eclipse.equinox.p2.sdk.feature.group
+    org.eclipse.sdk.feature.group
+    org.eclipse.pde.core
+}
+
+// UI Testing
+location "http://download.eclipse.org/technology/swtbot/releases/2.2.1/" {
+    org.eclipse.swtbot.forms.source.feature.group
+    org.eclipse.swtbot.eclipse.source.feature.group
+    org.eclipse.swtbot.source.feature.group
+    org.hamcrest.library
+    org.hamcrest.core
+}
+
+// Mylyn WikiText
+location "http://download.eclipse.org/mylyn/releases/latest" {
+    org.eclipse.mylyn.wikitext
+    com.google.guava
+}
+
+

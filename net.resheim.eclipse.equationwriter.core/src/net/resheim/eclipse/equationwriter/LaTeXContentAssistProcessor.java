@@ -19,7 +19,6 @@ import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.IRegion;
 import org.eclipse.jface.text.ITextViewer;
 import org.eclipse.jface.text.Region;
-import org.eclipse.jface.text.contentassist.CompletionProposal;
 import org.eclipse.jface.text.contentassist.ICompletionProposal;
 import org.eclipse.jface.text.templates.Template;
 import org.eclipse.jface.text.templates.TemplateCompletionProcessor;
@@ -45,54 +44,22 @@ class LaTeXContentAssistProcessor extends TemplateCompletionProcessor {
 		IDocument doc = viewer.getDocument();
 		String qualifier = getQualifier(doc, documentOffset);
 		int qlen = qualifier.length();
-		boolean restart = false;
-		for (LaTeXCommand keyword : EditorPlugin.getDefault().getSymbols()) {
-			if (qualifier.equals(keyword.getToken())) {
-				restart = true;
-				qlen = 0;
-			}
-		}
-		for (LaTeXCommand symbol : EditorPlugin.getDefault().getSymbols()) {
-			if ((restart || symbol.getToken().startsWith(qualifier)) && (documentOffset - qlen >= 0)) {
-				int position = symbol.getToken().length();
-				// Create a template if one has been specified
-				if (symbol.getTemplate() != null) {
-					Region region = new Region(documentOffset - qlen, qlen);
-					TemplateContext context = createContext(viewer, region);
-					for (Template template : getTemplates(tcp.getId())) {
-						try {
-							context.getContextType().validate(template.getPattern());
-							if (template.getName().startsWith(qualifier)) {
-								if (template.matches(qualifier, context.getContextType().getId())) {
-									Image image = EditorPlugin.getDefault().getImageRegistry().get(symbol.getToken());
-									TemplateProposal tp = new TemplateProposal(template, context, region, image);
-									props.add(tp);
-								}
-							}
-						} catch (TemplateException e) {
-							e.printStackTrace();
-						}
+		Region region = new Region(documentOffset - qlen, qlen);
+		TemplateContext context = createContext(viewer, region);
+		for (Template template : getTemplates(tcp.getId())) {
+			try {
+				context.getContextType().validate(template.getPattern());
+				if (template.getName().startsWith(qualifier)) {
+					if (template.matches(qualifier, context.getContextType().getId())) {
+						TemplateProposal tp = new TemplateProposal(template, context, region, getImage(template));
+						props.add(tp);
 					}
-				} else {
-					Image image = EditorPlugin.getDefault().getImageRegistry().get(symbol.getToken());
-					addBasicProposal(symbol.getToken(), documentOffset, qlen, image, position, props);
 				}
+			} catch (TemplateException e) {
+				e.printStackTrace();
 			}
 		}
 		return props.toArray(new ICompletionProposal[props.size()]);
-	}
-
-	private void addBasicProposal(String prop, int offset, int qlen, Image image, int position,
-			ArrayList<ICompletionProposal> props) {
-		CompletionProposal proposal = new CompletionProposal(prop, // replacement string
-				offset - qlen, // offset of the text
-				qlen, // length of the text
-				position, // cursor position after
-				image, // the image
-				prop, // displayed string
-				null, // context info
-				null); // extra information
-		props.add(proposal);
 	}
 
 	@Override

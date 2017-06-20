@@ -1,3649 +1,3339 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-    Copyright (c) 2017 Torkild U. Resheim.
-    All rights reserved. This program and the accompanying materials
-    are made available under the terms of the Eclipse Public License v1.0
-    which accompanies this distribution, and is available at
-    http://www.eclipse.org/legal/epl-v10.html
-   
-    Contributors:
-        Torkild U. Resheim - initial API and implementation
- -->
-
 <dictionary>
 	<command
 		group="ACCENT"
 		token="\acute{x}"
 		render="\acute{x}"
-		template="\acute{x}" />
+		template="\acute{x}"
+		icon="icons/content-assist/acute{x}.png" />
 	<command
 		group="ACCENT"
 		token="\grave{x}"
 		render="\grave{x}"
-		template="\grave{x}" />
+		template="\grave{x}"
+		icon="icons/content-assist/grave{x}.png" />
 	<command
 		group="ACCENT"
 		token="\ddot{x}"
 		render="\ddot{x}"
-		template="\ddot{x}" />
+		template="\ddot{x}"
+		icon="icons/content-assist/ddot{x}.png" />
 	<command
 		group="ACCENT"
 		token="\tilde{x}"
 		render="\tilde{x}"
-		template="\tilde{x}" />
+		template="\tilde{x}"
+		icon="icons/content-assist/tilde{x}.png" />
 	<command
 		group="ACCENT"
 		token="\bar{x}"
 		render="\bar{x}"
-		template="\bar{x}" />
+		template="\bar{x}"
+		icon="icons/content-assist/bar{x}.png" />
 	<command
 		group="ACCENT"
 		token="\breve{x}"
 		render="\breve{x}"
-		template="\breve{x}" />
+		template="\breve{x}"
+		icon="icons/content-assist/breve{x}.png" />
 	<command
 		group="ACCENT"
 		token="\check{x}"
 		render="\check{x}"
-		template="\check{x}" />
+		template="\check{x}"
+		icon="icons/content-assist/check{x}.png" />
 	<command
 		group="ACCENT"
 		token="\hat{x}"
 		render="\hat{x}"
-		template="\hat{x}" />
+		template="\hat{x}"
+		icon="icons/content-assist/hat{x}.png" />
 	<command
 		group="ACCENT"
 		token="\vec{x}"
 		render="\vec{x}"
-		template="\vec{x}" />
+		template="\vec{x}"
+		icon="icons/content-assist/vec{x}.png" />
 	<command
 		group="ACCENT"
 		token="\dot{x}"
 		render="\dot{x}"
-		template="\dot{x}" />
+		template="\dot{x}"
+		icon="icons/content-assist/dot{x}.png" />
 	<command
 		group="ACCENT"
 		token="\ddot{x}"
 		render="\ddot{x}"
-		template="\ddot{x}" />
+		template="\ddot{x}"
+		icon="icons/content-assist/ddot{x}.png" />
 	<command
 		group="ACCENT"
 		token="\dddot{x}"
 		render="\dddot{x}"
-		template="\dddot{x}" />
+		template="\dddot{x}"
+		icon="icons/content-assist/dddot{x}.png" />
 	<command
 		group="ACCENT"
 		token="\widetilde{abc}"
 		render="\widetilde{abc}"
-		template="\widetilde{abc}" />
+		template="\widetilde{abc}"
+		icon="icons/content-assist/widetilde{abc}.png" />
 	<command
 		group="ACCENT"
 		token="\widehat{abc}"
 		render="\widehat{abc}"
-		template="\widehat{abc}" />
+		template="\widehat{abc}"
+		icon="icons/content-assist/widehat{abc}.png" />
 	<command
 		group="ARROW"
 		token="\Arrowvert"
 		render="\Arrowvert"
-		template="\Arrowvert" />
+		template="\Arrowvert"
+		icon="icons/content-assist/_arrowvert.png" />
 	<command
 		group="ARROW"
 		token="\arrowvert"
 		render="\arrowvert"
-		template="\arrowvert" />
+		template="\arrowvert"
+		icon="icons/content-assist/arrowvert.png" />
 	<command
 		group="ARROW"
 		token="\circlearrowleft"
 		render="\circlearrowleft"
-		template="\circlearrowleft" />
+		template="\circlearrowleft"
+		icon="icons/content-assist/circlearrowleft.png" />
 	<command
 		group="ARROW"
 		token="\circlearrowright"
 		render="\circlearrowright"
-		template="\circlearrowright" />
+		template="\circlearrowright"
+		icon="icons/content-assist/circlearrowright.png" />
 	<command
 		group="ARROW"
 		token="\curvearrowleft"
 		render="\curvearrowleft"
-		template="\curvearrowleft" />
+		template="\curvearrowleft"
+		icon="icons/content-assist/curvearrowleft.png" />
 	<command
 		group="ARROW"
 		token="\curvearrowright"
 		render="\curvearrowright"
-		template="\curvearrowright" />
+		template="\curvearrowright"
+		icon="icons/content-assist/curvearrowright.png" />
 	<command
 		group="ARROW"
 		token="\downdownarrows"
 		render="\downdownarrows"
-		template="\downdownarrows" />
+		template="\downdownarrows"
+		icon="icons/content-assist/downdownarrows.png" />
 	<command
 		group="ARROW"
 		token="\downharpoonleft"
 		render="\downharpoonleft"
-		template="\downharpoonleft" />
+		template="\downharpoonleft"
+		icon="icons/content-assist/downharpoonleft.png" />
 	<command
 		group="ARROW"
 		token="\downharpoonright"
 		render="\downharpoonright"
-		template="\downharpoonright" />
+		template="\downharpoonright"
+		icon="icons/content-assist/downharpoonright.png" />
 	<command
 		group="ARROW"
 		token="\hookleftarrow"
 		render="\hookleftarrow"
-		template="\hookleftarrow" />
+		template="\hookleftarrow"
+		icon="icons/content-assist/hookleftarrow.png" />
 	<command
 		group="ARROW"
 		token="\hookrightarrow"
 		render="\hookrightarrow"
-		template="\hookrightarrow" />
+		template="\hookrightarrow"
+		icon="icons/content-assist/hookrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\leftarrow"
 		render="\leftarrow"
-		template="\leftarrow" />
+		template="\leftarrow"
+		icon="icons/content-assist/leftarrow.png" />
 	<command
 		group="ARROW"
 		token="\Leftarrow"
 		render="\Leftarrow"
-		template="\Leftarrow" />
+		template="\Leftarrow"
+		icon="icons/content-assist/_leftarrow.png" />
 	<command
 		group="ARROW"
 		token="\leftarrowtail"
 		render="\leftarrowtail"
-		template="\leftarrowtail" />
+		template="\leftarrowtail"
+		icon="icons/content-assist/leftarrowtail.png" />
 	<command
 		group="ARROW"
 		token="\leftharpoondown"
 		render="\leftharpoondown"
-		template="\leftharpoondown" />
+		template="\leftharpoondown"
+		icon="icons/content-assist/leftharpoondown.png" />
 	<command
 		group="ARROW"
 		token="\leftharpoonup"
 		render="\leftharpoonup"
-		template="\leftharpoonup" />
+		template="\leftharpoonup"
+		icon="icons/content-assist/leftharpoonup.png" />
 	<command
 		group="ARROW"
 		token="\leftleftarrows"
 		render="\leftleftarrows"
-		template="\leftleftarrows" />
+		template="\leftleftarrows"
+		icon="icons/content-assist/leftleftarrows.png" />
 	<command
 		group="ARROW"
 		token="\leftrightarrow"
 		render="\leftrightarrow"
-		template="\leftrightarrow" />
+		template="\leftrightarrow"
+		icon="icons/content-assist/leftrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\Leftrightarrow"
 		render="\Leftrightarrow"
-		template="\Leftrightarrow" />
+		template="\Leftrightarrow"
+		icon="icons/content-assist/_leftrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\leftrightarrows"
 		render="\leftrightarrows"
-		template="\leftrightarrows" />
+		template="\leftrightarrows"
+		icon="icons/content-assist/leftrightarrows.png" />
 	<command
 		group="ARROW"
 		token="\leftrightharpoons"
 		render="\leftrightharpoons"
-		template="\leftrightharpoons" />
+		template="\leftrightharpoons"
+		icon="icons/content-assist/leftrightharpoons.png" />
 	<command
 		group="ARROW"
 		token="\Lleftarrow"
 		render="\Lleftarrow"
-		template="\Lleftarrow" />
+		template="\Lleftarrow"
+		icon="icons/content-assist/_lleftarrow.png" />
 	<command
 		group="ARROW"
 		token="\longleftarrow"
 		render="\longleftarrow"
-		template="\longleftarrow" />
+		template="\longleftarrow"
+		icon="icons/content-assist/longleftarrow.png" />
 	<command
 		group="ARROW"
 		token="\Longleftarrow"
 		render="\Longleftarrow"
-		template="\Longleftarrow" />
+		template="\Longleftarrow"
+		icon="icons/content-assist/_longleftarrow.png" />
 	<command
 		group="ARROW"
 		token="\longleftrightarrow"
 		render="\longleftrightarrow"
-		template="\longleftrightarrow" />
+		template="\longleftrightarrow"
+		icon="icons/content-assist/longleftrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\Longleftrightarrow"
 		render="\Longleftrightarrow"
-		template="\Longleftrightarrow" />
+		template="\Longleftrightarrow"
+		icon="icons/content-assist/_longleftrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\longmapsto"
 		render="\longmapsto"
-		template="\longmapsto" />
+		template="\longmapsto"
+		icon="icons/content-assist/longmapsto.png" />
 	<command
 		group="ARROW"
 		token="\longrightarrow"
 		render="\longrightarrow"
-		template="\longrightarrow" />
+		template="\longrightarrow"
+		icon="icons/content-assist/longrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\Longrightarrow"
 		render="\Longrightarrow"
-		template="\Longrightarrow" />
+		template="\Longrightarrow"
+		icon="icons/content-assist/_longrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\looparrowleft"
 		render="\looparrowleft"
-		template="\looparrowleft" />
+		template="\looparrowleft"
+		icon="icons/content-assist/looparrowleft.png" />
 	<command
 		group="ARROW"
 		token="\looparrowright"
 		render="\looparrowright"
-		template="\looparrowright" />
+		template="\looparrowright"
+		icon="icons/content-assist/looparrowright.png" />
 	<command
 		group="ARROW"
 		token="\Lsh"
 		render="\Lsh"
-		template="\Lsh" />
+		template="\Lsh"
+		icon="icons/content-assist/_lsh.png" />
 	<command
 		group="ARROW"
 		token="\mapsto"
 		render="\mapsto"
-		template="\mapsto" />
+		template="\mapsto"
+		icon="icons/content-assist/mapsto.png" />
 	<command
 		group="ARROW"
 		token="\multimap"
 		render="\multimap"
-		template="\multimap" />
+		template="\multimap"
+		icon="icons/content-assist/multimap.png" />
 	<command
 		group="ARROW"
 		token="\nLeftarrow"
 		render="\nLeftarrow"
-		template="\nLeftarrow" />
+		template="\nLeftarrow"
+		icon="icons/content-assist/n_leftarrow.png" />
 	<command
 		group="ARROW"
 		token="\nLeftrightarrow"
 		render="\nLeftrightarrow"
-		template="\nLeftrightarrow" />
+		template="\nLeftrightarrow"
+		icon="icons/content-assist/n_leftrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\nRightarrow"
 		render="\nRightarrow"
-		template="\nRightarrow" />
+		template="\nRightarrow"
+		icon="icons/content-assist/n_rightarrow.png" />
 	<command
 		group="ARROW"
 		token="\nearrow"
 		render="\nearrow"
-		template="\nearrow" />
+		template="\nearrow"
+		icon="icons/content-assist/nearrow.png" />
 	<command
 		group="ARROW"
 		token="\nleftarrow"
 		render="\nleftarrow"
-		template="\nleftarrow" />
+		template="\nleftarrow"
+		icon="icons/content-assist/nleftarrow.png" />
 	<command
 		group="ARROW"
 		token="\nleftrightarrow"
 		render="\nleftrightarrow"
-		template="\nleftrightarrow" />
+		template="\nleftrightarrow"
+		icon="icons/content-assist/nleftrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\nrightarrow"
 		render="\nrightarrow"
-		template="\nrightarrow" />
+		template="\nrightarrow"
+		icon="icons/content-assist/nrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\nwarrow"
 		render="\nwarrow"
-		template="\nwarrow" />
+		template="\nwarrow"
+		icon="icons/content-assist/nwarrow.png" />
 	<command
 		group="ARROW"
 		token="\rightarrow"
 		render="\rightarrow"
-		template="\rightarrow" />
+		template="\rightarrow"
+		icon="icons/content-assist/rightarrow.png" />
 	<command
 		group="ARROW"
 		token="\Rightarrow"
 		render="\Rightarrow"
-		template="\Rightarrow" />
+		template="\Rightarrow"
+		icon="icons/content-assist/_rightarrow.png" />
 	<command
 		group="ARROW"
 		token="\rightarrowtail"
 		render="\rightarrowtail"
-		template="\rightarrowtail" />
+		template="\rightarrowtail"
+		icon="icons/content-assist/rightarrowtail.png" />
 	<command
 		group="ARROW"
 		token="\rightharpoondown"
 		render="\rightharpoondown"
-		template="\rightharpoondown" />
+		template="\rightharpoondown"
+		icon="icons/content-assist/rightharpoondown.png" />
 	<command
 		group="ARROW"
 		token="\rightharpoonup"
 		render="\rightharpoonup"
-		template="\rightharpoonup" />
+		template="\rightharpoonup"
+		icon="icons/content-assist/rightharpoonup.png" />
 	<command
 		group="ARROW"
 		token="\rightleftarrows"
 		render="\rightleftarrows"
-		template="\rightleftarrows" />
+		template="\rightleftarrows"
+		icon="icons/content-assist/rightleftarrows.png" />
 	<command
 		group="ARROW"
 		token="\rightleftharpoons"
 		render="\rightleftharpoons"
-		template="\rightleftharpoons" />
+		template="\rightleftharpoons"
+		icon="icons/content-assist/rightleftharpoons.png" />
 	<command
 		group="ARROW"
 		token="\rightrightarrows"
 		render="\rightrightarrows"
-		template="\rightrightarrows" />
+		template="\rightrightarrows"
+		icon="icons/content-assist/rightrightarrows.png" />
 	<command
 		group="ARROW"
 		token="\rightsquigarrow"
 		render="\rightsquigarrow"
-		template="\rightsquigarrow" />
+		template="\rightsquigarrow"
+		icon="icons/content-assist/rightsquigarrow.png" />
 	<command
 		group="ARROW"
 		token="\Rrightarrow"
 		render="\Rrightarrow"
-		template="\Rrightarrow" />
+		template="\Rrightarrow"
+		icon="icons/content-assist/_rrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\Rsh"
 		render="\Rsh"
-		template="\Rsh" />
+		template="\Rsh"
+		icon="icons/content-assist/_rsh.png" />
 	<command
 		group="ARROW"
 		token="\searrow"
 		render="\searrow"
-		template="\searrow" />
+		template="\searrow"
+		icon="icons/content-assist/searrow.png" />
 	<command
 		group="ARROW"
 		token="\swarrow"
 		render="\swarrow"
-		template="\swarrow" />
+		template="\swarrow"
+		icon="icons/content-assist/swarrow.png" />
 	<command
 		group="ARROW"
 		token="\twoheadleftarrow"
 		render="\twoheadleftarrow"
-		template="\twoheadleftarrow" />
+		template="\twoheadleftarrow"
+		icon="icons/content-assist/twoheadleftarrow.png" />
 	<command
 		group="ARROW"
 		token="\twoheadrightarrow"
 		render="\twoheadrightarrow"
-		template="\twoheadrightarrow" />
+		template="\twoheadrightarrow"
+		icon="icons/content-assist/twoheadrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\uparrow"
 		render="\uparrow"
-		template="\uparrow" />
+		template="\uparrow"
+		icon="icons/content-assist/uparrow.png" />
 	<command
 		group="ARROW"
 		token="\upharpoonleft"
 		render="\upharpoonleft"
-		template="\upharpoonleft" />
+		template="\upharpoonleft"
+		icon="icons/content-assist/upharpoonleft.png" />
 	<command
 		group="ARROW"
 		token="\upharpoonright"
 		render="\upharpoonright"
-		template="\upharpoonright" />
+		template="\upharpoonright"
+		icon="icons/content-assist/upharpoonright.png" />
 	<command
 		group="ARROW"
 		token="\upuparrows"
 		render="\upuparrows"
-		template="\upuparrows" />
+		template="\upuparrows"
+		icon="icons/content-assist/upuparrows.png" />
 	<command
 		group="ARROW"
 		token="\gets"
 		render="\gets"
-		template="\gets" />
+		template="\gets"
+		icon="icons/content-assist/gets.png" />
 	<command
 		group="ARROW"
 		token="\to"
 		render="\to"
-		template="\to" />
+		template="\to"
+		icon="icons/content-assist/to.png" />
 	<command
 		group="ARROW"
 		token="\restriction"
 		render="\restriction"
-		template="\restriction" />
-	<command
-		group="ARROW"
-		token="\underleftarrow"
-		render="\underleftarrow"
-		template="\underleftarrow" />
-	<command
-		group="ARROW"
-		token="\underleftrightarrow"
-		render="\underleftrightarrow"
-		template="\underleftrightarrow" />
-	<command
-		group="ARROW"
-		token="\underrightarrow"
-		render="\underrightarrow"
-		template="\underrightarrow" />
+		template="\restriction"
+		icon="icons/content-assist/restriction.png" />
 	<command
 		group="ARROW"
 		token="\xleftarrow"
 		render="A\xleftarrow{\text{left}}B"
-		template="\xleftarrow" />
+		template="\xleftarrow"
+		icon="icons/content-assist/xleftarrow.png" />
 	<command
 		group="ARROW"
 		token="\xrightarrow"
 		render="A\xrightarrow{\text{right}}B"
-		template="\xrightarrow" />
+		template="\xrightarrow"
+		icon="icons/content-assist/xrightarrow.png" />
 	<command
 		group="ARROW"
 		token="\xtwoheadleftarrow"
 		render="A\xtwoheadleftarrow{\text{left}}B"
-		template="\xtwoheadleftarrow" />
+		template="\xtwoheadleftarrow"
+		icon="icons/content-assist/xtwoheadleftarrow.png" />
 	<command
 		group="ARROW"
 		token="\xtwoheadrightarrow"
 		render="A\xtwoheadrightarrow{\text{right}}B"
-		template="\xtwoheadrightarrow" />
+		template="\xtwoheadrightarrow"
+		icon="icons/content-assist/xtwoheadrightarrow.png" />
 	<command
 		group="CUMULATIVE"
 		token="\int"
 		render="\int"
-		template="\int" />
+		template="\int"
+		icon="icons/content-assist/int.png" />
 	<command
 		group="CUMULATIVE"
 		token="\oint"
 		render="\oint"
-		template="\oint" />
+		template="\oint"
+		icon="icons/content-assist/oint.png" />
 	<command
 		group="CUMULATIVE"
 		token="\bigcap"
 		render="\bigcap"
-		template="\bigcap" />
+		template="\bigcap"
+		icon="icons/content-assist/bigcap.png" />
 	<command
 		group="CUMULATIVE"
 		token="\bigcup"
 		render="\bigcup"
-		template="\bigcup" />
+		template="\bigcup"
+		icon="icons/content-assist/bigcup.png" />
 	<command
 		group="CUMULATIVE"
 		token="\bigodot"
 		render="\bigodot"
-		template="\bigodot" />
+		template="\bigodot"
+		icon="icons/content-assist/bigodot.png" />
 	<command
 		group="CUMULATIVE"
 		token="\bigoplus"
 		render="\bigoplus"
-		template="\bigoplus" />
+		template="\bigoplus"
+		icon="icons/content-assist/bigoplus.png" />
 	<command
 		group="CUMULATIVE"
 		token="\bigotimes"
 		render="\bigotimes"
-		template="\bigotimes" />
+		template="\bigotimes"
+		icon="icons/content-assist/bigotimes.png" />
 	<command
 		group="CUMULATIVE"
 		token="\bigsqcup"
 		render="\bigsqcup"
-		template="\bigsqcup" />
+		template="\bigsqcup"
+		icon="icons/content-assist/bigsqcup.png" />
 	<command
 		group="CUMULATIVE"
 		token="\biguplus"
 		render="\biguplus"
-		template="\biguplus" />
+		template="\biguplus"
+		icon="icons/content-assist/biguplus.png" />
 	<command
 		group="CUMULATIVE"
 		token="\bigvee"
 		render="\bigvee"
-		template="\bigvee" />
+		template="\bigvee"
+		icon="icons/content-assist/bigvee.png" />
 	<command
 		group="CUMULATIVE"
 		token="\bigwedge"
 		render="\bigwedge"
-		template="\bigwedge" />
+		template="\bigwedge"
+		icon="icons/content-assist/bigwedge.png" />
 	<command
 		group="CUMULATIVE"
 		token="\coprod"
 		render="\coprod"
-		template="\coprod" />
+		template="\coprod"
+		icon="icons/content-assist/coprod.png" />
 	<command
 		group="CUMULATIVE"
 		token="\prod"
 		render="\prod"
-		template="\prod" />
+		template="\prod"
+		icon="icons/content-assist/prod.png" />
 	<command
 		group="CUMULATIVE"
 		token="\smallint"
 		render="\smallint"
-		template="\smallint" />
+		template="\smallint"
+		icon="icons/content-assist/smallint.png" />
 	<command
 		group="CUMULATIVE"
 		token="\sum"
 		render="\sum"
-		template="\sum" />
+		template="\sum"
+		icon="icons/content-assist/sum.png" />
 	<command
 		group="GREEK"
 		token="\Gamma"
 		render="\Gamma"
-		template="\Gamma" />
+		template="\Gamma"
+		icon="icons/content-assist/_gamma.png" />
 	<command
 		group="GREEK"
 		token="\Delta"
 		render="\Delta"
-		template="\Delta" />
+		template="\Delta"
+		icon="icons/content-assist/_delta.png" />
 	<command
 		group="GREEK"
 		token="\Lambda"
 		render="\Lambda"
-		template="\Lambda" />
+		template="\Lambda"
+		icon="icons/content-assist/_lambda.png" />
 	<command
 		group="GREEK"
 		token="\Phi"
 		render="\Phi"
-		template="\Phi" />
+		template="\Phi"
+		icon="icons/content-assist/_phi.png" />
 	<command
 		group="GREEK"
 		token="\Pi"
 		render="\Pi"
-		template="\Pi" />
+		template="\Pi"
+		icon="icons/content-assist/_pi.png" />
 	<command
 		group="GREEK"
 		token="\Psi"
 		render="\Psi"
-		template="\Psi" />
+		template="\Psi"
+		icon="icons/content-assist/_psi.png" />
 	<command
 		group="GREEK"
 		token="\Sigma"
 		render="\Sigma"
-		template="\Sigma" />
+		template="\Sigma"
+		icon="icons/content-assist/_sigma.png" />
 	<command
 		group="GREEK"
 		token="\Theta"
 		render="\Theta"
-		template="\Theta" />
+		template="\Theta"
+		icon="icons/content-assist/_theta.png" />
 	<command
 		group="GREEK"
 		token="\Upsilon"
 		render="\Upsilon"
-		template="\Upsilon" />
+		template="\Upsilon"
+		icon="icons/content-assist/_upsilon.png" />
 	<command
 		group="GREEK"
 		token="\Xi"
 		render="\Xi"
-		template="\Xi" />
+		template="\Xi"
+		icon="icons/content-assist/_xi.png" />
 	<command
 		group="GREEK"
 		token="\Omega"
 		render="\Omega"
-		template="\Omega" />
+		template="\Omega"
+		icon="icons/content-assist/_omega.png" />
 	<command
 		group="GREEK"
 		token="\alpha"
 		render="\alpha"
-		template="\alpha" />
+		template="\alpha"
+		icon="icons/content-assist/alpha.png" />
 	<command
 		group="GREEK"
 		token="\beta"
 		render="\beta"
-		template="\beta" />
+		template="\beta"
+		icon="icons/content-assist/beta.png" />
 	<command
 		group="GREEK"
 		token="\gamma"
 		render="\gamma"
-		template="\gamma" />
+		template="\gamma"
+		icon="icons/content-assist/gamma.png" />
 	<command
 		group="GREEK"
 		token="\delta"
 		render="\delta"
-		template="\delta" />
+		template="\delta"
+		icon="icons/content-assist/delta.png" />
 	<command
 		group="GREEK"
 		token="\epsilon"
 		render="\epsilon"
-		template="\epsilon" />
+		template="\epsilon"
+		icon="icons/content-assist/epsilon.png" />
 	<command
 		group="GREEK"
 		token="\zeta"
 		render="\zeta"
-		template="\zeta" />
+		template="\zeta"
+		icon="icons/content-assist/zeta.png" />
 	<command
 		group="GREEK"
 		token="\eta"
 		render="\eta"
-		template="\eta" />
+		template="\eta"
+		icon="icons/content-assist/eta.png" />
 	<command
 		group="GREEK"
 		token="\theta"
 		render="\theta"
-		template="\theta" />
+		template="\theta"
+		icon="icons/content-assist/theta.png" />
 	<command
 		group="GREEK"
 		token="\iota"
 		render="\iota"
-		template="\iota" />
+		template="\iota"
+		icon="icons/content-assist/iota.png" />
 	<command
 		group="GREEK"
 		token="\kappa"
 		render="\kappa"
-		template="\kappa" />
+		template="\kappa"
+		icon="icons/content-assist/kappa.png" />
 	<command
 		group="GREEK"
 		token="\lambda"
 		render="\lambda"
-		template="\lambda" />
+		template="\lambda"
+		icon="icons/content-assist/lambda.png" />
 	<command
 		group="GREEK"
 		token="\mu"
 		render="\mu"
-		template="\mu" />
+		template="\mu"
+		icon="icons/content-assist/mu.png" />
 	<command
 		group="GREEK"
 		token="\nu"
 		render="\nu"
-		template="\nu" />
+		template="\nu"
+		icon="icons/content-assist/nu.png" />
 	<command
 		group="GREEK"
 		token="\xi"
 		render="\xi"
-		template="\xi" />
+		template="\xi"
+		icon="icons/content-assist/xi.png" />
 	<command
 		group="GREEK"
 		token="\pi"
 		render="\pi"
-		template="\pi" />
+		template="\pi"
+		icon="icons/content-assist/pi.png" />
 	<command
 		group="GREEK"
 		token="\rho"
 		render="\rho"
-		template="\rho" />
+		template="\rho"
+		icon="icons/content-assist/rho.png" />
 	<command
 		group="GREEK"
 		token="\sigma"
 		render="\sigma"
-		template="\sigma" />
+		template="\sigma"
+		icon="icons/content-assist/sigma.png" />
 	<command
 		group="GREEK"
 		token="\tau"
 		render="\tau"
-		template="\tau" />
+		template="\tau"
+		icon="icons/content-assist/tau.png" />
 	<command
 		group="GREEK"
 		token="\upsilon"
 		render="\upsilon"
-		template="\upsilon" />
+		template="\upsilon"
+		icon="icons/content-assist/upsilon.png" />
 	<command
 		group="GREEK"
 		token="\phi"
 		render="\phi"
-		template="\phi" />
+		template="\phi"
+		icon="icons/content-assist/phi.png" />
 	<command
 		group="GREEK"
 		token="\chi"
 		render="\chi"
-		template="\chi" />
+		template="\chi"
+		icon="icons/content-assist/chi.png" />
 	<command
 		group="GREEK"
 		token="\psi"
 		render="\psi"
-		template="\psi" />
+		template="\psi"
+		icon="icons/content-assist/psi.png" />
 	<command
 		group="GREEK"
 		token="\omega"
 		render="\omega"
-		template="\omega" />
+		template="\omega"
+		icon="icons/content-assist/omega.png" />
 	<command
 		group="GREEK"
 		token="\digamma"
 		render="\digamma"
-		template="\digamma" />
+		template="\digamma"
+		icon="icons/content-assist/digamma.png" />
 	<command
 		group="GREEK"
 		token="\varDelta"
 		render="\varDelta"
-		template="\varDelta" />
+		template="\varDelta"
+		icon="icons/content-assist/var_delta.png" />
 	<command
 		group="GREEK"
 		token="\varGamma"
 		render="\varGamma"
-		template="\varGamma" />
+		template="\varGamma"
+		icon="icons/content-assist/var_gamma.png" />
 	<command
 		group="GREEK"
 		token="\varinjlim"
 		render="\varinjlim"
-		template="\varinjlim" />
+		template="\varinjlim"
+		icon="icons/content-assist/varinjlim.png" />
 	<command
 		group="GREEK"
 		token="\varLambda"
 		render="\varLambda"
-		template="\varLambda" />
+		template="\varLambda"
+		icon="icons/content-assist/var_lambda.png" />
 	<command
 		group="GREEK"
 		token="\varliminf"
 		render="\varliminf"
-		template="\varliminf" />
+		template="\varliminf"
+		icon="icons/content-assist/varliminf.png" />
 	<command
 		group="GREEK"
 		token="\varlimsup"
 		render="\varlimsup"
-		template="\varlimsup" />
+		template="\varlimsup"
+		icon="icons/content-assist/varlimsup.png" />
 	<command
 		group="GREEK"
 		token="\varOmega"
 		render="\varOmega"
-		template="\varOmega" />
+		template="\varOmega"
+		icon="icons/content-assist/var_omega.png" />
 	<command
 		group="GREEK"
 		token="\varPhi"
 		render="\varPhi"
-		template="\varPhi" />
+		template="\varPhi"
+		icon="icons/content-assist/var_phi.png" />
 	<command
 		group="GREEK"
 		token="\varPi"
 		render="\varPi"
-		template="\varPi" />
+		template="\varPi"
+		icon="icons/content-assist/var_pi.png" />
 	<command
 		group="GREEK"
 		token="\varPsi"
 		render="\varPsi"
-		template="\varPsi" />
+		template="\varPsi"
+		icon="icons/content-assist/var_psi.png" />
 	<command
 		group="GREEK"
 		token="\varSigma"
 		render="\varSigma"
-		template="\varSigma" />
+		template="\varSigma"
+		icon="icons/content-assist/var_sigma.png" />
 	<command
 		group="GREEK"
 		token="\varTheta"
 		render="\varTheta"
-		template="\varTheta" />
+		template="\varTheta"
+		icon="icons/content-assist/var_theta.png" />
 	<command
 		group="GREEK"
 		token="\varUpsilon"
 		render="\varUpsilon"
-		template="\varUpsilon" />
+		template="\varUpsilon"
+		icon="icons/content-assist/var_upsilon.png" />
 	<command
 		group="GREEK"
 		token="\varXi"
 		render="\varXi"
-		template="\varXi" />
+		template="\varXi"
+		icon="icons/content-assist/var_xi.png" />
 	<command
 		group="GREEK"
 		token="\varepsilon"
 		render="\varepsilon"
-		template="\varepsilon" />
+		template="\varepsilon"
+		icon="icons/content-assist/varepsilon.png" />
 	<command
 		group="GREEK"
 		token="\varkappa"
 		render="\varkappa"
-		template="\varkappa" />
+		template="\varkappa"
+		icon="icons/content-assist/varkappa.png" />
 	<command
 		group="GREEK"
 		token="\varphi"
 		render="\varphi"
-		template="\varphi" />
+		template="\varphi"
+		icon="icons/content-assist/varphi.png" />
 	<command
 		group="GREEK"
 		token="\varpi"
 		render="\varpi"
-		template="\varpi" />
+		template="\varpi"
+		icon="icons/content-assist/varpi.png" />
 	<command
 		group="GREEK"
 		token="\varrho"
 		render="\varrho"
-		template="\varrho" />
+		template="\varrho"
+		icon="icons/content-assist/varrho.png" />
 	<command
 		group="GREEK"
 		token="\varsigma"
 		render="\varsigma"
-		template="\varsigma" />
+		template="\varsigma"
+		icon="icons/content-assist/varsigma.png" />
 	<command
 		group="GREEK"
 		token="\vartheta"
 		render="\vartheta"
-		template="\vartheta" />
+		template="\vartheta"
+		icon="icons/content-assist/vartheta.png" />
 	<command
 		group="LETTER"
 		token="\aleph"
 		render="\aleph"
-		template="\aleph" />
+		template="\aleph"
+		icon="icons/content-assist/aleph.png" />
 	<command
 		group="LETTER"
 		token="\beth"
 		render="\beth"
-		template="\beth" />
+		template="\beth"
+		icon="icons/content-assist/beth.png" />
 	<command
 		group="LETTER"
 		token="\daleth"
 		render="\daleth"
-		template="\daleth" />
+		template="\daleth"
+		icon="icons/content-assist/daleth.png" />
 	<command
 		group="LETTER"
 		token="\gimel"
 		render="\gimel"
-		template="\gimel" />
+		template="\gimel"
+		icon="icons/content-assist/gimel.png" />
 	<command
 		group="LETTER"
 		token="\complement"
 		render="\complement"
-		template="\complement" />
+		template="\complement"
+		icon="icons/content-assist/complement.png" />
 	<command
 		group="LETTER"
 		token="\ell"
 		render="\ell"
-		template="\ell" />
+		template="\ell"
+		icon="icons/content-assist/ell.png" />
 	<command
 		group="LETTER"
 		token="\eth"
 		render="\eth"
-		template="\eth" />
+		template="\eth"
+		icon="icons/content-assist/eth.png" />
 	<command
 		group="LETTER"
 		token="\hbar"
 		render="\hbar"
-		template="\hbar" />
+		template="\hbar"
+		icon="icons/content-assist/hbar.png" />
 	<command
 		group="LETTER"
 		token="\hslash"
 		render="\hslash"
-		template="\hslash" />
+		template="\hslash"
+		icon="icons/content-assist/hslash.png" />
 	<command
 		group="LETTER"
 		token="\mho"
 		render="\mho"
-		template="\mho" />
+		template="\mho"
+		icon="icons/content-assist/mho.png" />
 	<command
 		group="LETTER"
 		token="\partial"
 		render="\partial"
-		template="\partial" />
+		template="\partial"
+		icon="icons/content-assist/partial.png" />
 	<command
 		group="LETTER"
 		token="\wp"
 		render="\wp"
-		template="\wp" />
+		template="\wp"
+		icon="icons/content-assist/wp.png" />
 	<command
 		group="LETTER"
 		token="\circledS"
 		render="\circledS"
-		template="\circledS" />
+		template="\circledS"
+		icon="icons/content-assist/circled_s.png" />
 	<command
 		group="LETTER"
 		token="\Bbbk"
 		render="\Bbbk"
-		template="\Bbbk" />
+		template="\Bbbk"
+		icon="icons/content-assist/_bbbk.png" />
 	<command
 		group="LETTER"
 		token="\Finv"
 		render="\Finv"
-		template="\Finv" />
+		template="\Finv"
+		icon="icons/content-assist/_finv.png" />
 	<command
 		group="LETTER"
 		token="\Game"
 		render="\Game"
-		template="\Game" />
+		template="\Game"
+		icon="icons/content-assist/_game.png" />
 	<command
 		group="LETTER"
 		token="\Im"
 		render="\Im"
-		template="\Im" />
+		template="\Im"
+		icon="icons/content-assist/_im.png" />
 	<command
 		group="LETTER"
 		token="\Re"
 		render="\Re"
-		template="\Re" />
+		template="\Re"
+		icon="icons/content-assist/_re.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\backepsilon"
 		render="\backepsilon"
-		template="\backepsilon" />
+		template="\backepsilon"
+		icon="icons/content-assist/backepsilon.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\because"
 		render="\because"
-		template="\because" />
+		template="\because"
+		icon="icons/content-assist/because.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\between"
 		render="\between"
-		template="\between" />
+		template="\between"
+		icon="icons/content-assist/between.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\blacktriangleleft"
 		render="\blacktriangleleft"
-		template="\blacktriangleleft" />
+		template="\blacktriangleleft"
+		icon="icons/content-assist/blacktriangleleft.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\blacktriangleright"
 		render="\blacktriangleright"
-		template="\blacktriangleright" />
+		template="\blacktriangleright"
+		icon="icons/content-assist/blacktriangleright.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\bowtie"
 		render="\bowtie"
-		template="\bowtie" />
+		template="\bowtie"
+		icon="icons/content-assist/bowtie.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\dashv"
 		render="\dashv"
-		template="\dashv" />
+		template="\dashv"
+		icon="icons/content-assist/dashv.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\frown"
 		render="\frown"
-		template="\frown" />
+		template="\frown"
+		icon="icons/content-assist/frown.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\in"
 		render="\in"
-		template="\in" />
+		template="\in"
+		icon="icons/content-assist/in.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\mid"
 		render="\mid"
-		template="\mid" />
+		template="\mid"
+		icon="icons/content-assist/mid.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\models"
 		render="\models"
-		template="\models" />
+		template="\models"
+		icon="icons/content-assist/models.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\ni"
 		render="\ni"
-		template="\ni" />
+		template="\ni"
+		icon="icons/content-assist/ni.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nmid"
 		render="\nmid"
-		template="\nmid" />
+		template="\nmid"
+		icon="icons/content-assist/nmid.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\notin"
 		render="\notin"
-		template="\notin" />
+		template="\notin"
+		icon="icons/content-assist/notin.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nparallel"
 		render="\nparallel"
-		template="\nparallel" />
+		template="\nparallel"
+		icon="icons/content-assist/nparallel.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nshortmid"
 		render="\nshortmid"
-		template="\nshortmid" />
+		template="\nshortmid"
+		icon="icons/content-assist/nshortmid.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nshortparallel"
 		render="\nshortparallel"
-		template="\nshortparallel" />
+		template="\nshortparallel"
+		icon="icons/content-assist/nshortparallel.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nsubseteq"
 		render="\nsubseteq"
-		template="\nsubseteq" />
+		template="\nsubseteq"
+		icon="icons/content-assist/nsubseteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nsubseteqq"
 		render="\nsubseteqq"
-		template="\nsubseteqq" />
+		template="\nsubseteqq"
+		icon="icons/content-assist/nsubseteqq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nsupseteq"
 		render="\nsupseteq"
-		template="\nsupseteq" />
+		template="\nsupseteq"
+		icon="icons/content-assist/nsupseteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nsupseteqq"
 		render="\nsupseteqq"
-		template="\nsupseteqq" />
+		template="\nsupseteqq"
+		icon="icons/content-assist/nsupseteqq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\ntriangleleft"
 		render="\ntriangleleft"
-		template="\ntriangleleft" />
+		template="\ntriangleleft"
+		icon="icons/content-assist/ntriangleleft.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\ntrianglelefteq"
 		render="\ntrianglelefteq"
-		template="\ntrianglelefteq" />
+		template="\ntrianglelefteq"
+		icon="icons/content-assist/ntrianglelefteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\ntriangleright"
 		render="\ntriangleright"
-		template="\ntriangleright" />
+		template="\ntriangleright"
+		icon="icons/content-assist/ntriangleright.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\ntrianglerighteq"
 		render="\ntrianglerighteq"
-		template="\ntrianglerighteq" />
+		template="\ntrianglerighteq"
+		icon="icons/content-assist/ntrianglerighteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nvdash"
 		render="\nvdash"
-		template="\nvdash" />
+		template="\nvdash"
+		icon="icons/content-assist/nvdash.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nVdash"
 		render="\nVdash"
-		template="\nVdash" />
+		template="\nVdash"
+		icon="icons/content-assist/n_vdash.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nvDash"
 		render="\nvDash"
-		template="\nvDash" />
+		template="\nvDash"
+		icon="icons/content-assist/nv_dash.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\nVDash"
 		render="\nVDash"
-		template="\nVDash" />
+		template="\nVDash"
+		icon="icons/content-assist/n_v_dash.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\parallel"
 		render="\parallel"
-		template="\parallel" />
+		template="\parallel"
+		icon="icons/content-assist/parallel.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\perp"
 		render="\perp"
-		template="\perp" />
+		template="\perp"
+		icon="icons/content-assist/perp.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\pitchfork"
 		render="\pitchfork"
-		template="\pitchfork" />
+		template="\pitchfork"
+		icon="icons/content-assist/pitchfork.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\propto"
 		render="\propto"
-		template="\propto" />
+		template="\propto"
+		icon="icons/content-assist/propto.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\shortmid"
 		render="\shortmid"
-		template="\shortmid" />
+		template="\shortmid"
+		icon="icons/content-assist/shortmid.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\shortparallel"
 		render="\shortparallel"
-		template="\shortparallel" />
+		template="\shortparallel"
+		icon="icons/content-assist/shortparallel.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\smallfrown"
 		render="\smallfrown"
-		template="\smallfrown" />
+		template="\smallfrown"
+		icon="icons/content-assist/smallfrown.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\smallsmile"
 		render="\smallsmile"
-		template="\smallsmile" />
+		template="\smallsmile"
+		icon="icons/content-assist/smallsmile.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\smile"
 		render="\smile"
-		template="\smile" />
+		template="\smile"
+		icon="icons/content-assist/smile.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\sqsubset"
 		render="\sqsubset"
-		template="\sqsubset" />
+		template="\sqsubset"
+		icon="icons/content-assist/sqsubset.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\sqsubseteq"
 		render="\sqsubseteq"
-		template="\sqsubseteq" />
+		template="\sqsubseteq"
+		icon="icons/content-assist/sqsubseteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\sqsupset"
 		render="\sqsupset"
-		template="\sqsupset" />
+		template="\sqsupset"
+		icon="icons/content-assist/sqsupset.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\sqsupseteq"
 		render="\sqsupseteq"
-		template="\sqsupseteq" />
+		template="\sqsupseteq"
+		icon="icons/content-assist/sqsupseteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\subset"
 		render="\subset"
-		template="\subset" />
+		template="\subset"
+		icon="icons/content-assist/subset.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\Subset"
 		render="\Subset"
-		template="\Subset" />
+		template="\Subset"
+		icon="icons/content-assist/_subset.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\subseteq"
 		render="\subseteq"
-		template="\subseteq" />
+		template="\subseteq"
+		icon="icons/content-assist/subseteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\subseteqq"
 		render="\subseteqq"
-		template="\subseteqq" />
+		template="\subseteqq"
+		icon="icons/content-assist/subseteqq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\subsetneq"
 		render="\subsetneq"
-		template="\subsetneq" />
+		template="\subsetneq"
+		icon="icons/content-assist/subsetneq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\subsetneqq"
 		render="\subsetneqq"
-		template="\subsetneqq" />
+		template="\subsetneqq"
+		icon="icons/content-assist/subsetneqq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\supset"
 		render="\supset"
-		template="\supset" />
+		template="\supset"
+		icon="icons/content-assist/supset.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\Supset"
 		render="\Supset"
-		template="\Supset" />
+		template="\Supset"
+		icon="icons/content-assist/_supset.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\supseteq"
 		render="\supseteq"
-		template="\supseteq" />
+		template="\supseteq"
+		icon="icons/content-assist/supseteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\supseteqq"
 		render="\supseteqq"
-		template="\supseteqq" />
+		template="\supseteqq"
+		icon="icons/content-assist/supseteqq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\supsetneq"
 		render="\supsetneq"
-		template="\supsetneq" />
+		template="\supsetneq"
+		icon="icons/content-assist/supsetneq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\supsetneqq"
 		render="\supsetneqq"
-		template="\supsetneqq" />
+		template="\supsetneqq"
+		icon="icons/content-assist/supsetneqq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\therefore"
 		render="\therefore"
-		template="\therefore" />
+		template="\therefore"
+		icon="icons/content-assist/therefore.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\trianglelefteq"
 		render="\trianglelefteq"
-		template="\trianglelefteq" />
+		template="\trianglelefteq"
+		icon="icons/content-assist/trianglelefteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\trianglerighteq"
 		render="\trianglerighteq"
-		template="\trianglerighteq" />
+		template="\trianglerighteq"
+		icon="icons/content-assist/trianglerighteq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\varpropto"
 		render="\varpropto"
-		template="\varpropto" />
+		template="\varpropto"
+		icon="icons/content-assist/varpropto.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\varsubsetneq"
 		render="\varsubsetneq"
-		template="\varsubsetneq" />
+		template="\varsubsetneq"
+		icon="icons/content-assist/varsubsetneq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\varsubsetneqq"
 		render="\varsubsetneqq"
-		template="\varsubsetneqq" />
+		template="\varsubsetneqq"
+		icon="icons/content-assist/varsubsetneqq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\varsupsetneq"
 		render="\varsupsetneq"
-		template="\varsupsetneq" />
+		template="\varsupsetneq"
+		icon="icons/content-assist/varsupsetneq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\varsupsetneqq"
 		render="\varsupsetneqq"
-		template="\varsupsetneqq" />
+		template="\varsupsetneqq"
+		icon="icons/content-assist/varsupsetneqq.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\vartriangle"
 		render="\vartriangle"
-		template="\vartriangle" />
+		template="\vartriangle"
+		icon="icons/content-assist/vartriangle.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\vartriangleleft"
 		render="\vartriangleleft"
-		template="\vartriangleleft" />
+		template="\vartriangleleft"
+		icon="icons/content-assist/vartriangleleft.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\vartriangleright"
 		render="\vartriangleright"
-		template="\vartriangleright" />
+		template="\vartriangleright"
+		icon="icons/content-assist/vartriangleright.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\vdash"
 		render="\vdash"
-		template="\vdash" />
+		template="\vdash"
+		icon="icons/content-assist/vdash.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\Vdash"
 		render="\Vdash"
-		template="\Vdash" />
+		template="\Vdash"
+		icon="icons/content-assist/_vdash.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\vDash"
 		render="\vDash"
-		template="\vDash" />
+		template="\vDash"
+		icon="icons/content-assist/v_dash.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\Vvdash"
 		render="\Vvdash"
-		template="\Vvdash" />
+		template="\Vvdash"
+		icon="icons/content-assist/_vvdash.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\owns"
 		render="\owns"
-		template="\owns" />
+		template="\owns"
+		icon="icons/content-assist/owns.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="\LaTeX"
 		render="\LaTeX"
-		template="\LaTeX" />
+		template="\LaTeX"
+		icon="icons/content-assist/_la_te_x.png" />
 	<command
 		group="MISCELLANEOUS"
 		token="icon"
 		render="\small{x^2}"
-		template="icon" />
+		template="icon"
+		icon="icons/content-assist/icon.png" />
 	<command
 		group="OPERATOR"
 		token="\amalg"
 		render="\amalg"
-		template="\amalg" />
+		template="\amalg"
+		icon="icons/content-assist/amalg.png" />
 	<command
 		group="OPERATOR"
 		token="\ast"
 		render="\ast"
-		template="\ast" />
+		template="\ast"
+		icon="icons/content-assist/ast.png" />
 	<command
 		group="OPERATOR"
 		token="\barwedge"
 		render="\barwedge"
-		template="\barwedge" />
+		template="\barwedge"
+		icon="icons/content-assist/barwedge.png" />
 	<command
 		group="OPERATOR"
 		token="\binom"
 		render="\binom{n}{k}"
-		template="\binom{${a}}{${b}}" />
+		template="\binom{${a}}{${b}}"
+		icon="icons/content-assist/binom.png" />
 	<command
 		group="OPERATOR"
 		token="\bigcirc"
 		render="\bigcirc"
-		template="\bigcirc" />
+		template="\bigcirc"
+		icon="icons/content-assist/bigcirc.png" />
 	<command
 		group="OPERATOR"
 		token="\bigtriangledown"
 		render="\bigtriangledown"
-		template="\bigtriangledown" />
+		template="\bigtriangledown"
+		icon="icons/content-assist/bigtriangledown.png" />
 	<command
 		group="OPERATOR"
 		token="\bigtriangleup"
 		render="\bigtriangleup"
-		template="\bigtriangleup" />
+		template="\bigtriangleup"
+		icon="icons/content-assist/bigtriangleup.png" />
 	<command
 		group="OPERATOR"
 		token="\boxdot"
 		render="\boxdot"
-		template="\boxdot" />
+		template="\boxdot"
+		icon="icons/content-assist/boxdot.png" />
 	<command
 		group="OPERATOR"
 		token="\boxminus"
 		render="\boxminus"
-		template="\boxminus" />
+		template="\boxminus"
+		icon="icons/content-assist/boxminus.png" />
 	<command
 		group="OPERATOR"
 		token="\boxplus"
 		render="\boxplus"
-		template="\boxplus" />
+		template="\boxplus"
+		icon="icons/content-assist/boxplus.png" />
 	<command
 		group="OPERATOR"
 		token="\boxtimes"
 		render="\boxtimes"
-		template="\boxtimes" />
+		template="\boxtimes"
+		icon="icons/content-assist/boxtimes.png" />
 	<command
 		group="OPERATOR"
 		token="\bullet"
 		render="\bullet"
-		template="\bullet" />
+		template="\bullet"
+		icon="icons/content-assist/bullet.png" />
 	<command
 		group="OPERATOR"
 		token="\cap"
 		render="\cap"
-		template="\cap" />
+		template="\cap"
+		icon="icons/content-assist/cap.png" />
 	<command
 		group="OPERATOR"
 		token="\Cap"
 		render="\Cap"
-		template="\Cap" />
+		template="\Cap"
+		icon="icons/content-assist/_cap.png" />
 	<command
 		group="OPERATOR"
 		token="\cdot"
 		render="\cdot"
-		template="\cdot" />
+		template="\cdot"
+		icon="icons/content-assist/cdot.png" />
 	<command
 		group="OPERATOR"
 		token="\centerdot"
 		render="\centerdot"
-		template="\centerdot" />
+		template="\centerdot"
+		icon="icons/content-assist/centerdot.png" />
 	<command
 		group="OPERATOR"
 		token="\circ"
 		render="\circ"
-		template="\circ" />
+		template="\circ"
+		icon="icons/content-assist/circ.png" />
 	<command
 		group="OPERATOR"
 		token="\circledast"
 		render="\circledast"
-		template="\circledast" />
+		template="\circledast"
+		icon="icons/content-assist/circledast.png" />
 	<command
 		group="OPERATOR"
 		token="\circledcirc"
 		render="\circledcirc"
-		template="\circledcirc" />
+		template="\circledcirc"
+		icon="icons/content-assist/circledcirc.png" />
 	<command
 		group="OPERATOR"
 		token="\circleddash"
 		render="\circleddash"
-		template="\circleddash" />
+		template="\circleddash"
+		icon="icons/content-assist/circleddash.png" />
 	<command
 		group="OPERATOR"
 		token="\cup"
 		render="\cup"
-		template="\cup" />
+		template="\cup"
+		icon="icons/content-assist/cup.png" />
 	<command
 		group="OPERATOR"
 		token="\Cup"
 		render="\Cup"
-		template="\Cup" />
+		template="\Cup"
+		icon="icons/content-assist/_cup.png" />
 	<command
 		group="OPERATOR"
 		token="\curlyvee"
 		render="\curlyvee"
-		template="\curlyvee" />
+		template="\curlyvee"
+		icon="icons/content-assist/curlyvee.png" />
 	<command
 		group="OPERATOR"
 		token="\curlywedge"
 		render="\curlywedge"
-		template="\curlywedge" />
+		template="\curlywedge"
+		icon="icons/content-assist/curlywedge.png" />
 	<command
 		group="OPERATOR"
 		token="\dagger"
 		render="\dagger"
-		template="\dagger" />
+		template="\dagger"
+		icon="icons/content-assist/dagger.png" />
 	<command
 		group="OPERATOR"
 		token="\ddagger"
 		render="\ddagger"
-		template="\ddagger" />
+		template="\ddagger"
+		icon="icons/content-assist/ddagger.png" />
 	<command
 		group="OPERATOR"
 		token="\diamond"
 		render="\diamond"
-		template="\diamond" />
+		template="\diamond"
+		icon="icons/content-assist/diamond.png" />
 	<command
 		group="OPERATOR"
 		token="\div"
 		render="\div"
-		template="\div" />
+		template="\div"
+		icon="icons/content-assist/div.png" />
 	<command
 		group="OPERATOR"
 		token="\divideontimes"
 		render="\divideontimes"
-		template="\divideontimes" />
+		template="\divideontimes"
+		icon="icons/content-assist/divideontimes.png" />
 	<command
 		group="OPERATOR"
 		token="\dotplus"
 		render="\dotplus"
-		template="\dotplus" />
+		template="\dotplus"
+		icon="icons/content-assist/dotplus.png" />
 	<command
 		group="OPERATOR"
 		token="\doublebarwedge"
 		render="\doublebarwedge"
-		template="\doublebarwedge" />
+		template="\doublebarwedge"
+		icon="icons/content-assist/doublebarwedge.png" />
 	<command
 		group="OPERATOR"
 		token="\frac"
 		render="\frac{n}{k}"
-		template="\frac{${n}}{${k}}" />
+		template="\frac{${n}}{${k}}"
+		icon="icons/content-assist/frac.png" />
 	<command
 		group="OPERATOR"
 		token="\gtrdot"
 		render="\gtrdot"
-		template="\gtrdot" />
+		template="\gtrdot"
+		icon="icons/content-assist/gtrdot.png" />
 	<command
 		group="OPERATOR"
 		token="\intercal"
 		render="\intercal"
-		template="\intercal" />
+		template="\intercal"
+		icon="icons/content-assist/intercal.png" />
 	<command
 		group="OPERATOR"
 		token="\leftthreetimes"
 		render="\leftthreetimes"
-		template="\leftthreetimes" />
+		template="\leftthreetimes"
+		icon="icons/content-assist/leftthreetimes.png" />
 	<command
 		group="OPERATOR"
 		token="\lessdot"
 		render="\lessdot"
-		template="\lessdot" />
+		template="\lessdot"
+		icon="icons/content-assist/lessdot.png" />
 	<command
 		group="OPERATOR"
 		token="\ltimes"
 		render="\ltimes"
-		template="\ltimes" />
+		template="\ltimes"
+		icon="icons/content-assist/ltimes.png" />
 	<command
 		group="OPERATOR"
 		token="\mp"
 		render="\mp"
-		template="\mp" />
+		template="\mp"
+		icon="icons/content-assist/mp.png" />
 	<command
 		group="OPERATOR"
 		token="\odot"
 		render="\odot"
-		template="\odot" />
+		template="\odot"
+		icon="icons/content-assist/odot.png" />
 	<command
 		group="OPERATOR"
 		token="\ominus"
 		render="\ominus"
-		template="\ominus" />
+		template="\ominus"
+		icon="icons/content-assist/ominus.png" />
 	<command
 		group="OPERATOR"
 		token="\oplus"
 		render="\oplus"
-		template="\oplus" />
+		template="\oplus"
+		icon="icons/content-assist/oplus.png" />
 	<command
 		group="OPERATOR"
 		token="\oslash"
 		render="\oslash"
-		template="\oslash" />
+		template="\oslash"
+		icon="icons/content-assist/oslash.png" />
 	<command
 		group="OPERATOR"
 		token="\otimes"
 		render="\otimes"
-		template="\otimes" />
+		template="\otimes"
+		icon="icons/content-assist/otimes.png" />
 	<command
 		group="OPERATOR"
 		token="\pm"
 		render="\pm"
-		template="\pm" />
+		template="\pm"
+		icon="icons/content-assist/pm.png" />
 	<command
 		group="OPERATOR"
 		token="\rightthreetimes"
 		render="\rightthreetimes"
-		template="\rightthreetimes" />
+		template="\rightthreetimes"
+		icon="icons/content-assist/rightthreetimes.png" />
 	<command
 		group="OPERATOR"
 		token="\rtimes"
 		render="\rtimes"
-		template="\rtimes" />
+		template="\rtimes"
+		icon="icons/content-assist/rtimes.png" />
 	<command
 		group="OPERATOR"
 		token="\setminus"
 		render="\setminus"
-		template="\setminus" />
+		template="\setminus"
+		icon="icons/content-assist/setminus.png" />
 	<command
 		group="OPERATOR"
 		token="\smallsetminus"
 		render="\smallsetminus"
-		template="\smallsetminus" />
+		template="\smallsetminus"
+		icon="icons/content-assist/smallsetminus.png" />
 	<command
 		group="OPERATOR"
 		token="\sqcap"
 		render="\sqcap"
-		template="\sqcap" />
+		template="\sqcap"
+		icon="icons/content-assist/sqcap.png" />
 	<command
 		group="OPERATOR"
 		token="\sqcup"
 		render="\sqcup"
-		template="\sqcup" />
+		template="\sqcup"
+		icon="icons/content-assist/sqcup.png" />
 	<command
 		group="OPERATOR"
 		token="\star"
 		render="\star"
-		template="\star" />
+		template="\star"
+		icon="icons/content-assist/star.png" />
 	<command
 		group="OPERATOR"
 		token="\times"
 		render="\times"
-		template="\times" />
+		template="\times"
+		icon="icons/content-assist/times.png" />
 	<command
 		group="OPERATOR"
 		token="\triangleleft"
 		render="\triangleleft"
-		template="\triangleleft" />
+		template="\triangleleft"
+		icon="icons/content-assist/triangleleft.png" />
 	<command
 		group="OPERATOR"
 		token="\triangleright"
 		render="\triangleright"
-		template="\triangleright" />
+		template="\triangleright"
+		icon="icons/content-assist/triangleright.png" />
 	<command
 		group="OPERATOR"
 		token="\uplus"
 		render="\uplus"
-		template="\uplus" />
+		template="\uplus"
+		icon="icons/content-assist/uplus.png" />
 	<command
 		group="OPERATOR"
 		token="\vee"
 		render="\vee"
-		template="\vee" />
-	<command
-		group="OPERATOR"
-		token="\veeba"
-		render="\veeba"
-		template="\veeba" />
+		template="\vee"
+		icon="icons/content-assist/vee.png" />
 	<command
 		group="OPERATOR"
 		token="\wedge"
 		render="\wedge"
-		template="\wedge" />
+		template="\wedge"
+		icon="icons/content-assist/wedge.png" />
 	<command
 		group="OPERATOR"
 		token="\wr"
 		render="\wr"
-		template="\wr" />
+		template="\wr"
+		icon="icons/content-assist/wr.png" />
 	<command
 		group="OPERATOR"
 		token="\land"
 		render="\land"
-		template="\land" />
+		template="\land"
+		icon="icons/content-assist/land.png" />
 	<command
 		group="OPERATOR"
 		token="\lor"
 		render="\lor"
-		template="\lor" />
+		template="\lor"
+		icon="icons/content-assist/lor.png" />
 	<command
 		group="OPERATOR"
 		token="\doublecup"
 		render="\doublecup"
-		template="\doublecup" />
+		template="\doublecup"
+		icon="icons/content-assist/doublecup.png" />
 	<command
 		group="OPERATOR"
 		token="\doublecap"
 		render="\doublecap"
-		template="\doublecap" />
+		template="\doublecap"
+		icon="icons/content-assist/doublecap.png" />
 	<command
 		group="RELATION"
 		token="\approx"
 		render="\approx"
-		template="\approx" />
+		template="\approx"
+		icon="icons/content-assist/approx.png" />
 	<command
 		group="RELATION"
 		token="\approxeq"
 		render="\approxeq"
-		template="\approxeq" />
+		template="\approxeq"
+		icon="icons/content-assist/approxeq.png" />
 	<command
 		group="RELATION"
 		token="\asymp"
 		render="\asymp"
-		template="\asymp" />
+		template="\asymp"
+		icon="icons/content-assist/asymp.png" />
 	<command
 		group="RELATION"
 		token="\backsim"
 		render="\backsim"
-		template="\backsim" />
+		template="\backsim"
+		icon="icons/content-assist/backsim.png" />
 	<command
 		group="RELATION"
 		token="\backsimeq"
 		render="\backsimeq"
-		template="\backsimeq" />
+		template="\backsimeq"
+		icon="icons/content-assist/backsimeq.png" />
 	<command
 		group="RELATION"
 		token="\bumpeq"
 		render="\bumpeq"
-		template="\bumpeq" />
+		template="\bumpeq"
+		icon="icons/content-assist/bumpeq.png" />
 	<command
 		group="RELATION"
 		token="\Bumpeq"
 		render="\Bumpeq"
-		template="\Bumpeq" />
+		template="\Bumpeq"
+		icon="icons/content-assist/_bumpeq.png" />
 	<command
 		group="RELATION"
 		token="\circeq"
 		render="\circeq"
-		template="\circeq" />
+		template="\circeq"
+		icon="icons/content-assist/circeq.png" />
 	<command
 		group="RELATION"
 		token="\cong"
 		render="\cong"
-		template="\cong" />
+		template="\cong"
+		icon="icons/content-assist/cong.png" />
 	<command
 		group="RELATION"
 		token="\curlyeqprec"
 		render="\curlyeqprec"
-		template="\curlyeqprec" />
+		template="\curlyeqprec"
+		icon="icons/content-assist/curlyeqprec.png" />
 	<command
 		group="RELATION"
 		token="\curlyeqsucc"
 		render="\curlyeqsucc"
-		template="\curlyeqsucc" />
+		template="\curlyeqsucc"
+		icon="icons/content-assist/curlyeqsucc.png" />
 	<command
 		group="RELATION"
 		token="\doteq"
 		render="\doteq"
-		template="\doteq" />
+		template="\doteq"
+		icon="icons/content-assist/doteq.png" />
 	<command
 		group="RELATION"
 		token="\doteqdot"
 		render="\doteqdot"
-		template="\doteqdot" />
+		template="\doteqdot"
+		icon="icons/content-assist/doteqdot.png" />
 	<command
 		group="RELATION"
 		token="\eqcirc"
 		render="\eqcirc"
-		template="\eqcirc" />
+		template="\eqcirc"
+		icon="icons/content-assist/eqcirc.png" />
 	<command
 		group="RELATION"
 		token="\eqsim"
 		render="\eqsim"
-		template="\eqsim" />
+		template="\eqsim"
+		icon="icons/content-assist/eqsim.png" />
 	<command
 		group="RELATION"
 		token="\eqslantgtr"
 		render="\eqslantgtr"
-		template="\eqslantgtr" />
+		template="\eqslantgtr"
+		icon="icons/content-assist/eqslantgtr.png" />
 	<command
 		group="RELATION"
 		token="\eqslantless"
 		render="\eqslantless"
-		template="\eqslantless" />
+		template="\eqslantless"
+		icon="icons/content-assist/eqslantless.png" />
 	<command
 		group="RELATION"
 		token="\equiv"
 		render="\equiv"
-		template="\equiv" />
+		template="\equiv"
+		icon="icons/content-assist/equiv.png" />
 	<command
 		group="RELATION"
 		token="\fallingdotseq"
 		render="\fallingdotseq"
-		template="\fallingdotseq" />
+		template="\fallingdotseq"
+		icon="icons/content-assist/fallingdotseq.png" />
 	<command
 		group="RELATION"
 		token="\geq"
 		render="\geq"
-		template="\geq" />
+		template="\geq"
+		icon="icons/content-assist/geq.png" />
 	<command
 		group="RELATION"
 		token="\geqq"
 		render="\geqq"
-		template="\geqq" />
+		template="\geqq"
+		icon="icons/content-assist/geqq.png" />
 	<command
 		group="RELATION"
 		token="\geqslant"
 		render="\geqslant"
-		template="\geqslant" />
+		template="\geqslant"
+		icon="icons/content-assist/geqslant.png" />
 	<command
 		group="RELATION"
 		token="\gg"
 		render="\gg"
-		template="\gg" />
+		template="\gg"
+		icon="icons/content-assist/gg.png" />
 	<command
 		group="RELATION"
 		token="\ggg"
 		render="\ggg"
-		template="\ggg" />
+		template="\ggg"
+		icon="icons/content-assist/ggg.png" />
 	<command
 		group="RELATION"
 		token="\gnapprox"
 		render="\gnapprox"
-		template="\gnapprox" />
+		template="\gnapprox"
+		icon="icons/content-assist/gnapprox.png" />
 	<command
 		group="RELATION"
 		token="\gneq"
 		render="\gneq"
-		template="\gneq" />
+		template="\gneq"
+		icon="icons/content-assist/gneq.png" />
 	<command
 		group="RELATION"
 		token="\gneqq"
 		render="\gneqq"
-		template="\gneqq" />
+		template="\gneqq"
+		icon="icons/content-assist/gneqq.png" />
 	<command
 		group="RELATION"
 		token="\gnsim"
 		render="\gnsim"
-		template="\gnsim" />
+		template="\gnsim"
+		icon="icons/content-assist/gnsim.png" />
 	<command
 		group="RELATION"
 		token="\gtrapprox"
 		render="\gtrapprox"
-		template="\gtrapprox" />
+		template="\gtrapprox"
+		icon="icons/content-assist/gtrapprox.png" />
 	<command
 		group="RELATION"
 		token="\gtreqless"
 		render="\gtreqless"
-		template="\gtreqless" />
+		template="\gtreqless"
+		icon="icons/content-assist/gtreqless.png" />
 	<command
 		group="RELATION"
 		token="\gtreqqless"
 		render="\gtreqqless"
-		template="\gtreqqless" />
+		template="\gtreqqless"
+		icon="icons/content-assist/gtreqqless.png" />
 	<command
 		group="RELATION"
 		token="\gtrless"
 		render="\gtrless"
-		template="\gtrless" />
+		template="\gtrless"
+		icon="icons/content-assist/gtrless.png" />
 	<command
 		group="RELATION"
 		token="\gtrsim"
 		render="\gtrsim"
-		template="\gtrsim" />
+		template="\gtrsim"
+		icon="icons/content-assist/gtrsim.png" />
 	<command
 		group="RELATION"
 		token="\gvertneqq"
 		render="\gvertneqq"
-		template="\gvertneqq" />
+		template="\gvertneqq"
+		icon="icons/content-assist/gvertneqq.png" />
 	<command
 		group="RELATION"
 		token="\leq"
 		render="\leq"
-		template="\leq" />
+		template="\leq"
+		icon="icons/content-assist/leq.png" />
 	<command
 		group="RELATION"
 		token="\leqq"
 		render="\leqq"
-		template="\leqq" />
+		template="\leqq"
+		icon="icons/content-assist/leqq.png" />
 	<command
 		group="RELATION"
 		token="\leqslant"
 		render="\leqslant"
-		template="\leqslant" />
+		template="\leqslant"
+		icon="icons/content-assist/leqslant.png" />
 	<command
 		group="RELATION"
 		token="\lessapprox"
 		render="\lessapprox"
-		template="\lessapprox" />
+		template="\lessapprox"
+		icon="icons/content-assist/lessapprox.png" />
 	<command
 		group="RELATION"
 		token="\lesseqgtr"
 		render="\lesseqgtr"
-		template="\lesseqgtr" />
+		template="\lesseqgtr"
+		icon="icons/content-assist/lesseqgtr.png" />
 	<command
 		group="RELATION"
 		token="\lesseqqgtr"
 		render="\lesseqqgtr"
-		template="\lesseqqgtr" />
+		template="\lesseqqgtr"
+		icon="icons/content-assist/lesseqqgtr.png" />
 	<command
 		group="RELATION"
 		token="\lessgtr"
 		render="\lessgtr"
-		template="\lessgtr" />
+		template="\lessgtr"
+		icon="icons/content-assist/lessgtr.png" />
 	<command
 		group="RELATION"
 		token="\lesssim"
 		render="\lesssim"
-		template="\lesssim" />
+		template="\lesssim"
+		icon="icons/content-assist/lesssim.png" />
 	<command
 		group="RELATION"
 		token="\ll"
 		render="\ll"
-		template="\ll" />
+		template="\ll"
+		icon="icons/content-assist/ll.png" />
 	<command
 		group="RELATION"
 		token="\lll"
 		render="\lll"
-		template="\lll" />
+		template="\lll"
+		icon="icons/content-assist/lll.png" />
 	<command
 		group="RELATION"
 		token="\lnapprox"
 		render="\lnapprox"
-		template="\lnapprox" />
+		template="\lnapprox"
+		icon="icons/content-assist/lnapprox.png" />
 	<command
 		group="RELATION"
 		token="\lneq"
 		render="\lneq"
-		template="\lneq" />
+		template="\lneq"
+		icon="icons/content-assist/lneq.png" />
 	<command
 		group="RELATION"
 		token="\lneqq"
 		render="\lneqq"
-		template="\lneqq" />
+		template="\lneqq"
+		icon="icons/content-assist/lneqq.png" />
 	<command
 		group="RELATION"
 		token="\lnsim"
 		render="\lnsim"
-		template="\lnsim" />
+		template="\lnsim"
+		icon="icons/content-assist/lnsim.png" />
 	<command
 		group="RELATION"
 		token="\lvertneqq"
 		render="\lvertneqq"
-		template="\lvertneqq" />
+		template="\lvertneqq"
+		icon="icons/content-assist/lvertneqq.png" />
 	<command
 		group="RELATION"
 		token="\ncong"
 		render="\ncong"
-		template="\ncong" />
+		template="\ncong"
+		icon="icons/content-assist/ncong.png" />
 	<command
 		group="RELATION"
 		token="\neq"
 		render="\neq"
-		template="\neq" />
+		template="\neq"
+		icon="icons/content-assist/neq.png" />
 	<command
 		group="RELATION"
 		token="\ngeq"
 		render="\ngeq"
-		template="\ngeq" />
+		template="\ngeq"
+		icon="icons/content-assist/ngeq.png" />
 	<command
 		group="RELATION"
 		token="\ngeqq"
 		render="\ngeqq"
-		template="\ngeqq" />
+		template="\ngeqq"
+		icon="icons/content-assist/ngeqq.png" />
 	<command
 		group="RELATION"
 		token="\ngeqslant"
 		render="\ngeqslant"
-		template="\ngeqslant" />
+		template="\ngeqslant"
+		icon="icons/content-assist/ngeqslant.png" />
 	<command
 		group="RELATION"
 		token="\ngtr"
 		render="\ngtr"
-		template="\ngtr" />
+		template="\ngtr"
+		icon="icons/content-assist/ngtr.png" />
 	<command
 		group="RELATION"
 		token="\nleq"
 		render="\nleq"
-		template="\nleq" />
+		template="\nleq"
+		icon="icons/content-assist/nleq.png" />
 	<command
 		group="RELATION"
 		token="\nleqq"
 		render="\nleqq"
-		template="\nleqq" />
+		template="\nleqq"
+		icon="icons/content-assist/nleqq.png" />
 	<command
 		group="RELATION"
 		token="\nleqslant"
 		render="\nleqslant"
-		template="\nleqslant" />
+		template="\nleqslant"
+		icon="icons/content-assist/nleqslant.png" />
 	<command
 		group="RELATION"
 		token="\nless"
 		render="\nless"
-		template="\nless" />
+		template="\nless"
+		icon="icons/content-assist/nless.png" />
 	<command
 		group="RELATION"
 		token="\nprec"
 		render="\nprec"
-		template="\nprec" />
+		template="\nprec"
+		icon="icons/content-assist/nprec.png" />
 	<command
 		group="RELATION"
 		token="\npreceq"
 		render="\npreceq"
-		template="\npreceq" />
+		template="\npreceq"
+		icon="icons/content-assist/npreceq.png" />
 	<command
 		group="RELATION"
 		token="\nsim"
 		render="\nsim"
-		template="\nsim" />
+		template="\nsim"
+		icon="icons/content-assist/nsim.png" />
 	<command
 		group="RELATION"
 		token="\nsucc"
 		render="\nsucc"
-		template="\nsucc" />
+		template="\nsucc"
+		icon="icons/content-assist/nsucc.png" />
 	<command
 		group="RELATION"
 		token="\nsucceq"
 		render="\nsucceq"
-		template="\nsucceq" />
+		template="\nsucceq"
+		icon="icons/content-assist/nsucceq.png" />
 	<command
 		group="RELATION"
 		token="\prec"
 		render="\prec"
-		template="\prec" />
+		template="\prec"
+		icon="icons/content-assist/prec.png" />
 	<command
 		group="RELATION"
 		token="\precapprox"
 		render="\precapprox"
-		template="\precapprox" />
+		template="\precapprox"
+		icon="icons/content-assist/precapprox.png" />
 	<command
 		group="RELATION"
 		token="\preccurlyeq"
 		render="\preccurlyeq"
-		template="\preccurlyeq" />
+		template="\preccurlyeq"
+		icon="icons/content-assist/preccurlyeq.png" />
 	<command
 		group="RELATION"
 		token="\preceq"
 		render="\preceq"
-		template="\preceq" />
+		template="\preceq"
+		icon="icons/content-assist/preceq.png" />
 	<command
 		group="RELATION"
 		token="\precnapprox"
 		render="\precnapprox"
-		template="\precnapprox" />
+		template="\precnapprox"
+		icon="icons/content-assist/precnapprox.png" />
 	<command
 		group="RELATION"
 		token="\precneqq"
 		render="\precneqq"
-		template="\precneqq" />
+		template="\precneqq"
+		icon="icons/content-assist/precneqq.png" />
 	<command
 		group="RELATION"
 		token="\precnsim"
 		render="\precnsim"
-		template="\precnsim" />
+		template="\precnsim"
+		icon="icons/content-assist/precnsim.png" />
 	<command
 		group="RELATION"
 		token="\precsim"
 		render="\precsim"
-		template="\precsim" />
+		template="\precsim"
+		icon="icons/content-assist/precsim.png" />
 	<command
 		group="RELATION"
 		token="\risingdotseq"
 		render="\risingdotseq"
-		template="\risingdotseq" />
+		template="\risingdotseq"
+		icon="icons/content-assist/risingdotseq.png" />
 	<command
 		group="RELATION"
 		token="\sim"
 		render="\sim"
-		template="\sim" />
+		template="\sim"
+		icon="icons/content-assist/sim.png" />
 	<command
 		group="RELATION"
 		token="\simeq"
 		render="\simeq"
-		template="\simeq" />
+		template="\simeq"
+		icon="icons/content-assist/simeq.png" />
 	<command
 		group="RELATION"
 		token="\succ"
 		render="\succ"
-		template="\succ" />
+		template="\succ"
+		icon="icons/content-assist/succ.png" />
 	<command
 		group="RELATION"
 		token="\succapprox"
 		render="\succapprox"
-		template="\succapprox" />
+		template="\succapprox"
+		icon="icons/content-assist/succapprox.png" />
 	<command
 		group="RELATION"
 		token="\succcurlyeq"
 		render="\succcurlyeq"
-		template="\succcurlyeq" />
+		template="\succcurlyeq"
+		icon="icons/content-assist/succcurlyeq.png" />
 	<command
 		group="RELATION"
 		token="\succeq"
 		render="\succeq"
-		template="\succeq" />
+		template="\succeq"
+		icon="icons/content-assist/succeq.png" />
 	<command
 		group="RELATION"
 		token="\succnapprox"
 		render="\succnapprox"
-		template="\succnapprox" />
+		template="\succnapprox"
+		icon="icons/content-assist/succnapprox.png" />
 	<command
 		group="RELATION"
 		token="\succneqq"
 		render="\succneqq"
-		template="\succneqq" />
+		template="\succneqq"
+		icon="icons/content-assist/succneqq.png" />
 	<command
 		group="RELATION"
 		token="\succnsim"
 		render="\succnsim"
-		template="\succnsim" />
+		template="\succnsim"
+		icon="icons/content-assist/succnsim.png" />
 	<command
 		group="RELATION"
 		token="\succsim"
 		render="\succsim"
-		template="\succsim" />
+		template="\succsim"
+		icon="icons/content-assist/succsim.png" />
 	<command
 		group="RELATION"
 		token="\thickapprox"
 		render="\thickapprox"
-		template="\thickapprox" />
+		template="\thickapprox"
+		icon="icons/content-assist/thickapprox.png" />
 	<command
 		group="RELATION"
 		token="\thicksim"
 		render="\thicksim"
-		template="\thicksim" />
+		template="\thicksim"
+		icon="icons/content-assist/thicksim.png" />
 	<command
 		group="RELATION"
 		token="\triangleq"
 		render="\triangleq"
-		template="\triangleq" />
+		template="\triangleq"
+		icon="icons/content-assist/triangleq.png" />
 	<command
 		group="RELATION"
 		token="\ne"
 		render="\ne"
-		template="\ne" />
+		template="\ne"
+		icon="icons/content-assist/ne.png" />
 	<command
 		group="RELATION"
 		token="\le"
 		render="\le"
-		template="\le" />
+		template="\le"
+		icon="icons/content-assist/le.png" />
 	<command
 		group="RELATION"
 		token="\ge"
 		render="\ge"
-		template="\ge" />
+		template="\ge"
+		icon="icons/content-assist/ge.png" />
 	<command
 		group="RELATION"
 		token="\Doteq"
 		render="\Doteq"
-		template="\Doteq" />
+		template="\Doteq"
+		icon="icons/content-assist/_doteq.png" />
 	<command
 		group="RELATION"
 		token="\llless"
 		render="\llless"
-		template="\llless" />
+		template="\llless"
+		icon="icons/content-assist/llless.png" />
 	<command
 		group="RELATION"
 		token="\gggtr"
 		render="\gggtr"
-		template="\gggtr" />
-	<command
-		group="GENERAL"
-		token="\above"
-		render="\above"
-		template="\above" />
-	<command
-		group="GENERAL"
-		token="\abovewithdelims"
-		render="\abovewithdelims"
-		template="\abovewithdelims" />
+		template="\gggtr"
+		icon="icons/content-assist/gggtr.png" />
 	<command
 		group="GENERAL"
 		token="\arccos"
 		render="\arccos"
-		template="\arccos" />
+		template="\arccos"
+		icon="icons/content-assist/arccos.png" />
 	<command
 		group="GENERAL"
 		token="\arcsin"
 		render="\arcsin"
-		template="\arcsin" />
+		template="\arcsin"
+		icon="icons/content-assist/arcsin.png" />
 	<command
 		group="GENERAL"
 		token="\arctan"
 		render="\arctan"
-		template="\arctan" />
+		template="\arctan"
+		icon="icons/content-assist/arctan.png" />
 	<command
 		group="GENERAL"
 		token="\arg"
 		render="\arg"
-		template="\arg" />
-	<command
-		group="GENERAL"
-		token="\array"
-		render="\array"
-		template="\array" />
-	<command
-		group="GENERAL"
-		token="\atop"
-		render="\atop"
-		template="\atop" />
-	<command
-		group="GENERAL"
-		token="\atopwithdelims"
-		render="\atopwithdelims"
-		template="\atopwithdelims" />
-	<command
-		group="GENERAL"
-		token="\Bbb"
-		render="\Bbb"
-		template="\Bbb" />
-	<command
-		group="GENERAL"
-		token="\bbox"
-		render="\bbox"
-		template="\bbox" />
-	<command
-		group="GENERAL"
-		token="\bcancel"
-		render="\bcancel"
-		template="\bcancel" />
-	<command
-		group="GENERAL"
-		token="\begin"
-		render="\begin"
-		template="\begin" />
-	<command
-		group="GENERAL"
-		token="\begingroup"
-		render="\begingroup"
-		template="\begingroup" />
-	<command
-		group="GENERAL"
-		token="\bf"
-		render="\bf"
-		template="\bf" />
-	<command
-		group="GENERAL"
-		token="\Big"
-		render="\Big"
-		template="\Big" />
-	<command
-		group="GENERAL"
-		token="\big"
-		render="\big"
-		template="\big" />
-	<command
-		group="GENERAL"
-		token="\Bigg"
-		render="\Bigg"
-		template="\Bigg" />
-	<command
-		group="GENERAL"
-		token="\bigg"
-		render="\bigg"
-		template="\bigg" />
-	<command
-		group="GENERAL"
-		token="\Biggl"
-		render="\Biggl"
-		template="\Biggl" />
-	<command
-		group="GENERAL"
-		token="\biggl"
-		render="\biggl"
-		template="\biggl" />
-	<command
-		group="GENERAL"
-		token="\Biggm"
-		render="\Biggm"
-		template="\Biggm" />
-	<command
-		group="GENERAL"
-		token="\biggm"
-		render="\biggm"
-		template="\biggm" />
-	<command
-		group="GENERAL"
-		token="\Biggr"
-		render="\Biggr"
-		template="\Biggr" />
-	<command
-		group="GENERAL"
-		token="\biggr"
-		render="\biggr"
-		template="\biggr" />
-	<command
-		group="GENERAL"
-		token="\Bigl"
-		render="\Bigl"
-		template="\Bigl" />
-	<command
-		group="GENERAL"
-		token="\bigl"
-		render="\bigl"
-		template="\bigl" />
-	<command
-		group="GENERAL"
-		token="\Bigm"
-		render="\Bigm"
-		template="\Bigm" />
-	<command
-		group="GENERAL"
-		token="\bigm"
-		render="\bigm"
-		template="\bigm" />
-	<command
-		group="GENERAL"
-		token="\Bigr"
-		render="\Bigr"
-		template="\Bigr" />
-	<command
-		group="GENERAL"
-		token="\bigr"
-		render="\bigr"
-		template="\bigr" />
+		template="\arg"
+		icon="icons/content-assist/arg.png" />
 	<command
 		group="GENERAL"
 		token="\bmod"
 		render="\bmod"
-		template="\bmod" />
-	<command
-		group="GENERAL"
-		token="\boldsymbol"
-		render="\boldsymbol"
-		template="\boldsymbol" />
+		template="\bmod"
+		icon="icons/content-assist/bmod.png" />
 	<command
 		group="GENERAL"
 		token="\Box"
 		render="\Box"
-		template="\Box" />
-	<command
-		group="GENERAL"
-		token="\boxed"
-		render="\boxed"
-		template="\boxed" />
+		template="\Box"
+		icon="icons/content-assist/_box.png" />
 	<command
 		group="GENERAL"
 		token="\brace"
 		render="\brace"
-		template="\brace" />
+		template="\brace"
+		icon="icons/content-assist/brace.png" />
 	<command
 		group="GENERAL"
 		token="\bracevert"
 		render="\bracevert"
-		template="\bracevert" />
+		template="\bracevert"
+		icon="icons/content-assist/bracevert.png" />
 	<command
 		group="GENERAL"
 		token="\brack"
 		render="\brack"
-		template="\brack" />
-	<command
-		group="GENERAL"
-		token="\buildrel"
-		render="\buildrel"
-		template="\buildrel" />
-	<command
-		group="GENERAL"
-		token="\cal"
-		render="\cal"
-		template="\cal" />
-	<command
-		group="GENERAL"
-		token="\cancel"
-		render="\cancel"
-		template="\cancel" />
-	<command
-		group="GENERAL"
-		token="\cancelto"
-		render="\cancelto"
-		template="\cancelto" />
+		template="\brack"
+		icon="icons/content-assist/brack.png" />
 	<command
 		group="GENERAL"
 		token="\cases"
 		render="\cases"
-		template="\cases" />
+		template="\cases"
+		icon="icons/content-assist/cases.png" />
 	<command
 		group="GENERAL"
 		token="\cdotp"
 		render="\cdotp"
-		template="\cdotp" />
+		template="\cdotp"
+		icon="icons/content-assist/cdotp.png" />
 	<command
 		group="GENERAL"
 		token="\cdots"
 		render="\cdots"
-		template="\cdots" />
-	<command
-		group="GENERAL"
-		token="\ce"
-		render="\ce"
-		template="\ce" />
-	<command
-		group="GENERAL"
-		token="\cee"
-		render="\cee"
-		template="\cee" />
-	<command
-		group="GENERAL"
-		token="\cf"
-		render="\cf"
-		template="\cf" />
-	<command
-		group="GENERAL"
-		token="\cfrac"
-		render="\cfrac"
-		template="\cfrac" />
+		template="\cdots"
+		icon="icons/content-assist/cdots.png" />
 	<command
 		group="GENERAL"
 		token="\checkmark"
 		render="\checkmark"
-		template="\checkmark" />
+		template="\checkmark"
+		icon="icons/content-assist/checkmark.png" />
 	<command
 		group="GENERAL"
 		token="\choose"
 		render="\choose"
-		template="\choose" />
+		template="\choose"
+		icon="icons/content-assist/choose.png" />
 	<command
 		group="GENERAL"
 		token="\circledR"
 		render="\circledR"
-		template="\circledR" />
-	<command
-		group="GENERAL"
-		token="\class"
-		render="\class"
-		template="\class" />
+		template="\circledR"
+		icon="icons/content-assist/circled_r.png" />
 	<command
 		group="GENERAL"
 		token="\colon"
 		render="\colon"
-		template="\colon" />
-	<command
-		group="GENERAL"
-		token="\color"
-		render="\color"
-		template="\color" />
-	<command
-		group="GENERAL"
-		token="\colorbox"
-		render="\colorbox"
-		template="\colorbox" />
+		template="\colon"
+		icon="icons/content-assist/colon.png" />
 	<command
 		group="GENERAL"
 		token="\cos"
 		render="\cos"
-		template="\cos" />
+		template="\cos"
+		icon="icons/content-assist/cos.png" />
 	<command
 		group="GENERAL"
 		token="\cosh"
 		render="\cosh"
-		template="\cosh" />
+		template="\cosh"
+		icon="icons/content-assist/cosh.png" />
 	<command
 		group="GENERAL"
 		token="\cot"
 		render="\cot"
-		template="\cot" />
+		template="\cot"
+		icon="icons/content-assist/cot.png" />
 	<command
 		group="GENERAL"
 		token="\coth"
 		render="\coth"
-		template="\coth" />
-	<command
-		group="GENERAL"
-		token="\cr"
-		render="\cr"
-		template="\cr" />
+		template="\coth"
+		icon="icons/content-assist/coth.png" />
 	<command
 		group="GENERAL"
 		token="\csc"
 		render="\csc"
-		template="\csc" />
+		template="\csc"
+		icon="icons/content-assist/csc.png" />
 	<command
 		group="GENERAL"
 		token="\dashleftarrow"
 		render="\dashleftarrow"
-		template="\dashleftarrow" />
+		template="\dashleftarrow"
+		icon="icons/content-assist/dashleftarrow.png" />
 	<command
 		group="GENERAL"
 		token="\dashrightarrow"
 		render="\dashrightarrow"
-		template="\dashrightarrow" />
-	<command
-		group="GENERAL"
-		token="\dbinom"
-		render="\dbinom"
-		template="\dbinom" />
-	<command
-		group="GENERAL"
-		token="\ddddot"
-		render="\ddddot"
-		template="\ddddot" />
+		template="\dashrightarrow"
+		icon="icons/content-assist/dashrightarrow.png" />
 	<command
 		group="GENERAL"
 		token="\ddots"
 		render="\ddots"
-		template="\ddots" />
-	<command
-		group="GENERAL"
-		token="\DeclareMathOperator"
-		render="\DeclareMathOperator"
-		template="\DeclareMathOperator" />
+		template="\ddots"
+		icon="icons/content-assist/ddots.png" />
 	<command
 		group="GENERAL"
 		token="\deg"
 		render="\deg"
-		template="\deg" />
+		template="\deg"
+		icon="icons/content-assist/deg.png" />
 	<command
 		group="GENERAL"
 		token="\det"
 		render="\det"
-		template="\det" />
-	<command
-		group="GENERAL"
-		token="\dfrac"
-		render="\dfrac"
-		template="\dfrac" />
+		template="\det"
+		icon="icons/content-assist/det.png" />
 	<command
 		group="GENERAL"
 		token="\Diamond"
 		render="\Diamond"
-		template="\Diamond" />
+		template="\Diamond"
+		icon="icons/content-assist/_diamond.png" />
 	<command
 		group="GENERAL"
 		token="\dim"
 		render="\dim"
-		template="\dim" />
-	<command
-		group="GENERAL"
-		token="\displaylines"
-		render="\displaylines"
-		template="\displaylines" />
-	<command
-		group="GENERAL"
-		token="\displaystyle"
-		render="\displaystyle"
-		template="\displaystyle" />
+		template="\dim"
+		icon="icons/content-assist/dim.png" />
 	<command
 		group="GENERAL"
 		token="\dots"
 		render="\dots"
-		template="\dots" />
+		template="\dots"
+		icon="icons/content-assist/dots.png" />
 	<command
 		group="GENERAL"
 		token="\dotsb"
 		render="\dotsb"
-		template="\dotsb" />
+		template="\dotsb"
+		icon="icons/content-assist/dotsb.png" />
 	<command
 		group="GENERAL"
 		token="\dotsc"
 		render="\dotsc"
-		template="\dotsc" />
+		template="\dotsc"
+		icon="icons/content-assist/dotsc.png" />
 	<command
 		group="GENERAL"
 		token="\dotsi"
 		render="\dotsi"
-		template="\dotsi" />
+		template="\dotsi"
+		icon="icons/content-assist/dotsi.png" />
 	<command
 		group="GENERAL"
 		token="\dotsm"
 		render="\dotsm"
-		template="\dotsm" />
+		template="\dotsm"
+		icon="icons/content-assist/dotsm.png" />
 	<command
 		group="GENERAL"
 		token="\dotso"
 		render="\dotso"
-		template="\dotso" />
+		template="\dotso"
+		icon="icons/content-assist/dotso.png" />
 	<command
 		group="GENERAL"
 		token="\Downarrow"
 		render="\Downarrow"
-		template="\Downarrow" />
+		template="\Downarrow"
+		icon="icons/content-assist/_downarrow.png" />
 	<command
 		group="GENERAL"
 		token="\downarrow"
 		render="\downarrow"
-		template="\downarrow" />
-	<command
-		group="GENERAL"
-		token="\end"
-		render="\end"
-		template="\end" />
-	<command
-		group="GENERAL"
-		token="\enspace"
-		render="\enspace"
-		template="\enspace" />
-	<command
-		group="GENERAL"
-		token="\eqalign"
-		render="\eqalign"
-		template="\eqalign" />
-	<command
-		group="GENERAL"
-		token="\eqalignno"
-		render="\eqalignno"
-		template="\eqalignno" />
+		template="\downarrow"
+		icon="icons/content-assist/downarrow.png" />
 	<command
 		group="GENERAL"
 		token="\exp"
 		render="\exp"
-		template="\exp" />
-	<command
-		group="GENERAL"
-		token="\fbox"
-		render="\fbox"
-		template="\fbox" />
-	<command
-		group="GENERAL"
-		token="\frak"
-		render="\frak"
-		template="\frak" />
+		template="\exp"
+		icon="icons/content-assist/exp.png" />
 	<command
 		group="GENERAL"
 		token="\gcd"
 		render="\gcd"
-		template="\gcd" />
-	<command
-		group="GENERAL"
-		token="\genfrac"
-		render="\genfrac"
-		template="\genfrac" />
+		template="\gcd"
+		icon="icons/content-assist/gcd.png" />
 	<command
 		group="GENERAL"
 		token="\gt"
 		render="\gt"
-		template="\gt" />
+		template="\gt"
+		icon="icons/content-assist/gt.png" />
 	<command
 		group="GENERAL"
 		token="\gt"
 		render="\gt"
-		template="\gt" />
-	<command
-		group="GENERAL"
-		token="\hbox"
-		render="\hbox"
-		template="\hbox" />
-	<command
-		group="GENERAL"
-		token="\hdashline"
-		render="\hdashline"
-		template="\hdashline" />
-	<command
-		group="GENERAL"
-		token="\hline"
-		render="\hline"
-		template="\hline" />
+		template="\gt"
+		icon="icons/content-assist/gt.png" />
 	<command
 		group="GENERAL"
 		token="\hom"
 		render="\hom"
-		template="\hom" />
-	<command
-		group="GENERAL"
-		token="\hphantom"
-		render="\hphantom"
-		template="\hphantom" />
-	<command
-		group="GENERAL"
-		token="\hskip"
-		render="\hskip"
-		template="\hskip" />
-	<command
-		group="GENERAL"
-		token="\hspace"
-		render="\hspace"
-		template="\hspace" />
-	<command
-		group="GENERAL"
-		token="\Huge"
-		render="\Huge"
-		template="\Huge" />
-	<command
-		group="GENERAL"
-		token="\huge"
-		render="\huge"
-		template="\huge" />
+		template="\hom"
+		icon="icons/content-assist/hom.png" />
 	<command
 		group="GENERAL"
 		token="\idotsint"
 		render="\idotsint"
-		template="\idotsint" />
+		template="\idotsint"
+		icon="icons/content-assist/idotsint.png" />
 	<command
 		group="GENERAL"
 		token="\iff"
 		render="\iff"
-		template="\iff" />
+		template="\iff"
+		icon="icons/content-assist/iff.png" />
 	<command
 		group="GENERAL"
 		token="\iiiint"
 		render="\iiiint"
-		template="\iiiint" />
+		template="\iiiint"
+		icon="icons/content-assist/iiiint.png" />
 	<command
 		group="GENERAL"
 		token="\iiint"
 		render="\iiint"
-		template="\iiint" />
+		template="\iiint"
+		icon="icons/content-assist/iiint.png" />
 	<command
 		group="GENERAL"
 		token="\iint"
 		render="\iint"
-		template="\iint" />
+		template="\iint"
+		icon="icons/content-assist/iint.png" />
 	<command
 		group="GENERAL"
 		token="\imath"
 		render="\imath"
-		template="\imath" />
+		template="\imath"
+		icon="icons/content-assist/imath.png" />
 	<command
 		group="GENERAL"
 		token="\impliedby"
 		render="\impliedby"
-		template="\impliedby" />
+		template="\impliedby"
+		icon="icons/content-assist/impliedby.png" />
 	<command
 		group="GENERAL"
 		token="\implies"
 		render="\implies"
-		template="\implies" />
+		template="\implies"
+		icon="icons/content-assist/implies.png" />
 	<command
 		group="GENERAL"
 		token="\inf"
 		render="\inf"
-		template="\inf" />
+		template="\inf"
+		icon="icons/content-assist/inf.png" />
 	<command
 		group="GENERAL"
 		token="\injlim"
 		render="\injlim"
-		template="\injlim" />
+		template="\injlim"
+		icon="icons/content-assist/injlim.png" />
 	<command
 		group="GENERAL"
 		token="\intop"
 		render="\intop"
-		template="\intop" />
-	<command
-		group="GENERAL"
-		token="\it"
-		render="\it"
-		template="\it" />
+		template="\intop"
+		icon="icons/content-assist/intop.png" />
 	<command
 		group="GENERAL"
 		token="\jmath"
 		render="\jmath"
-		template="\jmath" />
+		template="\jmath"
+		icon="icons/content-assist/jmath.png" />
 	<command
 		group="GENERAL"
 		token="\Join"
 		render="\Join"
-		template="\Join" />
+		template="\Join"
+		icon="icons/content-assist/_join.png" />
 	<command
 		group="GENERAL"
 		token="\ker"
 		render="\ker"
-		template="\ker" />
-	<command
-		group="GENERAL"
-		token="\kern"
-		render="\kern"
-		template="\kern" />
+		template="\ker"
+		icon="icons/content-assist/ker.png" />
 	<command
 		group="GENERAL"
 		token="\langle"
 		render="\langle"
-		template="\langle" />
-	<command
-		group="GENERAL"
-		token="\LARGE"
-		render="\LARGE"
-		template="\LARGE" />
-	<command
-		group="GENERAL"
-		token="\Large"
-		render="\Large"
-		template="\Large" />
-	<command
-		group="GENERAL"
-		token="\large"
-		render="\large"
-		template="\large" />
+		template="\langle"
+		icon="icons/content-assist/langle.png" />
 	<command
 		group="GENERAL"
 		token="\lbrace"
 		render="\lbrace"
-		template="\lbrace" />
+		template="\lbrace"
+		icon="icons/content-assist/lbrace.png" />
 	<command
 		group="GENERAL"
 		token="\lbrack"
 		render="\lbrack"
-		template="\lbrack" />
+		template="\lbrack"
+		icon="icons/content-assist/lbrack.png" />
 	<command
 		group="GENERAL"
 		token="\lceil"
 		render="\lceil"
-		template="\lceil" />
+		template="\lceil"
+		icon="icons/content-assist/lceil.png" />
 	<command
 		group="GENERAL"
 		token="\ldotp"
 		render="\ldotp"
-		template="\ldotp" />
+		template="\ldotp"
+		icon="icons/content-assist/ldotp.png" />
 	<command
 		group="GENERAL"
 		token="\ldots"
 		render="\ldots"
-		template="\ldots" />
+		template="\ldots"
+		icon="icons/content-assist/ldots.png" />
 	<command
 		group="GENERAL"
 		token="\leadsto"
 		render="\leadsto"
-		template="\leadsto" />
-	<command
-		group="GENERAL"
-		token="\left"
-		render="\left"
-		template="\left" />
+		template="\leadsto"
+		icon="icons/content-assist/leadsto.png" />
 	<command
 		group="GENERAL"
 		token="\leftrightsquigarrow"
 		render="\leftrightsquigarrow"
-		template="\leftrightsquigarrow" />
-	<command
-		group="GENERAL"
-		token="\leftroot"
-		render="\leftroot"
-		template="\leftroot" />
-	<command
-		group="GENERAL"
-		token="\leqalignno"
-		render="\leqalignno"
-		template="\leqalignno" />
+		template="\leftrightsquigarrow"
+		icon="icons/content-assist/leftrightsquigarrow.png" />
 	<command
 		group="GENERAL"
 		token="\lfloor"
 		render="\lfloor"
-		template="\lfloor" />
+		template="\lfloor"
+		icon="icons/content-assist/lfloor.png" />
 	<command
 		group="GENERAL"
 		token="\lg"
 		render="\lg"
-		template="\lg" />
+		template="\lg"
+		icon="icons/content-assist/lg.png" />
 	<command
 		group="GENERAL"
 		token="\lgroup"
 		render="\lgroup"
-		template="\lgroup" />
+		template="\lgroup"
+		icon="icons/content-assist/lgroup.png" />
 	<command
 		group="GENERAL"
 		token="\lhd"
 		render="\lhd"
-		template="\lhd" />
+		template="\lhd"
+		icon="icons/content-assist/lhd.png" />
 	<command
 		group="GENERAL"
 		token="\lim"
 		render="\lim"
-		template="\lim" />
+		template="\lim"
+		icon="icons/content-assist/lim.png" />
 	<command
 		group="GENERAL"
 		token="\liminf"
 		render="\liminf"
-		template="\liminf" />
-	<command
-		group="GENERAL"
-		token="\limits"
-		render="\limits"
-		template="\limits" />
+		template="\liminf"
+		icon="icons/content-assist/liminf.png" />
 	<command
 		group="GENERAL"
 		token="\limsup"
 		render="\limsup"
-		template="\limsup" />
-	<command
-		group="GENERAL"
-		token="\llap"
-		render="\llap"
-		template="\llap" />
+		template="\limsup"
+		icon="icons/content-assist/limsup.png" />
 	<command
 		group="GENERAL"
 		token="\llcorner"
 		render="\llcorner"
-		template="\llcorner" />
+		template="\llcorner"
+		icon="icons/content-assist/llcorner.png" />
 	<command
 		group="GENERAL"
 		token="\lmoustache"
 		render="\lmoustache"
-		template="\lmoustache" />
+		template="\lmoustache"
+		icon="icons/content-assist/lmoustache.png" />
 	<command
 		group="GENERAL"
 		token="\ln"
 		render="\ln"
-		template="\ln" />
+		template="\ln"
+		icon="icons/content-assist/ln.png" />
 	<command
 		group="GENERAL"
 		token="\lnot"
 		render="\lnot"
-		template="\lnot" />
+		template="\lnot"
+		icon="icons/content-assist/lnot.png" />
 	<command
 		group="GENERAL"
 		token="\log"
 		render="\log"
-		template="\log" />
-	<command
-		group="GENERAL"
-		token="\lower"
-		render="\lower"
-		template="\lower" />
+		template="\log"
+		icon="icons/content-assist/log.png" />
 	<command
 		group="GENERAL"
 		token="\lrcorner"
 		render="\lrcorner"
-		template="\lrcorner" />
+		template="\lrcorner"
+		icon="icons/content-assist/lrcorner.png" />
 	<command
 		group="GENERAL"
 		token="\lt"
 		render="\lt"
-		template="\lt" />
+		template="\lt"
+		icon="icons/content-assist/lt.png" />
 	<command
 		group="GENERAL"
 		token="\lt"
 		render="\lt"
-		template="\lt" />
+		template="\lt"
+		icon="icons/content-assist/lt.png" />
 	<command
 		group="GENERAL"
 		token="\lVert"
 		render="\lVert"
-		template="\lVert" />
+		template="\lVert"
+		icon="icons/content-assist/l_vert.png" />
 	<command
 		group="GENERAL"
 		token="\lvert"
 		render="\lvert"
-		template="\lvert" />
+		template="\lvert"
+		icon="icons/content-assist/lvert.png" />
 	<command
 		group="GENERAL"
 		token="\maltese"
 		render="\maltese"
-		template="\maltese" />
-	<command
-		group="GENERAL"
-		token="\mathbb"
-		render="\mathbb"
-		template="\mathbb" />
-	<command
-		group="GENERAL"
-		token="\mathbf"
-		render="\mathbf"
-		template="\mathbf" />
-	<command
-		group="GENERAL"
-		token="\mathbin"
-		render="\mathbin"
-		template="\mathbin" />
-	<command
-		group="GENERAL"
-		token="\mathcal"
-		render="\mathcal"
-		template="\mathcal" />
-	<command
-		group="GENERAL"
-		token="\mathclose"
-		render="\mathclose"
-		template="\mathclose" />
-	<command
-		group="GENERAL"
-		token="\mathfrak"
-		render="\mathfrak"
-		template="\mathfrak" />
-	<command
-		group="GENERAL"
-		token="\mathinner"
-		render="\mathinner"
-		template="\mathinner" />
-	<command
-		group="GENERAL"
-		token="\mathit"
-		render="\mathit"
-		template="\mathit" />
-	<command
-		group="GENERAL"
-		token="\mathop"
-		render="\mathop"
-		template="\mathop" />
-	<command
-		group="GENERAL"
-		token="\mathopen"
-		render="\mathopen"
-		template="\mathopen" />
-	<command
-		group="GENERAL"
-		token="\mathord"
-		render="\mathord"
-		template="\mathord" />
-	<command
-		group="GENERAL"
-		token="\mathpunct"
-		render="\mathpunct"
-		template="\mathpunct" />
-	<command
-		group="GENERAL"
-		token="\mathrel"
-		render="\mathrel"
-		template="\mathrel" />
-	<command
-		group="GENERAL"
-		token="\mathring"
-		render="\mathring"
-		template="\mathring" />
-	<command
-		group="GENERAL"
-		token="\mathrm"
-		render="\mathrm"
-		template="\mathrm" />
-	<command
-		group="GENERAL"
-		token="\mathscr"
-		render="\mathscr"
-		template="\mathscr" />
-	<command
-		group="GENERAL"
-		token="\mathsf"
-		render="\mathsf"
-		template="\mathsf" />
-	<command
-		group="GENERAL"
-		token="\mathstrut"
-		render="\mathstrut"
-		template="\mathstrut" />
-	<command
-		group="GENERAL"
-		token="\mathtt"
-		render="\mathtt"
-		template="\mathtt" />
-	<command
-		group="GENERAL"
-		token="\matrix"
-		render="\matrix"
-		template="\matrix" />
+		template="\maltese"
+		icon="icons/content-assist/maltese.png" />
 	<command
 		group="GENERAL"
 		token="\max"
 		render="\max"
-		template="\max" />
-	<command
-		group="GENERAL"
-		token="\mbox"
-		render="\mbox"
-		template="\mbox" />
-	<command
-		group="GENERAL"
-		token="\middle"
-		render="\middle"
-		template="\middle" />
+		template="\max"
+		icon="icons/content-assist/max.png" />
 	<command
 		group="GENERAL"
 		token="\min"
 		render="\min"
-		template="\min" />
-	<command
-		group="GENERAL"
-		token="\mit"
-		render="\mit"
-		template="\mit" />
-	<command
-		group="GENERAL"
-		token="\mkern"
-		render="\mkern"
-		template="\mkern" />
-	<command
-		group="GENERAL"
-		token="\mod"
-		render="\mod"
-		template="\mod" />
-	<command
-		group="GENERAL"
-		token="\moveleft"
-		render="\moveleft"
-		template="\moveleft" />
-	<command
-		group="GENERAL"
-		token="\moveright"
-		render="\moveright"
-		template="\moveright" />
-	<command
-		group="GENERAL"
-		token="\mskip"
-		render="\mskip"
-		template="\mskip" />
-	<command
-		group="GENERAL"
-		token="\mspace"
-		render="\mspace"
-		template="\mspace" />
-	<command
-		group="GENERAL"
-		token="\negmedspace"
-		render="\negmedspace"
-		template="\negmedspace" />
-	<command
-		group="GENERAL"
-		token="\negthickspace"
-		render="\negthickspace"
-		template="\negthickspace" />
-	<command
-		group="GENERAL"
-		token="\negthinspace"
-		render="\negthinspace"
-		template="\negthinspace" />
-	<command
-		group="GENERAL"
-		token="\Newextarrow"
-		render="\Newextarrow"
-		template="\Newextarrow" />
-	<command
-		group="GENERAL"
-		token="\newline"
-		render="\newline"
-		template="\newline" />
-	<command
-		group="GENERAL"
-		token="\nobreakspace"
-		render="\nobreakspace"
-		template="\nobreakspace" />
-	<command
-		group="GENERAL"
-		token="\nolimits"
-		render="\nolimits"
-		template="\nolimits" />
-	<command
-		group="GENERAL"
-		token="\normalsize"
-		render="\normalsize"
-		template="\normalsize" />
+		template="\min"
+		icon="icons/content-assist/min.png" />
 	<command
 		group="GENERAL"
 		token="\not"
 		render="\not"
-		template="\not" />
-	<command
-		group="GENERAL"
-		token="\oldstyle"
-		render="\oldstyle"
-		template="\oldstyle" />
+		template="\not"
+		icon="icons/content-assist/not.png" />
 	<command
 		group="GENERAL"
 		token="\omicron"
 		render="\omicron"
-		template="\omicron" />
-	<command
-		group="GENERAL"
-		token="\operatorname"
-		render="\operatorname"
-		template="\operatorname" />
+		template="\omicron"
+		icon="icons/content-assist/omicron.png" />
 	<command
 		group="GENERAL"
 		token="\over"
 		render="\over"
-		template="\over" />
-	<command
-		group="GENERAL"
-		token="\overbrace"
-		render="\overbrace"
-		template="\overbrace" />
-	<command
-		group="GENERAL"
-		token="\overleftarrow"
-		render="\overleftarrow"
-		template="\overleftarrow" />
-	<command
-		group="GENERAL"
-		token="\overleftrightarrow"
-		render="\overleftrightarrow"
-		template="\overleftrightarrow" />
-	<command
-		group="GENERAL"
-		token="\overline"
-		render="\overline"
-		template="\overline" />
-	<command
-		group="GENERAL"
-		token="\overrightarrow"
-		render="\overrightarrow"
-		template="\overrightarrow" />
-	<command
-		group="GENERAL"
-		token="\overset"
-		render="\overset"
-		template="\overset" />
-	<command
-		group="GENERAL"
-		token="\overwithdelims"
-		render="\overwithdelims"
-		template="\overwithdelims" />
-	<command
-		group="GENERAL"
-		token="\phantom"
-		render="\phantom"
-		template="\phantom" />
+		template="\over"
+		icon="icons/content-assist/over.png" />
 	<command
 		group="GENERAL"
 		token="\pmatrix"
 		render="\pmatrix"
-		template="\pmatrix" />
-	<command
-		group="GENERAL"
-		token="\pmb"
-		render="\pmb"
-		template="\pmb" />
-	<command
-		group="GENERAL"
-		token="\pmod"
-		render="\pmod"
-		template="\pmod" />
-	<command
-		group="GENERAL"
-		token="\pod"
-		render="\pod"
-		template="\pod" />
+		template="\pmatrix"
+		icon="icons/content-assist/pmatrix.png" />
 	<command
 		group="GENERAL"
 		token="\Pr"
 		render="\Pr"
-		template="\Pr" />
+		template="\Pr"
+		icon="icons/content-assist/_pr.png" />
 	<command
 		group="GENERAL"
 		token="\projlim"
 		render="\projlim"
-		template="\projlim" />
-	<command
-		group="GENERAL"
-		token="\qquad"
-		render="\qquad"
-		template="\qquad" />
-	<command
-		group="GENERAL"
-		token="\quad"
-		render="\quad"
-		template="\quad" />
-	<command
-		group="GENERAL"
-		token="\raise"
-		render="\raise"
-		template="\raise" />
+		template="\projlim"
+		icon="icons/content-assist/projlim.png" />
 	<command
 		group="GENERAL"
 		token="\rangle"
 		render="\rangle"
-		template="\rangle" />
+		template="\rangle"
+		icon="icons/content-assist/rangle.png" />
 	<command
 		group="GENERAL"
 		token="\rbrace"
 		render="\rbrace"
-		template="\rbrace" />
+		template="\rbrace"
+		icon="icons/content-assist/rbrace.png" />
 	<command
 		group="GENERAL"
 		token="\rbrack"
 		render="\rbrack"
-		template="\rbrack" />
+		template="\rbrack"
+		icon="icons/content-assist/rbrack.png" />
 	<command
 		group="GENERAL"
 		token="\rceil"
 		render="\rceil"
-		template="\rceil" />
+		template="\rceil"
+		icon="icons/content-assist/rceil.png" />
 	<command
 		group="GENERAL"
 		token="\rfloor"
 		render="\rfloor"
-		template="\rfloor" />
+		template="\rfloor"
+		icon="icons/content-assist/rfloor.png" />
 	<command
 		group="GENERAL"
 		token="\rgroup"
 		render="\rgroup"
-		template="\rgroup" />
+		template="\rgroup"
+		icon="icons/content-assist/rgroup.png" />
 	<command
 		group="GENERAL"
 		token="\rhd"
 		render="\rhd"
-		template="\rhd" />
+		template="\rhd"
+		icon="icons/content-assist/rhd.png" />
 	<command
 		group="GENERAL"
 		token="\right"
 		render="\right"
-		template="\right" />
-	<command
-		group="GENERAL"
-		token="\rlap"
-		render="\rlap"
-		template="\rlap" />
-	<command
-		group="GENERAL"
-		token="\rm"
-		render="\rm"
-		template="\rm" />
+		template="\right"
+		icon="icons/content-assist/right.png" />
 	<command
 		group="GENERAL"
 		token="\rmoustache"
 		render="\rmoustache"
-		template="\rmoustache" />
-	<command
-		group="GENERAL"
-		token="\root"
-		render="\root"
-		template="\root" />
+		template="\rmoustache"
+		icon="icons/content-assist/rmoustache.png" />
 	<command
 		group="GENERAL"
 		token="\rVert"
 		render="\rVert"
-		template="\rVert" />
+		template="\rVert"
+		icon="icons/content-assist/r_vert.png" />
 	<command
 		group="GENERAL"
 		token="\rvert"
 		render="\rvert"
-		template="\rvert" />
+		template="\rvert"
+		icon="icons/content-assist/rvert.png" />
 	<command
 		group="GENERAL"
 		token="\S"
 		render="\S"
-		template="\S" />
-	<command
-		group="GENERAL"
-		token="\scr"
-		render="\scr"
-		template="\scr" />
-	<command
-		group="GENERAL"
-		token="\scriptscriptstyle"
-		render="\scriptscriptstyle"
-		template="\scriptscriptstyle" />
-	<command
-		group="GENERAL"
-		token="\scriptsize"
-		render="\scriptsize"
-		template="\scriptsize" />
-	<command
-		group="GENERAL"
-		token="\scriptstyle"
-		render="\scriptstyle"
-		template="\scriptstyle" />
+		template="\S"
+		icon="icons/content-assist/_s.png" />
 	<command
 		group="GENERAL"
 		token="\sec"
 		render="\sec"
-		template="\sec" />
-	<command
-		group="GENERAL"
-		token="\sf"
-		render="\sf"
-		template="\sf" />
-	<command
-		group="GENERAL"
-		token="\shoveleft"
-		render="\shoveleft"
-		template="\shoveleft" />
-	<command
-		group="GENERAL"
-		token="\shoveright"
-		render="\shoveright"
-		template="\shoveright" />
-	<command
-		group="GENERAL"
-		token="\sideset"
-		render="\sideset"
-		template="\sideset" />
+		template="\sec"
+		icon="icons/content-assist/sec.png" />
 	<command
 		group="GENERAL"
 		token="\sin"
 		render="\sin"
-		template="\sin" />
+		template="\sin"
+		icon="icons/content-assist/sin.png" />
 	<command
 		group="GENERAL"
 		token="\sinh"
 		render="\sinh"
-		template="\sinh" />
-	<command
-		group="GENERAL"
-		token="\skew"
-		render="\skew"
-		template="\skew" />
-	<command
-		group="GENERAL"
-		token="\small"
-		render="\small"
-		template="\small" />
-	<command
-		group="GENERAL"
-		token="\smash"
-		render="\smash"
-		template="\smash" />
-	<command
-		group="GENERAL"
-		token="\Space"
-		render="\Space"
-		template="\Space" />
-	<command
-		group="GENERAL"
-		token="\space"
-		render="\space"
-		template="\space" />
-	<command
-		group="GENERAL"
-		token="\sqrt"
-		render="\sqrt"
-		template="\sqrt" />
-	<command
-		group="GENERAL"
-		token="\stackrel"
-		render="\stackrel"
-		template="\stackrel" />
-	<command
-		group="GENERAL"
-		token="\strut"
-		render="\strut"
-		template="\strut" />
-	<command
-		group="GENERAL"
-		token="\substack"
-		render="\substack"
-		template="\substack" />
+		template="\sinh"
+		icon="icons/content-assist/sinh.png" />
 	<command
 		group="GENERAL"
 		token="\sup"
 		render="\sup"
-		template="\sup" />
+		template="\sup"
+		icon="icons/content-assist/sup.png" />
 	<command
 		group="GENERAL"
 		token="\tan"
 		render="\tan"
-		template="\tan" />
+		template="\tan"
+		icon="icons/content-assist/tan.png" />
 	<command
 		group="GENERAL"
 		token="\tanh"
 		render="\tanh"
-		template="\tanh" />
-	<command
-		group="GENERAL"
-		token="\tbinom"
-		render="\tbinom"
-		template="\tbinom" />
+		template="\tanh"
+		icon="icons/content-assist/tanh.png" />
 	<command
 		group="GENERAL"
 		token="\TeX"
 		render="\TeX"
-		template="\TeX" />
-	<command
-		group="GENERAL"
-		token="\text"
-		render="\text"
-		template="\text" />
-	<command
-		group="GENERAL"
-		token="\textbf"
-		render="\textbf"
-		template="\textbf" />
-	<command
-		group="GENERAL"
-		token="\textit"
-		render="\textit"
-		template="\textit" />
-	<command
-		group="GENERAL"
-		token="\textrm"
-		render="\textrm"
-		template="\textrm" />
-	<command
-		group="GENERAL"
-		token="\textstyle"
-		render="\textstyle"
-		template="\textstyle" />
-	<command
-		group="GENERAL"
-		token="\tfrac"
-		render="\tfrac"
-		template="\tfrac" />
-	<command
-		group="GENERAL"
-		token="\thinspace"
-		render="\thinspace"
-		template="\thinspace" />
-	<command
-		group="GENERAL"
-		token="\tiny"
-		render="\tiny"
-		template="\tiny" />
-	<command
-		group="GENERAL"
-		token="\tt"
-		render="\tt"
-		template="\tt" />
+		template="\TeX"
+		icon="icons/content-assist/_te_x.png" />
 	<command
 		group="GENERAL"
 		token="\ulcorner"
 		render="\ulcorner"
-		template="\ulcorner" />
-	<command
-		group="GENERAL"
-		token="\underbrace"
-		render="\underbrace"
-		template="\underbrace" />
-	<command
-		group="GENERAL"
-		token="\underline"
-		render="\underline"
-		template="\underline" />
-	<command
-		group="GENERAL"
-		token="\underset"
-		render="\underset"
-		template="\underset" />
+		template="\ulcorner"
+		icon="icons/content-assist/ulcorner.png" />
 	<command
 		group="GENERAL"
 		token="\unlhd"
 		render="\unlhd"
-		template="\unlhd" />
+		template="\unlhd"
+		icon="icons/content-assist/unlhd.png" />
 	<command
 		group="GENERAL"
 		token="\unrhd"
 		render="\unrhd"
-		template="\unrhd" />
+		template="\unrhd"
+		icon="icons/content-assist/unrhd.png" />
 	<command
 		group="GENERAL"
 		token="\Uparrow"
 		render="\Uparrow"
-		template="\Uparrow" />
+		template="\Uparrow"
+		icon="icons/content-assist/_uparrow.png" />
 	<command
 		group="GENERAL"
 		token="\Updownarrow"
 		render="\Updownarrow"
-		template="\Updownarrow" />
+		template="\Updownarrow"
+		icon="icons/content-assist/_updownarrow.png" />
 	<command
 		group="GENERAL"
 		token="\updownarrow"
 		render="\updownarrow"
-		template="\updownarrow" />
-	<command
-		group="GENERAL"
-		token="\uproot"
-		render="\uproot"
-		template="\uproot" />
+		template="\updownarrow"
+		icon="icons/content-assist/updownarrow.png" />
 	<command
 		group="GENERAL"
 		token="\urcorner"
 		render="\urcorner"
-		template="\urcorner" />
-	<command
-		group="GENERAL"
-		token="\vcenter"
-		render="\vcenter"
-		template="\vcenter" />
+		template="\urcorner"
+		icon="icons/content-assist/urcorner.png" />
 	<command
 		group="GENERAL"
 		token="\vdots"
 		render="\vdots"
-		template="\vdots" />
+		template="\vdots"
+		icon="icons/content-assist/vdots.png" />
 	<command
 		group="GENERAL"
 		token="\veebar"
 		render="\veebar"
-		template="\veebar" />
-	<command
-		group="GENERAL"
-		token="\verb"
-		render="\verb"
-		template="\verb" />
+		template="\veebar"
+		icon="icons/content-assist/veebar.png" />
 	<command
 		group="GENERAL"
 		token="\Vert"
 		render="\Vert"
-		template="\Vert" />
+		template="\Vert"
+		icon="icons/content-assist/_vert.png" />
 	<command
 		group="GENERAL"
 		token="\vert"
 		render="\vert"
-		template="\vert" />
-	<command
-		group="GENERAL"
-		token="\vphantom"
-		render="\vphantom"
-		template="\vphantom" />
-	<command
-		group="GENERAL"
-		token="\xcancel"
-		render="\xcancel"
-		template="\xcancel" />
-	<command
-		group="GENERAL"
-		token="\xlongequal"
-		render="\xlongequal"
-		template="\xlongequal" />
-	<command
-		group="GENERAL"
-		token="\xmapsto"
-		render="\xmapsto"
-		template="\xmapsto" />
-	<command
-		group="GENERAL"
-		token="\xtofrom"
-		render="\xtofrom"
-		template="\xtofrom" />
+		template="\vert"
+		icon="icons/content-assist/vert.png" />
 	<command
 		group="GENERAL"
 		token="\varprojlim"
 		render="\varprojlim"
-		template="\varprojlim" />
+		template="\varprojlim"
+		icon="icons/content-assist/varprojlim.png" />
 	<command
 		group="SYMBOL"
 		token="\#"
 		render="\#"
-		template="\#" />
+		template="\#"
+		icon="icons/content-assist/#.png" />
 	<command
 		group="SYMBOL"
-		token="\&"
-		render="\&"
-		template="\&" />
+		token="\&amp;"
+		render="\&amp;"
+		template="\&amp;"
+		icon="icons/content-assist/&amp;.png" />
 	<command
 		group="SYMBOL"
 		token="\And"
 		render="\And"
-		template="\And" />
+		template="\And"
+		icon="icons/content-assist/_and.png" />
 	<command
 		group="SYMBOL"
 		token="\angle"
 		render="\angle"
-		template="\angle" />
+		template="\angle"
+		icon="icons/content-assist/angle.png" />
 	<command
 		group="SYMBOL"
 		token="\backprime"
 		render="\backprime"
-		template="\backprime" />
+		template="\backprime"
+		icon="icons/content-assist/backprime.png" />
 	<command
 		group="SYMBOL"
 		token="\backslash"
 		render="\backslash"
-		template="\backslash" />
+		template="\backslash"
+		icon="icons/content-assist/backslash.png" />
 	<command
 		group="SYMBOL"
 		token="\bigstar"
 		render="\bigstar"
-		template="\bigstar" />
+		template="\bigstar"
+		icon="icons/content-assist/bigstar.png" />
 	<command
 		group="SYMBOL"
 		token="\blacklozenge"
 		render="\blacklozenge"
-		template="\blacklozenge" />
+		template="\blacklozenge"
+		icon="icons/content-assist/blacklozenge.png" />
 	<command
 		group="SYMBOL"
 		token="\blacksquare"
 		render="\blacksquare"
-		template="\blacksquare" />
+		template="\blacksquare"
+		icon="icons/content-assist/blacksquare.png" />
 	<command
 		group="SYMBOL"
 		token="\blacktriangle"
 		render="\blacktriangle"
-		template="\blacktriangle" />
+		template="\blacktriangle"
+		icon="icons/content-assist/blacktriangle.png" />
 	<command
 		group="SYMBOL"
 		token="\blacktriangledown"
 		render="\blacktriangledown"
-		template="\blacktriangledown" />
+		template="\blacktriangledown"
+		icon="icons/content-assist/blacktriangledown.png" />
 	<command
 		group="SYMBOL"
 		token="\bot"
 		render="\bot"
-		template="\bot" />
+		template="\bot"
+		icon="icons/content-assist/bot.png" />
 	<command
 		group="SYMBOL"
 		token="\clubsuit"
 		render="\clubsuit"
-		template="\clubsuit" />
+		template="\clubsuit"
+		icon="icons/content-assist/clubsuit.png" />
 	<command
 		group="SYMBOL"
 		token="\diagdown"
 		render="\diagdown"
-		template="\diagdown" />
+		template="\diagdown"
+		icon="icons/content-assist/diagdown.png" />
 	<command
 		group="SYMBOL"
 		token="\diagup"
 		render="\diagup"
-		template="\diagup" />
+		template="\diagup"
+		icon="icons/content-assist/diagup.png" />
 	<command
 		group="SYMBOL"
 		token="\diamondsuit"
 		render="\diamondsuit"
-		template="\diamondsuit" />
+		template="\diamondsuit"
+		icon="icons/content-assist/diamondsuit.png" />
 	<command
 		group="SYMBOL"
 		token="\emptyset"
 		render="\emptyset"
-		template="\emptyset" />
+		template="\emptyset"
+		icon="icons/content-assist/emptyset.png" />
 	<command
 		group="SYMBOL"
 		token="\exists"
 		render="\exists"
-		template="\exists" />
+		template="\exists"
+		icon="icons/content-assist/exists.png" />
 	<command
 		group="SYMBOL"
 		token="\flat"
 		render="\flat"
-		template="\flat" />
+		template="\flat"
+		icon="icons/content-assist/flat.png" />
 	<command
 		group="SYMBOL"
 		token="\forall"
 		render="\forall"
-		template="\forall" />
+		template="\forall"
+		icon="icons/content-assist/forall.png" />
 	<command
 		group="SYMBOL"
 		token="\heartsuit"
 		render="\heartsuit"
-		template="\heartsuit" />
+		template="\heartsuit"
+		icon="icons/content-assist/heartsuit.png" />
 	<command
 		group="SYMBOL"
 		token="\infty"
 		render="\infty"
-		template="\infty" />
+		template="\infty"
+		icon="icons/content-assist/infty.png" />
 	<command
 		group="SYMBOL"
 		token="\lozenge"
 		render="\lozenge"
-		template="\lozenge" />
+		template="\lozenge"
+		icon="icons/content-assist/lozenge.png" />
 	<command
 		group="SYMBOL"
 		token="\measuredangle"
 		render="\measuredangle"
-		template="\measuredangle" />
+		template="\measuredangle"
+		icon="icons/content-assist/measuredangle.png" />
 	<command
 		group="SYMBOL"
 		token="\nabla"
 		render="\nabla"
-		template="\nabla" />
+		template="\nabla"
+		icon="icons/content-assist/nabla.png" />
 	<command
 		group="SYMBOL"
 		token="\natural"
 		render="\natural"
-		template="\natural" />
+		template="\natural"
+		icon="icons/content-assist/natural.png" />
 	<command
 		group="SYMBOL"
 		token="\neg"
 		render="\neg"
-		template="\neg" />
+		template="\neg"
+		icon="icons/content-assist/neg.png" />
 	<command
 		group="SYMBOL"
 		token="\nexists"
 		render="\nexists"
-		template="\nexists" />
+		template="\nexists"
+		icon="icons/content-assist/nexists.png" />
 	<command
 		group="SYMBOL"
 		token="\prime"
 		render="\prime"
-		template="\prime" />
+		template="\prime"
+		icon="icons/content-assist/prime.png" />
 	<command
 		group="SYMBOL"
 		token="\sharp"
 		render="\sharp"
-		template="\sharp" />
+		template="\sharp"
+		icon="icons/content-assist/sharp.png" />
 	<command
 		group="SYMBOL"
 		token="\spadesuit"
 		render="\spadesuit"
-		template="\spadesuit" />
+		template="\spadesuit"
+		icon="icons/content-assist/spadesuit.png" />
 	<command
 		group="SYMBOL"
 		token="\sphericalangle"
 		render="\sphericalangle"
-		template="\sphericalangle" />
+		template="\sphericalangle"
+		icon="icons/content-assist/sphericalangle.png" />
 	<command
 		group="SYMBOL"
 		token="\square"
 		render="\square"
-		template="\square" />
+		template="\square"
+		icon="icons/content-assist/square.png" />
 	<command
 		group="SYMBOL"
 		token="\top"
 		render="\top"
-		template="\top" />
+		template="\top"
+		icon="icons/content-assist/top.png" />
 	<command
 		group="SYMBOL"
 		token="\surd"
 		render="\surd"
-		template="\surd" />
+		template="\surd"
+		icon="icons/content-assist/surd.png" />
 	<command
 		group="SYMBOL"
 		token="\triangle"
 		render="\triangle"
-		template="\triangle" />
+		template="\triangle"
+		icon="icons/content-assist/triangle.png" />
 	<command
 		group="SYMBOL"
 		token="\triangledown"
 		render="\triangledown"
-		template="\triangledown" />
+		template="\triangledown"
+		icon="icons/content-assist/triangledown.png" />
 	<command
 		group="SYMBOL"
 		token="\varnothing"
 		render="\varnothing"
-		template="\varnothing" />
+		template="\varnothing"
+		icon="icons/content-assist/varnothing.png" />
 	<command
 		group="SYMBOL"
 		token="\yen"
 		render="\yen"
-		template="\yen" />
+		template="\yen"
+		icon="icons/content-assist/yen.png" />
 </dictionary>

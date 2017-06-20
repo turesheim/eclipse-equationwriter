@@ -17,13 +17,8 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
 import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.util.List;
 
-import org.eclipse.core.runtime.FileLocator;
-import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.mylyn.wikitext.parser.DocumentBuilder.SpanType;
 import org.eclipse.mylyn.wikitext.parser.builder.HtmlDocumentBuilder;
 import org.eclipse.swt.SWT;
@@ -38,16 +33,14 @@ import org.eclipse.swt.graphics.Rectangle;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
-import org.osgi.framework.Bundle;
 
-import net.resheim.eclipse.equationwriter.EditorPlugin;
 import net.resheim.eclipse.equationwriter.LaTeXCommand;
 import net.resheim.eclipse.equationwriter.LaTeXDictionary;
 
 /**
  * This type is ised to create icons for the content assist feature. It will iterate over all LaTeX commands found in
- * the dictionaru, render it and produce PNG file in different sizes. Note that this has been found to work with Luna.
- * It appears there have been some changes in the browser widget.
+ * the dictionaru, render it and produce PNG file in different sizes. Note that this has been found to only work with
+ * Luna. It appears there have been some changes in the browser widget in Neon and Oxygen.
  * 
  * @author Torkild U. Resheim
  */
@@ -71,13 +64,17 @@ public class IconBuilder {
 	public static final String JS = "" //
 			+ "<script type=\"text/x-mathjax-config\">MathJax.Hub.Config({tex2jax: {inlineMath: [[\"$\",\"$\"],[\"\\\\(\",\"\\\\)\"]]}});</script>" //
 			+ "<script type=\"text/javascript\" src=\"%MATHJAX%/MathJax.js?config=TeX-AMS_SVG\"></script>" //
-			+ "<style>\n" + "  * {\n" + "    margin: 0;\n" //
-			+ "    padding: 0;\n" + "  }\n" + "</style>\n" + "<script>\n" //
+			+ "<style>\n" //
+			+ "  * { font-size: 32pt;  margin: 0; padding: 0; }\n" //
+			+ "</style>\n" //
+			+ "<script>\n" //
 			+ "  MathJax.Hub.Config({\n" //
 			+ "    SVG: {\n" //
+			+ "      minScaleAdjust: 250,\n" // 
 			+ "      scale: 250,\n" //
-			+ "      blacker: 10,\n" //
-			+ "      font: \"STIX-Web\"\n" + "    }\n" //
+			+ "      blacker: 30,\n" //
+			+ "      font: \"TeX\"\n" // 
+			+ "    }\n" //
 			+ "  });\n" //
 			+ "  (function () {\n" //
 			+ "    var QUEUE = MathJax.Hub.queue;\n" //
@@ -129,8 +126,9 @@ public class IconBuilder {
 		shell.setLocation(100, 100);
 		shell.setLayout(new FillLayout());
 		browser = new Browser(shell, SWT.NONE);
-		browser.setSize(400, 400);
-		shell.pack(true);
+		browser.setSize(200, 200);
+		shell.setSize(200, 200);
+		//shell.pack(true);
 		// call this method when the symbol has been correctly rendered
 		new MathJaxReady(browser, "loadFormula");
 
@@ -138,13 +136,10 @@ public class IconBuilder {
 		final StringWriter sw = new StringWriter();
 		final HtmlDocumentBuilder h = new HtmlDocumentBuilder(sw);
 		h.beginDocument();
-		Bundle bundle = Platform.getBundle(EditorPlugin.MATHJAX_BUNDLE_ID);
-		URL url = FileLocator.find(bundle, Path.fromPortableString("MathJax"), null);
+		URI uri = new File("../net.resheim.eclipse.equationwriter.mathjax/MathJax/").toURI();
 		try {
-			URI uri = FileLocator.resolve(url).toURI();
-			File f = new File(uri);
-			h.charactersUnescaped(JS.replace("%MATHJAX%", f.toString()));
-		} catch (URISyntaxException | IOException e) {
+			h.charactersUnescaped(JS.replace("%MATHJAX%", uri.toURL().toString()));
+		} catch (IOException e) {
 			h.beginSpan(SpanType.CODE, null);
 			h.characters(e.getMessage());
 			h.endSpan();
@@ -193,7 +188,7 @@ public class IconBuilder {
 	 * Save a screenshot (of the browser) having rendered the expression.
 	 */
 	private static void saveCurrentIcon() {
-		File dir = new File("icons/content-assist");
+		File dir = new File("icons/content-assist2");
 		if (!dir.exists()) {
 			dir.mkdir();
 		}
@@ -205,13 +200,12 @@ public class IconBuilder {
 		Rectangle edges = detectEdges(image);
 
 		// we need three different sizes for HiDPI displays.
-		saveIcon(image, edges, SIZE_1x, currentSymbol.getToken(), dir, "");
-		saveIcon(image, edges, SIZE_1_5x, currentSymbol.getToken(), dir, "@1.5x");
-		saveIcon(image, edges, SIZE_2x, currentSymbol.getToken(), dir, "@2x");
+		saveIcon(image, edges, SIZE_1x, dir, "");
+		saveIcon(image, edges, SIZE_1_5x, dir, "@1.5x");
+		saveIcon(image, edges, SIZE_2x, dir, "@2x");
 	}
 
-	private static void saveIcon(final Image image, final Rectangle edges, int size, String filename, File dir,
-			String suffix) {
+	private static void saveIcon(final Image image, final Rectangle edges, int size, File dir, String suffix) {
 
 		// make sure that height and width are the same
 		int width = edges.width;
@@ -250,34 +244,18 @@ public class IconBuilder {
 		// save the final image
 		ImageLoader il = new ImageLoader();
 		il.data = new ImageData[] { id };
-		String imageName = dir.getAbsolutePath() + File.separator + getFilename(filename) + suffix + ".png";
+
+		String string = currentSymbol.getIcon().getFileName().toString();
+		String filename = string.substring(0, string.lastIndexOf("."));
+
+		String imageName = dir.getAbsolutePath() + File.separator + filename + suffix + ".png";
 		File imageFile = new File(imageName);
 		if (imageFile.exists()) {
 			imageFile.delete();
 		}
 		il.save(imageName, SWT.IMAGE_PNG);
-		System.out.println("Created icon for " + currentSymbol.getToken() + ". Original size: " + edges);
-	}
 
-	/**
-	 * Converts the string to something that can be used as the icon file name
-	 * 
-	 * @param keyword
-	 *            the keyword
-	 * @return the file name
-	 */
-	public static String getFilename(String keyword) {
-		StringBuilder sb = new StringBuilder();
-		char[] charArray = keyword.toCharArray();
-		for (char c : charArray) {
-			if (Character.isUpperCase(c)) {
-				sb.append("_");
-				sb.append(Character.toLowerCase(c));
-			} else if (c != '\\') {
-				sb.append(c);
-			}
-		}
-		return sb.toString();
+		System.out.println("Created icon for " + currentSymbol.getToken() + ". Original size: " + edges);
 	}
 
 	public static ImageData convertBrightnessToAlpha(ImageData data, RGB foreground) {
