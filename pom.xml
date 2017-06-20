@@ -46,12 +46,12 @@
 	</licenses>
 
 	<properties>
-		<tycho.version>0.22.0</tycho.version>
+		<tycho.version>1.0.0</tycho.version>
 	</properties>
 
 	<organization>
 		<name>Torkild U. Resheim</name>
-		<url>http://resheim.net/</url>
+		<url>https://resheim.net/</url>
 	</organization>
 
 	<build>
@@ -142,6 +142,7 @@
 
 	<modules>
 		<module>net.resheim.eclipse.equationwriter.core</module>
+		<module>net.resheim.eclipse.equationwriter.mathjax</module>
 		<module>net.resheim.eclipse.equationwriter-feature</module>
 		<module>net.resheim.eclipse.equationwriter-site</module>
 	</modules>
