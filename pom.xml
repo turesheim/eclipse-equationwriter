@@ -80,7 +80,7 @@
 							<groupId>net.resheim.eclipse.equationwriter</groupId>
 							<artifactId>net.resheim.eclipse.equationwriter-parent</artifactId>
 							<version>0.1.0-SNAPSHOT</version>
-							<classifier>default</classifier>
+							<classifier>oxygen</classifier>
 						</artifact>
 					</target>
 					<resolver>p2</resolver>
