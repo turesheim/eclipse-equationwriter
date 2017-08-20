@@ -9,7 +9,6 @@
     Contributors:
         Torkild U. Resheim - initial API and implementation
  -->
-
 <feature
       id="net.resheim.eclipse.equationwriter"
       label="%featureName"
@@ -40,6 +39,7 @@
          id="net.resheim.eclipse.equationwriter.mathjax"
          download-size="0"
          install-size="0"
-         version="0.0.0"/>
+         version="0.0.0"
+         unpack="false"/>
 
 </feature>

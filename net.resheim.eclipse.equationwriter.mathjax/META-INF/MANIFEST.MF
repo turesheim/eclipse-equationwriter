@@ -3,3 +3,4 @@ Bundle-ManifestVersion: 2
 Bundle-Name: MathJaX
 Bundle-SymbolicName: net.resheim.eclipse.equationwriter.mathjax
 Bundle-Version: 2.6.0.qualifier
+Eclipse-BundleShape: dir
