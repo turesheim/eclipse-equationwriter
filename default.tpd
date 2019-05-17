@@ -1,7 +1,7 @@
 target "Eclipse Equationwriter Target Platform" with source requirements
 
 // Base dependencies (Currently 4.5)
-location "http://download.eclipse.org/releases/luna/" {
+location "https://download.eclipse.org/releases/2019-03/" {
     org.eclipse.emf.ecore
     org.eclipse.emf.ecore.xmi
     org.eclipse.emf.ecore.change
@@ -11,10 +11,12 @@ location "http://download.eclipse.org/releases/luna/" {
     org.eclipse.equinox.p2.sdk.feature.group
     org.eclipse.sdk.feature.group
     org.eclipse.pde.core
+    org.eclipse.mylyn.wikitext
+    com.google.guava
 }
 
 // UI Testing
-location "http://download.eclipse.org/technology/swtbot/releases/2.2.1/" {
+location "http://download.eclipse.org/technology/swtbot/releases/2.7.0/" {
     org.eclipse.swtbot.forms.source.feature.group
     org.eclipse.swtbot.eclipse.source.feature.group
     org.eclipse.swtbot.source.feature.group
@@ -22,10 +24,5 @@ location "http://download.eclipse.org/technology/swtbot/releases/2.2.1/" {
     org.hamcrest.core
 }
 
-// Mylyn WikiText
-location "http://download.eclipse.org/mylyn/releases/latest" {
-    org.eclipse.mylyn.wikitext
-    com.google.guava
-}
 
 
