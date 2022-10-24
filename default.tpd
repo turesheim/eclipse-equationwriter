@@ -1,7 +1,7 @@
-target "Eclipse Equationwriter Target Platform" with source requirements
+target "Resheim Equationwriter Target Platform" with source requirements
 
-// Base dependencies (Currently 4.5)
-location "https://download.eclipse.org/releases/2019-03/" {
+// Base dependencies
+location "https://download.eclipse.org/releases/2022-09/" {
     org.eclipse.emf.ecore
     org.eclipse.emf.ecore.xmi
     org.eclipse.emf.ecore.change
@@ -16,7 +16,7 @@ location "https://download.eclipse.org/releases/2019-03/" {
 }
 
 // UI Testing
-location "http://download.eclipse.org/technology/swtbot/releases/2.7.0/" {
+location "https://download.eclipse.org/technology/swtbot/releases/4.0.0/" {
     org.eclipse.swtbot.forms.source.feature.group
     org.eclipse.swtbot.eclipse.source.feature.group
     org.eclipse.swtbot.source.feature.group
